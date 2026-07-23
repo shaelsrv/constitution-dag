@@ -88,3 +88,51 @@ statistical guards (null models, cross-country replication) and belong in the
 research layer of downstream projects, not in this dataset. Keeping that line
 is itself a quality mechanism: it prevents the data from inheriting the
 credibility of claims it hasn't earned.
+
+## The life of an error (found → verified → fixed → propagated)
+
+The pilot ran this end-to-end on a real error — our own curated seed said
+Kotdwar was a Nagar Palika Parishad; it is a Nagar Nigam — so each step below
+is exercised, not hypothetical.
+
+**1. Found.** Four detection surfaces, in rising order of reach:
+CI validation (structural breakage); `scan.py` tripwires (valid-but-suspicious
+rows: duplicates, division bleed, unwatched watchers, grounding gaps, proxy
+drift — a hit is a QUESTION, not a finding); pivot falsifiability (a local
+person notices concrete wrongness and files the "Report an inaccuracy" issue —
+no source required, local knowledge is exactly how the Kotdwar error surfaced);
+and scheduled adversarial passes re-checking samples against primary sources —
+including `high` rows, because LAW CHANGES: yesterday's verified fact is
+tomorrow's stale row, so accuracy decays without re-verification.
+
+**2. Verified.** Retrieval, not votes (the pilot's grounded LLM verifiers
+refuted the true claim). Overturning an existing `high` row needs primary or
+authoritative sources a maintainer can check, or a scoped authority's recorded
+review. Verification fails closed: unresolved stays flagged, never "confirmed".
+
+**3. Fixed — three mechanisms matched to three error types:**
+- *Wrong value* → *correction*: row changed in the next dump version + a
+  `ledgers/corrections.jsonl` entry (before / after / source / contributor).
+- *Duplicate* → *merge*: links repointed to the survivor; merge recorded in the
+  ledger. (Kotdwar had two synthetic mayor offices folded into the corrected one.)
+- *Wrong existence* (fabricated office, misattributed power) → *deprecation,
+  not deletion*: the row stays, flagged with a mandatory reason (validator-
+  enforced), excluded from analysis — a public retraction, journal-style,
+  because someone may have cited it. (Kotdwar's generic "sarpanch with
+  policing power" went this way.)
+Nothing is ever silently edited: the git diff, the ledger entry, and the
+version bump make every fix itself auditable.
+
+**4. Propagated.** The fix ships as a new immutable PATCH version with a signed
+tag and a CHANGELOG entry naming the error; the Kaggle mirror updates with the
+same version notes; downstream atlases (which pin dump versions) bump
+deliberately and can render retraction notices on affected pages. Anyone who
+cited the old version can diff exactly what changed and why — immutability is
+what makes being wrong recoverable.
+
+Current triage queue: `python scan.py dumps/india-0.1.1 --pivot kotdwar`
+reports 16 open tripwire hits in non-pivot cities (division bleed in
+Hyderabad/Araria/Coimbatore/Noida/Gurgaon, incl. Araria's dual municipal
+identity — the same error class the pivot already went through). They are
+listed, labeled, and awaiting retrieval-based verification — which is the
+system behaving correctly: suspicion is cheap, correction is earned.

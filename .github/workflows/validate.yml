@@ -23,5 +23,7 @@ jobs:
                   print(f"== smoke: paths {place} ==", flush=True)
                   r = subprocess.run([sys.executable, "dag.py", dump, "paths", place])
                   rc |= r.returncode
+                  print(f"== tripwire scan (report only) ==", flush=True)
+                  subprocess.run([sys.executable, "scan.py", dump, "--pivot", place])
           sys.exit(rc)
           PY
