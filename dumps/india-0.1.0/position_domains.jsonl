@@ -1,0 +1,1269 @@
+{"position_id": 337, "domain": "fire_emergency", "power_over_citizen": "National policy framework for fire services, coordination during major disasters, funding support through National Disaster Response Fund"}
+{"position_id": 137, "domain": "higher_education", "power_over_citizen": "Sets national higher education policy, oversees central universities, proposes legislation affecting higher education standards, coordinates with UGC and AICTE"}
+{"position_id": 134, "domain": "education", "power_over_citizen": "Runs the citizen's school day-to-day; admissions, discipline, local implementation"}
+{"position_id": 135, "domain": "education", "power_over_citizen": "Administers government schools across the district; staffing, inspections"}
+{"position_id": 136, "domain": "education", "power_over_citizen": "Sets state school policy, curriculum board, budgets, teacher recruitment"}
+{"position_id": 137, "domain": "education", "power_over_citizen": "National education policy (NEP), central boards/funding, frameworks that shape the citizen's schooling"}
+{"position_id": 143, "domain": "policing", "power_over_citizen": "Heads city policing; law & order, FIRs, public order over the citizen"}
+{"position_id": 144, "domain": "policing", "power_over_citizen": "State police chief; commands all commissionerates and districts"}
+{"position_id": 145, "domain": "policing", "power_over_citizen": "Political head of state police; policy, postings, law & order accountability"}
+{"position_id": 146, "domain": "education", "power_over_citizen": "Administers government schools in the district; the citizen's school admin"}
+{"position_id": 147, "domain": "education", "power_over_citizen": "State school policy, curriculum, budgets affecting the citizen's schooling"}
+{"position_id": 156, "domain": "media", "power_over_citizen": "Apex broadcast/film/press/digital regulator; codes, channel permissions, certification"}
+{"position_id": 157, "domain": "media", "power_over_citizen": "Regulates cable/DTH tariffs, channel pricing, internet services"}
+{"position_id": 158, "domain": "media", "power_over_citizen": "Govt advertising, journalist accreditation, state info"}
+{"position_id": 159, "domain": "media", "power_over_citizen": "Cinema/cable licensing; internet shutdown orders"}
+{"position_id": 160, "domain": "media", "power_over_citizen": "Govt advertising, accreditation, state info"}
+{"position_id": 161, "domain": "media", "power_over_citizen": "Cinema/cable licensing; internet shutdown authority"}
+{"position_id": 168, "domain": "health", "power_over_citizen": "Sanitation, food-safety licensing, birth/death registration, vector control"}
+{"position_id": 169, "domain": "health", "power_over_citizen": "PHCs, immunization, disease surveillance, epidemic control measures"}
+{"position_id": 170, "domain": "health", "power_over_citizen": "PRIMARY authority (State subject): epidemic regulations, state health services, disease notification"}
+{"position_id": 171, "domain": "health", "power_over_citizen": "National policy, NHM, drug regulation, port/airport quarantine"}
+{"position_id": 173, "domain": "health", "power_over_citizen": "District health head, disease surveillance, epidemic control, clinic registration"}
+{"position_id": 174, "domain": "health", "power_over_citizen": "PRIMARY authority (State subject): epidemic regulations, health directorate"}
+{"position_id": 181, "domain": "transport", "power_over_citizen": "City roads, junctions, footpaths within municipal limits"}
+{"position_id": 182, "domain": "transport", "power_over_citizen": "Driving licence, vehicle registration, permits, fitness, MV tax"}
+{"position_id": 183, "domain": "transport", "power_over_citizen": "State transport policy, MV tax, bus fares, oversees RTA/TSRTC/licensing"}
+{"position_id": 184, "domain": "transport", "power_over_citizen": "National MV law, licence/registration standards, National Highways"}
+{"position_id": 186, "domain": "transport", "power_over_citizen": "Driving licence, vehicle registration, permits, fitness, MV tax"}
+{"position_id": 187, "domain": "transport", "power_over_citizen": "State transport policy, MV tax, bus fares, oversees RTO/UTC/licensing"}
+{"position_id": 192, "domain": "taxation", "power_over_citizen": "Municipal property tax"}
+{"position_id": 193, "domain": "taxation", "power_over_citizen": "State GST collection"}
+{"position_id": 194, "domain": "taxation", "power_over_citizen": "Income tax + Central GST"}
+{"position_id": 196, "domain": "taxation", "power_over_citizen": "State GST collection"}
+{"position_id": 203, "domain": "housing", "power_over_citizen": "Building permits and occupancy; setbacks; demolition"}
+{"position_id": 204, "domain": "housing", "power_over_citizen": "Layout/master-plan approval; metro-region development"}
+{"position_id": 205, "domain": "housing", "power_over_citizen": "Allots state housing units; tenancy/rent rules"}
+{"position_id": 206, "domain": "housing", "power_over_citizen": "PMAY-Urban scheme funding; model laws"}
+{"position_id": 208, "domain": "housing", "power_over_citizen": "Layout/master-plan approval; housing-scheme plots"}
+{"position_id": 214, "domain": "justice", "power_over_citizen": "Trial courts: civil, criminal, rent, family; fine, convict, decree"}
+{"position_id": 215, "domain": "justice", "power_over_citizen": "Appeals and writ petitions (Art 226)"}
+{"position_id": 206, "domain": "sanitation", "power_over_citizen": "Formulates national urban sanitation policies, administers Swachh Bharat Mission (Urban), provides funding and guidelines to states"}
+{"position_id": 217, "domain": "justice", "power_over_citizen": "Trial courts: civil, criminal, land, family"}
+{"position_id": 218, "domain": "justice", "power_over_citizen": "Appeals and writs (Art 226)"}
+{"position_id": 223, "domain": "employment", "power_over_citizen": "Fixes state minimum wages, enforces labour laws, conciliates disputes"}
+{"position_id": 224, "domain": "employment", "power_over_citizen": "Adjudicates dismissal, retrenchment, wage disputes"}
+{"position_id": 225, "domain": "employment", "power_over_citizen": "Frames Labour Codes, national floor wage, framework"}
+{"position_id": 226, "domain": "employment", "power_over_citizen": "Notifies state minimum wages, enforces labour laws, conciliates"}
+{"position_id": 227, "domain": "employment", "power_over_citizen": "District enforcement: inspections, wage claims, local disputes"}
+{"position_id": 231, "domain": "welfare", "power_over_citizen": "Ration cards + subsidized food grain; PDS entitlement"}
+{"position_id": 232, "domain": "welfare", "power_over_citizen": "State social-security pensions (old-age, widow, disability)"}
+{"position_id": 233, "domain": "welfare", "power_over_citizen": "Allocates NFSA food grain to states; coverage + issue prices"}
+{"position_id": 234, "domain": "welfare", "power_over_citizen": "Ration cards + subsidized grain via PDS; food entitlement"}
+{"position_id": 235, "domain": "welfare", "power_over_citizen": "Old-age, widow, disability pensions"}
+{"position_id": 244, "domain": "identity", "power_over_citizen": "Registers/issues birth and death certificates"}
+{"position_id": 245, "domain": "identity", "power_over_citizen": "Issues Aadhaar biometric ID; authentication for services"}
+{"position_id": 246, "domain": "elections", "power_over_citizen": "Administers electoral rolls and polling for Parliament/Assembly"}
+{"position_id": 206, "domain": "utilities", "power_over_citizen": "Formulates national urban utilities policy; funds major schemes (AMRUT, Smart Cities) affecting Coimbatore utilities infrastructure"}
+{"position_id": 248, "domain": "consumer_finance", "power_over_citizen": "Adjudicates consumer complaints; redress against businesses"}
+{"position_id": 249, "domain": "consumer_finance", "power_over_citizen": "Regulates banks and banking; consumer banking rules; ombudsman"}
+{"position_id": 251, "domain": "elections", "power_over_citizen": "Administers electoral rolls and polling for Parliament/Assembly"}
+{"position_id": 252, "domain": "consumer_finance", "power_over_citizen": "Adjudicates consumer complaints; redress"}
+{"position_id": 257, "domain": "environment", "power_over_citizen": "Consent to operate; effluent/emission standards; closure orders"}
+{"position_id": 258, "domain": "environment", "power_over_citizen": "Environmental Clearance for projects; EIA rules"}
+{"position_id": 259, "domain": "environment", "power_over_citizen": "Adjudicates environmental disputes; compensation; halt projects"}
+{"position_id": 260, "domain": "environment", "power_over_citizen": "Consents to operate; effluent/emission limits; closure"}
+{"position_id": 264, "domain": "utilities", "power_over_citizen": "Piped water + sewerage; tariffs; connections; disconnection"}
+{"position_id": 265, "domain": "utilities", "power_over_citizen": "Distributes electricity; connections; billing; disconnection"}
+{"position_id": 266, "domain": "utilities", "power_over_citizen": "Determines tariffs, service standards, consumer issues"}
+{"position_id": 267, "domain": "utilities", "power_over_citizen": "Local water + sewerage; water charges; connections; disconnection"}
+{"position_id": 268, "domain": "utilities", "power_over_citizen": "Distributes electricity; connections; billing; disconnection"}
+{"position_id": 269, "domain": "utilities", "power_over_citizen": "Sets tariffs, service standards, consumer disputes"}
+{"position_id": 282, "domain": "agriculture", "power_over_citizen": "Farmer investment support, seed/fertilizer regulation, extension"}
+{"position_id": 283, "domain": "agriculture", "power_over_citizen": "Regulates market yard, fees, trader licensing, auction rules"}
+{"position_id": 284, "domain": "agriculture", "power_over_citizen": "MSP via CACP, PM-KISAN, crop insurance, fertilizer subsidy"}
+{"position_id": 285, "domain": "agriculture", "power_over_citizen": "Food safety standards, licensing food businesses, recalls"}
+{"position_id": 286, "domain": "disaster", "power_over_citizen": "District plans, local response, evacuations, relief"}
+{"position_id": 287, "domain": "disaster", "power_over_citizen": "State disaster policy, directs districts, SDRF relief"}
+{"position_id": 288, "domain": "disaster", "power_over_citizen": "National policy, deploys NDRF, triggers relief funds"}
+{"position_id": 289, "domain": "higher_education", "power_over_citizen": "Admissions, curriculum, exams, degrees, conduct; affiliates colleges"}
+{"position_id": 290, "domain": "higher_education", "power_over_citizen": "Coordinates universities, entrance tests, fees, new colleges"}
+{"position_id": 291, "domain": "higher_education", "power_over_citizen": "Recognizes universities, academic standards, degree validity, central grants"}
+{"position_id": 292, "domain": "agriculture", "power_over_citizen": "Farmer subsidies, seed/fertilizer regulation, hill-agriculture schemes"}
+{"position_id": 293, "domain": "agriculture", "power_over_citizen": "Regulates market yards, fees, trader licensing"}
+{"position_id": 294, "domain": "disaster", "power_over_citizen": "District plans, flood/landslide response, evacuation, relief (high relevance in Garhwal Himalaya)"}
+{"position_id": 295, "domain": "disaster", "power_over_citizen": "State disaster policy, directs districts, SDRF relief"}
+{"position_id": 296, "domain": "higher_education", "power_over_citizen": "Admissions, curriculum, exams, degrees; central university, President is Visitor"}
+{"position_id": 297, "domain": "higher_education", "power_over_citizen": "Regulates state universities/colleges, admissions, fees"}
+{"position_id": 302, "domain": "child_welfare", "power_over_citizen": "Child protection schemes, sanctions Child Care Institutions"}
+{"position_id": 303, "domain": "child_welfare", "power_over_citizen": "CWC determines child in need of care; JJB adjudicates children in conflict with law"}
+{"position_id": 304, "domain": "child_welfare", "power_over_citizen": "JJ Model Rules, Mission Vatsalya, child-rights standards"}
+{"position_id": 305, "domain": "child_welfare", "power_over_citizen": "Child protection schemes, registers Child Care Institutions"}
+{"position_id": 306, "domain": "child_welfare", "power_over_citizen": "CWC determines child in need of care; JJB adjudicates"}
+{"position_id": 312, "domain": "fire_emergency", "power_over_citizen": "Fire stations, fire-safety inspections, NOCs, closure of unsafe premises"}
+{"position_id": 313, "domain": "fire_emergency", "power_over_citizen": "Local disaster response; 108 emergency medical transport"}
+{"position_id": 314, "domain": "fire_emergency", "power_over_citizen": "National disaster/fire policy; national emergency number 112"}
+{"position_id": 315, "domain": "fire_emergency", "power_over_citizen": "Fire stations, inspections, NOCs, closure (Kotdwar fire station)"}
+{"position_id": 321, "domain": "culture_recreation", "power_over_citizen": "City parks/public spaces, rules, event permits"}
+{"position_id": 322, "domain": "culture_recreation", "power_over_citizen": "Public library network, cultural/heritage institutions, monuments"}
+{"position_id": 323, "domain": "culture_recreation", "power_over_citizen": "Protects monuments (Golconda, Charminar); regulates nearby construction; funds culture"}
+{"position_id": 325, "domain": "culture_recreation", "power_over_citizen": "Public libraries, cultural/heritage institutions, monuments"}
+{"position_id": 336, "domain": "immigration", "power_over_citizen": "Registers foreigners, visa extensions, residential permits"}
+{"position_id": 337, "domain": "immigration", "power_over_citizen": "Citizenship grants, naturalization, OCI, immigration policy"}
+{"position_id": 338, "domain": "immigration", "power_over_citizen": "Passports and visas"}
+{"position_id": 339, "domain": "sanitation", "power_over_citizen": "Garbage collection, street sweeping, public cleanliness, waste segregation"}
+{"position_id": 340, "domain": "sanitation", "power_over_citizen": "Approves sanitation budgets, bye-laws, user charges"}
+{"position_id": 341, "domain": "telecom", "power_over_citizen": "Licenses operators, spectrum, authorizes phone/internet"}
+{"position_id": 343, "domain": "telecom", "power_over_citizen": "Telecom/internet statutes, spectrum, net access"}
+{"position_id": 344, "domain": "immigration", "power_over_citizen": "Registers foreigners; SP acts as Foreigners Registration Officer"}
+{"position_id": 431, "domain": "policing", "power_over_citizen": "Police + magisterial powers; arrest, prohibitory orders"}
+{"position_id": 369, "domain": "policing", "power_over_citizen": "Commands Kolkata Police: arrest, detain, regulate; magistrate-like powers"}
+{"position_id": 370, "domain": "policing", "power_over_citizen": "Controls police (State subject); directs deployment"}
+{"position_id": 371, "domain": "education", "power_over_citizen": "Curriculum, school recognition, admissions, board exams"}
+{"position_id": 372, "domain": "education", "power_over_citizen": "Runs KMC primary schools"}
+{"position_id": 373, "domain": "health", "power_over_citizen": "State hospitals, licenses practitioners, health orders"}
+{"position_id": 374, "domain": "health", "power_over_citizen": "Urban primary health, sanitation, vital registration"}
+{"position_id": 375, "domain": "justice", "power_over_citizen": "Appeals, writ petitions, constitutional claims; supervises lower courts"}
+{"position_id": 376, "domain": "justice", "power_over_citizen": "Tries criminal and civil cases at first instance"}
+{"position_id": 377, "domain": "taxation", "power_over_citizen": "Assesses + collects municipal property tax (unit-area)"}
+{"position_id": 378, "domain": "taxation", "power_over_citizen": "State GST and stamp duty"}
+{"position_id": 390, "domain": "policing", "power_over_citizen": "City police: arrests, prohibitory/preventive orders, licensing"}
+{"position_id": 391, "domain": "policing", "power_over_citizen": "Magisterial/preventive powers: curfews, detention, law-and-order"}
+{"position_id": 392, "domain": "education", "power_over_citizen": "PMC schools, admissions, civic education"}
+{"position_id": 393, "domain": "education", "power_over_citizen": "Curriculum, school recognition, RTE seat rules"}
+{"position_id": 395, "domain": "health", "power_over_citizen": "District hospitals, disease control, epidemic orders"}
+{"position_id": 396, "domain": "justice", "power_over_citizen": "Criminal + civil cases; convict, sentence, civil relief"}
+{"position_id": 397, "domain": "justice", "power_over_citizen": "Appeals, writ petitions, fundamental rights; binds lower courts"}
+{"position_id": 398, "domain": "taxation", "power_over_citizen": "Assesses + levies municipal property tax; can attach for non-payment"}
+{"position_id": 399, "domain": "taxation", "power_over_citizen": "Assess, audit, collect income tax; penalize evasion"}
+{"position_id": 419, "domain": "policing", "power_over_citizen": "Arrest, detention, prohibitory orders, assembly/traffic regulation"}
+{"position_id": 421, "domain": "justice", "power_over_citizen": "Appeals, writ petitions, bail, constitutional matters"}
+{"position_id": 422, "domain": "justice", "power_over_citizen": "Serious criminal + civil cases, sentences, bail"}
+{"position_id": 423, "domain": "education", "power_over_citizen": "Curriculum, fees, RTE admissions, recognition"}
+{"position_id": 424, "domain": "education", "power_over_citizen": "Corporation schools, admissions, staffing"}
+{"position_id": 425, "domain": "policing", "power_over_citizen": "Police + magisterial powers; arrest, prohibitory orders"}
+{"position_id": 426, "domain": "policing", "power_over_citizen": "Heads state police; supervises districts/commissionerates"}
+{"position_id": 427, "domain": "justice", "power_over_citizen": "Appeals, writ petitions, bail, constitutional matters"}
+{"position_id": 428, "domain": "justice", "power_over_citizen": "Serious criminal + civil cases, sentences, bail"}
+{"position_id": 429, "domain": "education", "power_over_citizen": "Curriculum, fees, RTE admissions, recognition"}
+{"position_id": 430, "domain": "education", "power_over_citizen": "Civic schools, civic services"}
+{"position_id": 432, "domain": "policing", "power_over_citizen": "Heads state police; supervises districts/commissionerates"}
+{"position_id": 433, "domain": "justice", "power_over_citizen": "Appeals, writ petitions, bail, constitutional matters"}
+{"position_id": 434, "domain": "justice", "power_over_citizen": "Serious criminal + civil cases, sentences, bail"}
+{"position_id": 435, "domain": "education", "power_over_citizen": "Curriculum, fees, RTE admissions, recognition"}
+{"position_id": 436, "domain": "education", "power_over_citizen": "Civic schools, civic services"}
+{"position_id": 487, "domain": "taxation", "power_over_citizen": "State GST registration, assessment, collection"}
+{"position_id": 489, "domain": "housing", "power_over_citizen": "Develops + allots public/affordable housing"}
+{"position_id": 490, "domain": "housing", "power_over_citizen": "Sanctions building plans; demolition of unauthorised"}
+{"position_id": 492, "domain": "transport", "power_over_citizen": "Driving licence, registration, road tax, permits"}
+{"position_id": 493, "domain": "transport", "power_over_citizen": "City bus services, routes, fares"}
+{"position_id": 494, "domain": "environment", "power_over_citizen": "Consent to operate; air/water pollution; closure"}
+{"position_id": 495, "domain": "environment", "power_over_citizen": "Environmental clearances; pollution/forest norms"}
+{"position_id": 497, "domain": "welfare", "power_over_citizen": "Ration cards; subsidised food grain via fair-price shops"}
+{"position_id": 498, "domain": "welfare", "power_over_citizen": "Pensions + welfare schemes (old-age, widow, disability)"}
+{"position_id": 499, "domain": "welfare", "power_over_citizen": "Central pension + food-security entitlements"}
+{"position_id": 500, "domain": "taxation", "power_over_citizen": "Assesses + collects property tax; penalties, attachment"}
+{"position_id": 501, "domain": "taxation", "power_over_citizen": "State GST registration, assessment, collection"}
+{"position_id": 503, "domain": "housing", "power_over_citizen": "Develops + allots public/affordable housing"}
+{"position_id": 504, "domain": "housing", "power_over_citizen": "Sanctions building plans; demolition of unauthorised"}
+{"position_id": 505, "domain": "transport", "power_over_citizen": "Driving licence, registration, road tax, permits"}
+{"position_id": 506, "domain": "transport", "power_over_citizen": "City bus services, routes, fares"}
+{"position_id": 507, "domain": "environment", "power_over_citizen": "Consent to operate; air/water pollution; closure"}
+{"position_id": 508, "domain": "welfare", "power_over_citizen": "Ration cards; subsidised food grain via fair-price shops"}
+{"position_id": 509, "domain": "welfare", "power_over_citizen": "Pensions + welfare schemes (old-age, widow, disability)"}
+{"position_id": 510, "domain": "taxation", "power_over_citizen": "Assesses + collects property tax; penalties, attachment"}
+{"position_id": 511, "domain": "taxation", "power_over_citizen": "State GST registration, assessment, collection"}
+{"position_id": 513, "domain": "housing", "power_over_citizen": "Develops + allots public/affordable housing"}
+{"position_id": 514, "domain": "housing", "power_over_citizen": "Sanctions building plans; demolition of unauthorised"}
+{"position_id": 515, "domain": "transport", "power_over_citizen": "Driving licence, registration, road tax, permits"}
+{"position_id": 516, "domain": "transport", "power_over_citizen": "City bus services, routes, fares"}
+{"position_id": 518, "domain": "welfare", "power_over_citizen": "Ration cards; subsidised food grain via fair-price shops"}
+{"position_id": 519, "domain": "welfare", "power_over_citizen": "Pensions + welfare schemes (old-age, widow, disability)"}
+{"position_id": 520, "domain": "taxation", "power_over_citizen": "Assesses + collects property tax; penalties, attachment"}
+{"position_id": 521, "domain": "taxation", "power_over_citizen": "State GST registration, assessment, collection"}
+{"position_id": 523, "domain": "housing", "power_over_citizen": "Develops + allots public/affordable housing"}
+{"position_id": 524, "domain": "housing", "power_over_citizen": "Sanctions building plans; demolition of unauthorised"}
+{"position_id": 525, "domain": "transport", "power_over_citizen": "Driving licence, registration, road tax, permits"}
+{"position_id": 526, "domain": "transport", "power_over_citizen": "City bus services, routes, fares"}
+{"position_id": 527, "domain": "environment", "power_over_citizen": "Consent to operate; air/water pollution; closure"}
+{"position_id": 528, "domain": "welfare", "power_over_citizen": "Ration cards; subsidised food grain via fair-price shops"}
+{"position_id": 529, "domain": "welfare", "power_over_citizen": "Pensions + welfare schemes (old-age, widow, disability)"}
+{"position_id": 530, "domain": "taxation", "power_over_citizen": "Assesses + collects property tax; penalties, attachment"}
+{"position_id": 531, "domain": "taxation", "power_over_citizen": "State GST registration, assessment, collection"}
+{"position_id": 533, "domain": "housing", "power_over_citizen": "Develops + allots public/affordable housing"}
+{"position_id": 534, "domain": "housing", "power_over_citizen": "Sanctions building plans; demolition of unauthorised"}
+{"position_id": 535, "domain": "transport", "power_over_citizen": "Driving licence, registration, road tax, permits"}
+{"position_id": 536, "domain": "transport", "power_over_citizen": "City bus services, routes, fares"}
+{"position_id": 537, "domain": "environment", "power_over_citizen": "Consent to operate; air/water pollution; closure"}
+{"position_id": 538, "domain": "welfare", "power_over_citizen": "Ration cards; subsidised food grain via fair-price shops"}
+{"position_id": 539, "domain": "welfare", "power_over_citizen": "Pensions + welfare schemes (old-age, widow, disability)"}
+{"position_id": 566, "domain": "health", "power_over_citizen": "Governs health for the citizen"}
+{"position_id": 567, "domain": "health", "power_over_citizen": "Governs health for the citizen"}
+{"position_id": 568, "domain": "employment", "power_over_citizen": "Governs employment for the citizen"}
+{"position_id": 570, "domain": "elections", "power_over_citizen": "Governs elections for the citizen"}
+{"position_id": 572, "domain": "health", "power_over_citizen": "Governs health for the citizen"}
+{"position_id": 573, "domain": "health", "power_over_citizen": "Governs health for the citizen"}
+{"position_id": 574, "domain": "employment", "power_over_citizen": "Governs employment for the citizen"}
+{"position_id": 575, "domain": "elections", "power_over_citizen": "Governs elections for the citizen"}
+{"position_id": 608, "domain": "utilities", "power_over_citizen": "Supplies/disconnects electricity; connection"}
+{"position_id": 609, "domain": "utilities", "power_over_citizen": "Fixes the electricity tariff the citizen pays"}
+{"position_id": 610, "domain": "utilities", "power_over_citizen": "Provides/cuts piped water; bills it"}
+{"position_id": 611, "domain": "sanitation", "power_over_citizen": "Collects waste; enforces segregation; user charges"}
+{"position_id": 612, "domain": "sanitation", "power_over_citizen": "Sanitation/ODF norms + rankings"}
+{"position_id": 613, "domain": "fire_emergency", "power_over_citizen": "Fire safety NOCs; fire emergency response"}
+{"position_id": 614, "domain": "fire_emergency", "power_over_citizen": "Frontline fire/rescue; fire NOCs"}
+{"position_id": 615, "domain": "identity", "power_over_citizen": "Birth/death certificates - foundational identity record"}
+{"position_id": 616, "domain": "identity", "power_over_citizen": "Passport; international mobility"}
+{"position_id": 617, "domain": "higher_education", "power_over_citizen": "Confers degree; affiliation/exam standards"}
+{"position_id": 618, "domain": "higher_education", "power_over_citizen": "Plans/coordinates higher education; seat availability"}
+{"position_id": 620, "domain": "utilities", "power_over_citizen": "Supplies/disconnects electricity; connection"}
+{"position_id": 621, "domain": "utilities", "power_over_citizen": "Fixes the electricity tariff the citizen pays"}
+{"position_id": 622, "domain": "utilities", "power_over_citizen": "Provides/cuts piped water; bills it"}
+{"position_id": 623, "domain": "sanitation", "power_over_citizen": "Collects waste; enforces segregation; user charges"}
+{"position_id": 624, "domain": "fire_emergency", "power_over_citizen": "Fire safety NOCs; fire emergency response"}
+{"position_id": 625, "domain": "fire_emergency", "power_over_citizen": "Frontline fire/rescue; fire NOCs"}
+{"position_id": 626, "domain": "identity", "power_over_citizen": "Birth/death certificates - foundational identity record"}
+{"position_id": 627, "domain": "higher_education", "power_over_citizen": "Confers degree; affiliation/exam standards"}
+{"position_id": 628, "domain": "higher_education", "power_over_citizen": "Plans/coordinates higher education; seat availability"}
+{"position_id": 629, "domain": "utilities", "power_over_citizen": "Supplies/disconnects electricity; connection"}
+{"position_id": 630, "domain": "utilities", "power_over_citizen": "Fixes the electricity tariff the citizen pays"}
+{"position_id": 631, "domain": "utilities", "power_over_citizen": "Provides/cuts piped water; bills it"}
+{"position_id": 632, "domain": "sanitation", "power_over_citizen": "Collects waste; enforces segregation; user charges"}
+{"position_id": 633, "domain": "fire_emergency", "power_over_citizen": "Fire safety NOCs; fire emergency response"}
+{"position_id": 634, "domain": "fire_emergency", "power_over_citizen": "Frontline fire/rescue; fire NOCs"}
+{"position_id": 635, "domain": "identity", "power_over_citizen": "Birth/death certificates - foundational identity record"}
+{"position_id": 636, "domain": "higher_education", "power_over_citizen": "Confers degree; affiliation/exam standards"}
+{"position_id": 637, "domain": "higher_education", "power_over_citizen": "Plans/coordinates higher education; seat availability"}
+{"position_id": 638, "domain": "utilities", "power_over_citizen": "Supplies/disconnects electricity; connection"}
+{"position_id": 639, "domain": "utilities", "power_over_citizen": "Fixes the electricity tariff the citizen pays"}
+{"position_id": 640, "domain": "utilities", "power_over_citizen": "Provides/cuts piped water; bills it"}
+{"position_id": 641, "domain": "sanitation", "power_over_citizen": "Collects waste; enforces segregation; user charges"}
+{"position_id": 642, "domain": "fire_emergency", "power_over_citizen": "Fire safety NOCs; fire emergency response"}
+{"position_id": 643, "domain": "fire_emergency", "power_over_citizen": "Frontline fire/rescue; fire NOCs"}
+{"position_id": 644, "domain": "identity", "power_over_citizen": "Birth/death certificates - foundational identity record"}
+{"position_id": 645, "domain": "higher_education", "power_over_citizen": "Confers degree; affiliation/exam standards"}
+{"position_id": 646, "domain": "higher_education", "power_over_citizen": "Plans/coordinates higher education; seat availability"}
+{"position_id": 647, "domain": "utilities", "power_over_citizen": "Supplies/disconnects electricity; connection"}
+{"position_id": 648, "domain": "utilities", "power_over_citizen": "Fixes the electricity tariff the citizen pays"}
+{"position_id": 649, "domain": "utilities", "power_over_citizen": "Provides/cuts piped water; bills it"}
+{"position_id": 650, "domain": "sanitation", "power_over_citizen": "Collects waste; enforces segregation; user charges"}
+{"position_id": 651, "domain": "fire_emergency", "power_over_citizen": "Fire safety NOCs; fire emergency response"}
+{"position_id": 652, "domain": "fire_emergency", "power_over_citizen": "Frontline fire/rescue; fire NOCs"}
+{"position_id": 653, "domain": "identity", "power_over_citizen": "Birth/death certificates - foundational identity record"}
+{"position_id": 654, "domain": "higher_education", "power_over_citizen": "Confers degree; affiliation/exam standards"}
+{"position_id": 655, "domain": "higher_education", "power_over_citizen": "Plans/coordinates higher education; seat availability"}
+{"position_id": 685, "domain": "agriculture", "power_over_citizen": "Subsidies, seed/fertilizer regulation, crop insurance, extension"}
+{"position_id": 686, "domain": "agriculture", "power_over_citizen": "Regulates wholesale trade, market yards, pricing"}
+{"position_id": 687, "domain": "child_welfare", "power_over_citizen": "Child protection (ICPS), anganwadi, child welfare institutions"}
+{"position_id": 688, "domain": "child_welfare", "power_over_citizen": "Care/custody of children in need; placement, adoption"}
+{"position_id": 689, "domain": "child_welfare", "power_over_citizen": "National child-protection policy, ICPS, CARA adoption"}
+{"position_id": 690, "domain": "consumer_finance", "power_over_citizen": "Adjudicates consumer complaints; compensation"}
+{"position_id": 692, "domain": "culture_recreation", "power_over_citizen": "Protects centrally-protected monuments; access"}
+{"position_id": 693, "domain": "disaster", "power_over_citizen": "Local disaster response, evacuations, relief"}
+{"position_id": 694, "domain": "disaster", "power_over_citizen": "State disaster policy, relief, coordination"}
+{"position_id": 695, "domain": "agriculture", "power_over_citizen": "Subsidies, seed/fertilizer, crop insurance, extension"}
+{"position_id": 696, "domain": "agriculture", "power_over_citizen": "Regulates wholesale agricultural trade, market yards"}
+{"position_id": 697, "domain": "child_welfare", "power_over_citizen": "Child protection (ICPS), anganwadi, institutions"}
+{"position_id": 698, "domain": "child_welfare", "power_over_citizen": "Care/custody of children in need; placement, adoption"}
+{"position_id": 701, "domain": "disaster", "power_over_citizen": "Local disaster response, evacuations, relief"}
+{"position_id": 702, "domain": "disaster", "power_over_citizen": "State disaster policy, relief, coordination"}
+{"position_id": 738, "domain": "sanitation", "power_over_citizen": "Directly-elected councillors set sanitation policy, budgets and user charges (Art.243R elected local body)"}
+{"position_id": 739, "domain": "sanitation", "power_over_citizen": "Directly-elected councillors set sanitation policy, budgets and charges"}
+{"position_id": 740, "domain": "sanitation", "power_over_citizen": "Directly-elected councillors set sanitation policy, budgets and charges"}
+{"position_id": 741, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators set sanitation policy, budgets and charges"}
+{"position_id": 742, "domain": "sanitation", "power_over_citizen": "Directly-elected councillors set sanitation policy, budgets and charges"}
+{"position_id": 743, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators set sanitation policy, budgets and charges"}
+{"position_id": 744, "domain": "sanitation", "power_over_citizen": "Directly-elected councillors set sanitation policy and charges"}
+{"position_id": 745, "domain": "sanitation", "power_over_citizen": "Elected head of the municipal corporation; presides over the council, sets civic priorities (executive power shared with appointed Commissioner)"}
+{"position_id": 1888, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 1888, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 3347, "domain": "identity", "power_over_citizen": "Directly-elected executive head of the municipal corporation"}
+{"position_id": 769, "domain": "policing", "power_over_citizen": "Directly-elected village head; local dispute resolution, sanitation, water, public-works, welfare delivery under Eleventh Schedule (73rd Amendment)"}
+{"position_id": 780, "domain": "education", "power_over_citizen": "Runs municipal primary schools for city children"}
+{"position_id": 786, "domain": "identity", "power_over_citizen": "Directly-elected executive city head; presides over civic administration (sanitation, health, water, services)"}
+{"position_id": 789, "domain": "health", "power_over_citizen": "Rural sub-centres/health & sanitation, drinking water, welfare delivery under Eleventh Schedule"}
+{"position_id": 790, "domain": "agriculture", "power_over_citizen": "Devolved agriculture, land improvement, minor irrigation, rural development"}
+{"position_id": 745, "domain": "culture_recreation", "power_over_citizen": "Directly-elected civic head; parks, cultural facilities policy via council"}
+{"position_id": 2882, "domain": "welfare", "power_over_citizen": "Formulates national welfare policies for scheduled castes, scheduled tribes, other backward classes, persons with disabilities, senior citizens, and transgender persons; oversees centrally-sponsored welfare schemes"}
+{"position_id": 2883, "domain": "welfare", "power_over_citizen": "Formulates national policies for women and child welfare including Integrated Child Development Services (ICDS), maternity benefits, child nutrition programs, and women empowerment schemes"}
+{"position_id": 2884, "domain": "welfare", "power_over_citizen": "Oversees rural welfare schemes including Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA), rural housing (PMAY-G), and rural development programs affecting peri-urban areas of Coimbatore"}
+{"position_id": 2816, "domain": "policing", "power_over_citizen": "Political control over state police through Home Department, policy decisions on policing priorities, appointment authority for senior police officers"}
+{"position_id": 2817, "domain": "policing", "power_over_citizen": "Oversight of central police organizations (CBI, NIA, CRPF), coordination with state police, national security matters, deployment of central forces for law and order assistance"}
+{"position_id": 2888, "domain": "transport", "power_over_citizen": "Formulates national transport policy, motor vehicle regulations, national highway development; oversees National Highways Authority of India (NHAI) projects affecting Coimbatore; sets national road safety standards and vehicle emission norms"}
+{"position_id": 2887, "domain": "transport", "power_over_citizen": "Sets state transport policy, bus fares for state transport corporations, road safety regulations; oversees Tamil Nadu State Transport Corporation (TNSTC) operations including Coimbatore division; approves major transport infrastructure projects"}
+{"position_id": 3347, "domain": "sanitation", "power_over_citizen": "Directly-elected head of the Nagar Nigam; presides over civic services"}
+{"position_id": 2965, "domain": "identity", "power_over_citizen": "Issues birth and death certificates, maintains vital statistics records that establish legal identity from birth"}
+{"position_id": 2967, "domain": "identity", "power_over_citizen": "Issues passports, verifies identity documents, processes passport applications for international travel identity"}
+{"position_id": 2970, "domain": "identity", "power_over_citizen": "Supreme authority over Aadhaar biometric identity system, sets national identity standards, manages central identity database"}
+{"position_id": 3015, "domain": "child_welfare", "power_over_citizen": "Implements child welfare schemes, operates anganwadi centers, coordinates with District Child Protection Unit for child welfare services within municipal limits"}
+{"position_id": 3016, "domain": "child_welfare", "power_over_citizen": "Heads District Child Protection Unit, coordinates child protection services, manages Child Welfare Committees, oversees adoption and foster care processes, handles child abuse cases"}
+{"position_id": 3017, "domain": "child_welfare", "power_over_citizen": "Quasi-judicial body that determines status of children in need of care and protection, orders institutional or non-institutional care, decides on adoption eligibility"}
+{"position_id": 3019, "domain": "child_welfare", "power_over_citizen": "Administers child welfare programs statewide, implements ICDS, oversees Child Welfare Committees, manages child care institutions, implements state child protection policy"}
+{"position_id": 2966, "domain": "identity", "power_over_citizen": "Issues marriage certificates, supervises sub-registrars for property registration, oversees vital statistics at district level"}
+{"position_id": 3018, "domain": "child_welfare", "power_over_citizen": "Chairs District Child Protection Committee, oversees implementation of child welfare schemes, coordinates between departments for child protection"}
+{"position_id": 2830, "domain": "education", "power_over_citizen": "Manages corporation-run primary schools, maintains school infrastructure, coordinates with state education department for urban schools"}
+{"position_id": 2831, "domain": "education", "power_over_citizen": "Sets state education policy, curriculum framework, teacher recruitment policies, school funding allocations, examination standards for state boards"}
+{"position_id": 3355, "domain": "elections", "power_over_citizen": "Your directly-elected state legislator — votes on the state laws and budgets behind every domain; raises your grievances in the assembly"}
+{"position_id": 3105, "domain": "employment", "power_over_citizen": "Registers unemployed citizens, maintains employment records, facilitates job matching with employers, issues unemployment certificates"}
+{"position_id": 3351, "domain": "policing", "power_over_citizen": "District police chief — FIR registration, investigations, and law-and-order for Kotdwar and all of Pauri Garhwal"}
+{"position_id": 2905, "domain": "housing", "power_over_citizen": "Frames housing policies, approves housing schemes, allocates budget for housing projects, adopts building regulations and bylaws"}
+{"position_id": 2907, "domain": "housing", "power_over_citizen": "Legislates on housing policy, urban planning laws, rent control, building regulations; approves state housing budget; raises constituency housing issues"}
+{"position_id": 2908, "domain": "housing", "power_over_citizen": "Formulates state housing policy, implements housing schemes (TNSCB, slum clearance), allocates state housing budget, oversees Tamil Nadu Slum Clearance Board and TNHB"}
+{"position_id": 2910, "domain": "housing", "power_over_citizen": "Legislates on central housing schemes (PMAY-Urban), approves central housing budget, can raise housing issues in Parliament, influences allocation of central funds for housing"}
+{"position_id": 2911, "domain": "housing", "power_over_citizen": "Formulates national housing policy, implements Pradhan Mantri Awas Yojana (PMAY-Urban), allocates central funds for housing, sets guidelines for urban housing schemes"}
+{"position_id": 2975, "domain": "elections", "power_over_citizen": "Supervises electoral roll preparation, manages polling stations, coordinates election conduct for Coimbatore North Assembly Constituency and Coimbatore South Assembly Constituency and portions of Coimbatore Lok Sabha Constituency within the district"}
+{"position_id": 3032, "domain": "disaster", "power_over_citizen": "Chairs District Disaster Management Authority (DDMA), coordinates all disaster preparedness and response activities, declares local disasters, requisitions resources, orders evacuations, manages relief distribution, and supervises all disaster operations in the district"}
+{"position_id": 3033, "domain": "disaster", "power_over_citizen": "Heads State Executive Committee on Disaster Management, coordinates state disaster response, implements State Disaster Management Authority decisions, allocates state resources for disaster relief, and supervises district-level disaster operations"}
+{"position_id": 3034, "domain": "disaster", "power_over_citizen": "Chairs State Disaster Management Authority (SDMA), approves state disaster management plans and policies, declares state-level disasters, sanctions major relief expenditure, coordinates with National Disaster Management Authority, and exercises overall disaster management authority in the state"}
+{"position_id": 3035, "domain": "disaster", "power_over_citizen": "Chairs National Disaster Management Authority (NDMA), approves national disaster management policy and plans, declares national disasters, coordinates inter-state disaster response, sanctions National Disaster Response Force deployment, allocates funds from National Disaster Response Fund, and sets binding guidelines for state and district authorities"}
+{"position_id": 3078, "domain": "culture_recreation", "power_over_citizen": "Formulates and implements state cultural policy, manages state museums, archaeological sites, fine arts academies, state-level cultural festivals, grants to cultural institutions, and heritage preservation programs"}
+{"position_id": 3079, "domain": "culture_recreation", "power_over_citizen": "Manages state sports policy, sports infrastructure, youth programs, state-level sports competitions, sports training centers, and recreational facilities for youth"}
+{"position_id": 3080, "domain": "culture_recreation", "power_over_citizen": "Formulates national cultural policy, manages national museums, monuments of national importance (through ASI), national academies (Sangeet Natak Akademi, Sahitya Akademi, Lalit Kala Akademi), national cultural festivals, and international cultural relations"}
+{"position_id": 3081, "domain": "culture_recreation", "power_over_citizen": "Formulates national sports policy, manages Sports Authority of India, national sports programs (Khelo India), elite athlete development, national sports competitions, and youth development schemes"}
+{"position_id": 2842, "domain": "health", "power_over_citizen": "Oversees public health programs, disease surveillance, immunization, maternal and child health, rural health centers (PHCs/CHCs), district hospital administration, epidemic control across district"}
+{"position_id": 2843, "domain": "health", "power_over_citizen": "Formulates and implements state health policy, manages public health infrastructure, disease control programs, medical education standards for state institutions, drug regulation, coordinates National Health Mission at state level"}
+{"position_id": 2844, "domain": "health", "power_over_citizen": "Sets health policy priorities, oversees state health department, proposes health budget, issues health orders and schemes, manages state medical services"}
+{"position_id": 2845, "domain": "health", "power_over_citizen": "Sets national health policy, manages central health schemes (Ayushman Bharat, National Health Mission), regulates drugs and medical devices, controls medical education standards (via MCI/NMC), manages central hospitals and AIIMS, disease surveillance, international health regulations"}
+{"position_id": 2841, "domain": "health", "power_over_citizen": "Administers primary health centers, maternity homes, dispensaries, sanitation, disease control programs, birth/death registration, food safety inspections within municipal limits"}
+{"position_id": 2920, "domain": "employment", "power_over_citizen": "Enforces minimum wages, working conditions, payment of wages, and industrial employment standing orders; handles complaints under Shops and Establishments Act; inspects workplaces for compliance with labour laws"}
+{"position_id": 2921, "domain": "employment", "power_over_citizen": "Supervises labour officers; adjudicates industrial disputes; registers trade unions; oversees implementation of labour welfare schemes; conciliation and mediation in labour disputes"}
+{"position_id": 2922, "domain": "employment", "power_over_citizen": "Administers all state labour laws; sets minimum wage rates for scheduled employments; oversees labour welfare boards; manages employment exchanges; implements social security schemes for unorganized workers"}
+{"position_id": 2923, "domain": "employment", "power_over_citizen": "Formulates state labour policy; oversees implementation of employment programs; administers labour welfare funds; coordinates with central government on labour matters"}
+{"position_id": 2924, "domain": "employment", "power_over_citizen": "Sets policy direction for labour welfare; proposes labour legislation; oversees skill development programs; manages labour welfare boards and funds"}
+{"position_id": 2925, "domain": "employment", "power_over_citizen": "Enforces central labour laws including Industrial Disputes Act, Contract Labour Act, Inter-State Migrant Workers Act; adjudicates disputes in central sphere establishments; conciliation services"}
+{"position_id": 2926, "domain": "employment", "power_over_citizen": "Formulates national labour policy; administers central labour laws; oversees employment generation schemes; manages social security programs; coordinates labour reforms"}
+{"position_id": 2927, "domain": "employment", "power_over_citizen": "Sets national labour policy; proposes labour legislation to Parliament; oversees implementation of labour codes; manages tripartite consultations with employers and unions"}
+{"position_id": 2981, "domain": "consumer_finance", "power_over_citizen": "Adjudicates consumer complaints involving goods and services with claim value up to ₹1 crore; orders compensation, refunds, and penalties against unfair trade practices in financial services"}
+{"position_id": 2986, "domain": "consumer_finance", "power_over_citizen": "Formulates consumer protection policy; administers Consumer Protection Act; operates National Consumer Helpline; coordinates consumer finance protection initiatives across regulators"}
+{"position_id": 2853, "domain": "taxation", "power_over_citizen": "Administers State GST (SGST), VAT (legacy), professional tax, and other state-level indirect taxes for Coimbatore district"}
+{"position_id": 2854, "domain": "taxation", "power_over_citizen": "Proposes and implements state tax policy including SGST rates, professional tax, stamp duty, property tax guidelines, and state-level levies"}
+{"position_id": 2855, "domain": "taxation", "power_over_citizen": "Proposes and implements national tax policy including income tax, CGST rates, customs duties, excise duties, and other central taxes through annual Finance Acts"}
+{"position_id": 3044, "domain": "higher_education", "power_over_citizen": "Administers government arts and science colleges, implements state higher education policies, manages admissions to state government colleges, oversees affiliated college standards"}
+{"position_id": 3045, "domain": "higher_education", "power_over_citizen": "Administers polytechnics and diploma institutions, regulates technical education below degree level in state institutions"}
+{"position_id": 3046, "domain": "higher_education", "power_over_citizen": "Controls agricultural education and degree programs, operates agricultural colleges including those accessible to Coimbatore citizens"}
+{"position_id": 3047, "domain": "higher_education", "power_over_citizen": "Sets higher education policy, allocates budget for state universities and colleges, proposes legislation for higher education reforms"}
+{"position_id": 3049, "domain": "higher_education", "power_over_citizen": "Approves technical institutions, sets standards for engineering and technical education, regulates curriculum and quality standards for technical colleges in Coimbatore"}
+{"position_id": 3087, "domain": "telecom", "power_over_citizen": "Legislates on telecom matters, debates telecom policy, raises constituency issues regarding telecom infrastructure and services in Parliament, participates in parliamentary committees overseeing telecom sector"}
+{"position_id": 3088, "domain": "telecom", "power_over_citizen": "Limited direct telecom power (telecom is Union subject); can raise local telecom infrastructure issues, advocate for better connectivity, coordinate with state government on right-of-way for telecom infrastructure"}
+{"position_id": 3086, "domain": "telecom", "power_over_citizen": "Issues telecom licenses, allocates spectrum, regulates tariffs, formulates telecom policy, manages universal service obligations, oversees telecom infrastructure deployment and quality of service standards"}
+{"position_id": 2936, "domain": "environment", "power_over_citizen": "Monitors industrial pollution, coordinates environmental clearances for district-level projects, implements state environmental schemes, oversees water quality and air quality monitoring"}
+{"position_id": 2938, "domain": "environment", "power_over_citizen": "Administers state environmental policies, forest conservation, wildlife protection, coastal zone management, environmental impact assessments for state projects"}
+{"position_id": 2939, "domain": "environment", "power_over_citizen": "Sets state environmental policy, oversees pollution control board, manages state forests and wildlife sanctuaries, approves major environmental projects"}
+{"position_id": 2940, "domain": "environment", "power_over_citizen": "Sets national environmental policy, grants environmental clearances for major projects, enforces national pollution standards, manages national parks and wildlife sanctuaries, represents India in international environmental forums"}
+{"position_id": 2996, "domain": "sanitation", "power_over_citizen": "Approves sanitation budgets, policies, and bye-laws; oversees Commissioner's sanitation work"}
+{"position_id": 2997, "domain": "sanitation", "power_over_citizen": "Sets state sanitation policy, allocates funds for urban sanitation programs, oversees Swachh Bharat Mission implementation"}
+{"position_id": 3058, "domain": "agriculture", "power_over_citizen": "Formulates and implements state agricultural policy, agricultural subsidies, irrigation schemes, agricultural marketing regulations, crop insurance schemes, and state agricultural programs"}
+{"position_id": 3060, "domain": "agriculture", "power_over_citizen": "Formulates national agricultural policy, central agricultural schemes (PM-KISAN, crop insurance), minimum support price recommendations, agricultural research policy, national agricultural market regulations, and coordinates with states"}
+{"position_id": 3056, "domain": "agriculture", "power_over_citizen": "Direct implementation of agricultural extension services, crop management guidance, distribution of agricultural inputs and subsidies, soil testing services, farmer training programs"}
+{"position_id": 2952, "domain": "utilities", "power_over_citizen": "Implements water supply and sewage schemes in areas outside municipal corporation limits; manages rural and peri-urban water infrastructure; coordinates with local bodies"}
+{"position_id": 2953, "domain": "utilities", "power_over_citizen": "Sets electricity policy, tariff structures (through regulatory approval), power generation priorities, and oversees TANGEDCO operations affecting all utility consumers in state"}
+{"position_id": 2954, "domain": "utilities", "power_over_citizen": "Determines electricity tariffs for all consumer categories; regulates power distribution standards; adjudicates consumer disputes; ensures compliance with service quality norms"}
+{"position_id": 2955, "domain": "utilities", "power_over_citizen": "Sets national electricity policy, grid standards, renewable energy targets; oversees central power generation and inter-state transmission; coordinates national electrification programs"}
+{"position_id": 2956, "domain": "utilities", "power_over_citizen": "Sets national water supply and sanitation policy; implements Jal Jeevan Mission for rural water supply; provides funding and technical support to states for water infrastructure"}
+{"position_id": 3008, "domain": "fire_emergency", "power_over_citizen": "Direct operational control of fire emergency response, fire prevention, fire safety inspections, and firefighting operations within municipal corporation limits"}
+{"position_id": 3106, "domain": "employment", "power_over_citizen": "Promotes self-employment and entrepreneurship, administers PMEGP and other employment generation schemes, provides registration for small enterprises"}
+{"position_id": 3009, "domain": "fire_emergency", "power_over_citizen": "Coordinates fire emergency services across the revenue district, supervises fire stations in rural and urban areas outside municipal corporation jurisdiction"}
+{"position_id": 1889, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 1890, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1891, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1892, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 1893, "domain": "policing", "power_over_citizen": "Appointed IPS head of state police"}
+{"position_id": 1894, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 1895, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1896, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1898, "domain": "elections", "power_over_citizen": "Directly-elected Lok Sabha makes union law"}
+{"position_id": 1899, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 1899, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 1900, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 1901, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1902, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1903, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1904, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1905, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 1905, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 1906, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 1907, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1908, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1909, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1910, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1911, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 1911, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 1912, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 1913, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1914, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1915, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1916, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1917, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 1917, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 1918, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 1919, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1920, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1921, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1922, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1923, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 1923, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 1924, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 1925, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1926, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1927, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1928, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1929, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 1929, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 1930, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 1931, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1932, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1933, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1934, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1935, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 1936, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 1937, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1938, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1939, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1940, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1941, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 1942, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 1943, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1944, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1945, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1946, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1947, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 1948, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 1949, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1950, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1951, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1952, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1953, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 1954, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 1955, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1956, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1957, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1958, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1959, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 1960, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 1961, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1962, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1963, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1964, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1965, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 1966, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 1967, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1968, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1969, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1970, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1971, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 1972, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 1973, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1974, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1975, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1976, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1977, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 1978, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 1979, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1980, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1981, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1982, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1983, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 1984, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 1985, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1986, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1987, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1988, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1989, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 1990, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 1991, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1992, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1993, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 1994, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 1995, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 1995, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 1996, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 1997, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 1998, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 1999, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2000, "domain": "policing", "power_over_citizen": "Appointed IPS head of state police"}
+{"position_id": 2001, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2002, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2003, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2004, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2004, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2005, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2006, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2007, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2008, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2009, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2010, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2010, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2011, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2012, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2013, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2014, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2015, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2016, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2016, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2017, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2018, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2019, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2020, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2021, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2022, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2023, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2024, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2025, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2026, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2027, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2028, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2029, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2030, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2031, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2032, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2033, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2034, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2035, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2036, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2037, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2038, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2039, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2040, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2041, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2042, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2043, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2044, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2045, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2046, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2047, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2048, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2049, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2050, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2051, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2052, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2053, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2054, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2055, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2056, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2057, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2058, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2058, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2059, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2060, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2061, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2062, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2063, "domain": "policing", "power_over_citizen": "Appointed IPS head of state police"}
+{"position_id": 2064, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2065, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2066, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2067, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2067, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2068, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2069, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2070, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2071, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2072, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2073, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2073, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2074, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2075, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2076, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2077, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2078, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2079, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2079, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2080, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2081, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2082, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2083, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2084, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2085, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2086, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2087, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2088, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2089, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2090, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2091, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2092, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2093, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2094, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2095, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2096, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2097, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2098, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2099, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2100, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2101, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2102, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2103, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2104, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2105, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2106, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2107, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2108, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2109, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2110, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2111, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2112, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2113, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2114, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2115, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2115, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2116, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2117, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2118, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2119, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2120, "domain": "policing", "power_over_citizen": "Appointed IPS head of state police"}
+{"position_id": 2121, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2122, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2123, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2124, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2124, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2125, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2126, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2127, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2128, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2129, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2130, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2130, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2131, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2132, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2133, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2134, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2135, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2136, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2137, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2138, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2139, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2140, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2141, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2142, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2143, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2144, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2145, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2146, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2147, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2148, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2149, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2150, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2151, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2152, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2153, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2154, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2155, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2156, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2157, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2158, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2159, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2160, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2161, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2162, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2163, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2164, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2165, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2166, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2166, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2167, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2168, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2169, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2170, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2172, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2173, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2174, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2175, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2175, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2176, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2177, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2178, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2179, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2180, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2181, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2182, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2183, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2184, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2185, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2186, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2187, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2188, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2189, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2190, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2191, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2192, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2193, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2194, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2195, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2196, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2197, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2198, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2199, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2200, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2201, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2202, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2203, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2204, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2205, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2205, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2206, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2207, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2208, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2209, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2211, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2212, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2213, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2214, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2214, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2215, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2216, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2217, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2218, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2219, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2220, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2221, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2222, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2223, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2224, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2225, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2226, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2227, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2228, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2229, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2230, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2231, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2232, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2233, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2234, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2235, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2236, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2237, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2238, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2239, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2240, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2241, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2242, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2243, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2244, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2244, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2245, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2246, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2247, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2248, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2250, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2251, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2252, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2253, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2253, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2254, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2255, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2256, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2257, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2258, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2259, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2260, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2261, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2262, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2263, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2264, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2265, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2266, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2267, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2268, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2269, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2270, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2271, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2272, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2273, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2274, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2275, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2276, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2277, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2278, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2279, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2280, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2281, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2282, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2283, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2283, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2284, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2285, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2286, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2287, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2288, "domain": "policing", "power_over_citizen": "Appointed IPS head of state police"}
+{"position_id": 2289, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2290, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2291, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2292, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2292, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2293, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2294, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2295, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2296, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2297, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2298, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2299, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2300, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2301, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2302, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2303, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2304, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2305, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2306, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2307, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2308, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2309, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2310, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2311, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2312, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2313, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2314, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2315, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2316, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2316, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2317, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2318, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2319, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2320, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2321, "domain": "policing", "power_over_citizen": "Appointed IPS head of state police"}
+{"position_id": 2322, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2323, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2324, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2325, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2325, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2326, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2327, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2328, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2329, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2330, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2331, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2332, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2333, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2334, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2335, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2336, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2337, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2338, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2339, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2340, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2341, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2342, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2343, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2344, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2345, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2346, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2347, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2348, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2349, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2349, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2350, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2351, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2352, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2353, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2354, "domain": "policing", "power_over_citizen": "Appointed IPS head of state police"}
+{"position_id": 2355, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2356, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2357, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2358, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2358, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2359, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2360, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2361, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2362, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2363, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2364, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2365, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2366, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2367, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2368, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2369, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2370, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2371, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2372, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2373, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2374, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2375, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2376, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2377, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2378, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2379, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2380, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2381, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2382, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2382, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2383, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2384, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2385, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2386, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2387, "domain": "policing", "power_over_citizen": "Appointed IPS head of state police"}
+{"position_id": 2388, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2389, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2390, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2391, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2392, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2393, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2394, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2395, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2396, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2397, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2398, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2399, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2400, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2401, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2402, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2403, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2403, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2404, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2405, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2406, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2407, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2409, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2410, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2411, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2412, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2413, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2414, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2415, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2416, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2417, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2418, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2419, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2420, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2421, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2422, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2423, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2424, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2424, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2425, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2426, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2427, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2428, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2429, "domain": "policing", "power_over_citizen": "Appointed IPS head of state police"}
+{"position_id": 2430, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2431, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2432, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2433, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2434, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2435, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2436, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2437, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2438, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2439, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2440, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2441, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2442, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2443, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2444, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2445, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2445, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2446, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2447, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2448, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2449, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2450, "domain": "policing", "power_over_citizen": "Appointed IPS head of state police"}
+{"position_id": 2451, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2452, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2453, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2454, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2455, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2456, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2457, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2458, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2459, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2460, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2461, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2462, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2463, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2464, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2465, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2466, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2466, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2467, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2468, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2469, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2470, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2471, "domain": "policing", "power_over_citizen": "Appointed IPS head of state police"}
+{"position_id": 2472, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2473, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2474, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2475, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2476, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2477, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2478, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2479, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2480, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2481, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2482, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2483, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2484, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2485, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2486, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2487, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2487, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2488, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2489, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2490, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2491, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2492, "domain": "policing", "power_over_citizen": "Appointed IPS head of state police"}
+{"position_id": 2493, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2494, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2495, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2496, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2497, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2498, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2499, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2500, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2501, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2502, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2502, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2503, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2504, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2505, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2506, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2507, "domain": "policing", "power_over_citizen": "Appointed IPS head of state police"}
+{"position_id": 2508, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2509, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2510, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2511, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2512, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2513, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2514, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2515, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2516, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2517, "domain": "welfare", "power_over_citizen": "Directly-elected village head: sanitation, water, works, MGNREGA/PDS delivery"}
+{"position_id": 2517, "domain": "sanitation", "power_over_citizen": "Village sanitation & water"}
+{"position_id": 2518, "domain": "agriculture", "power_over_citizen": "District rural development, agriculture, minor irrigation"}
+{"position_id": 2519, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2520, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2521, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2522, "domain": "policing", "power_over_citizen": "Appointed IPS head of state police"}
+{"position_id": 2523, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2524, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2525, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2526, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2527, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2528, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2529, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2530, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2531, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2532, "domain": "sanitation", "power_over_citizen": "Directly-elected corporators: sanitation, water, local services"}
+{"position_id": 2533, "domain": "sanitation", "power_over_citizen": "Appointed IAS executive head of the municipal corporation"}
+{"position_id": 2534, "domain": "disaster", "power_over_citizen": "Appointed IAS district head; chairs DDMA; magisterial powers"}
+{"position_id": 2535, "domain": "policing", "power_over_citizen": "Appointed IPS district police command"}
+{"position_id": 2536, "domain": "elections", "power_over_citizen": "Directly-elected MLAs make binding state law (state-list subjects)"}
+{"position_id": 2537, "domain": "policing", "power_over_citizen": "Appointed IPS head of state police"}
+{"position_id": 2538, "domain": "justice", "power_over_citizen": "Appointed via collegium; no elected judge at any tier"}
+{"position_id": 2539, "domain": "justice", "power_over_citizen": "Appointed adjudicator; tries criminal & civil cases"}
+{"position_id": 2540, "domain": "consumer_finance", "power_over_citizen": "Appointed prosecutor; no elected prosecutor at any tier"}
+{"position_id": 2878, "domain": "welfare", "power_over_citizen": "Administers state welfare schemes including social security pensions, welfare hostels, scholarships for SC/ST/BC/MBC communities, women and child welfare programs, disability welfare, and old age homes"}
+{"position_id": 2880, "domain": "welfare", "power_over_citizen": "Formulates and oversees state welfare policies including social security pensions, nutritious meal schemes, welfare hostels, scholarships, women welfare, disability welfare, and old age welfare programs"}
+{"position_id": 2881, "domain": "welfare", "power_over_citizen": "Administers state-level welfare schemes, disburses funds for social security pensions, manages welfare institutions, implements centrally-sponsored welfare schemes at state level"}
+{"position_id": 3107, "domain": "employment", "power_over_citizen": "Implements employment guarantee schemes including MGNREGA, provides wage employment to rural households, maintains job cards"}
+{"position_id": 3111, "domain": "welfare", "power_over_citizen": "Implements urban welfare schemes including public distribution system coordination, urban sanitation, and municipal welfare programs within Araria town limits"}
+{"position_id": 3112, "domain": "welfare", "power_over_citizen": "Administers social welfare schemes including disability pensions, old age pensions, widow pensions, scholarships for SC/ST/OBC, and welfare programs for marginalized groups"}
+{"position_id": 3113, "domain": "welfare", "power_over_citizen": "Supervises ICDS implementation, nutrition programs, child protection services, and women welfare schemes at district level; oversees CDPOs"}
+{"position_id": 3114, "domain": "welfare", "power_over_citizen": "Overall coordination of welfare schemes, disaster relief, public distribution system supervision, and district-level welfare program implementation; chairs District Welfare Board"}
+{"position_id": 3115, "domain": "welfare", "power_over_citizen": "Oversees ICDS, child nutrition programs, child protection, women welfare schemes, and maternity benefits across Bihar"}
+{"position_id": 3116, "domain": "welfare", "power_over_citizen": "Political head of social welfare department; sets policy direction for pensions, SC/ST/OBC welfare, disability programs, and social security schemes in Bihar"}
+{"position_id": 3117, "domain": "welfare", "power_over_citizen": "Heads state government; ultimate authority over all state welfare schemes, approves major welfare policies, and oversees implementation of central and state welfare programs"}
+{"position_id": 3118, "domain": "welfare", "power_over_citizen": "Represents constituency in state legislature; raises welfare issues, participates in welfare legislation, and advocates for welfare schemes for constituents"}
+{"position_id": 3119, "domain": "welfare", "power_over_citizen": "Formulates and implements central welfare schemes for SC/ST/OBC, persons with disabilities, senior citizens, and other marginalized groups; provides funding to state schemes"}
+{"position_id": 3121, "domain": "welfare", "power_over_citizen": "Implements MGNREGA, rural housing (PMAY-G), National Social Assistance Programme (pensions), and other rural welfare schemes; provides funding and guidelines to states"}
+{"position_id": 3122, "domain": "welfare", "power_over_citizen": "Represents constituency in Parliament; raises welfare issues, participates in welfare legislation, accesses MPLADS funds for local welfare projects, and advocates for central welfare schemes"}
+{"position_id": 3123, "domain": "welfare", "power_over_citizen": "Enacts central welfare legislation, approves welfare budgets, and oversees implementation of national welfare schemes through parliamentary committees"}
+{"position_id": 3149, "domain": "transport", "power_over_citizen": "Local road construction, maintenance, traffic management infrastructure, parking facilities, and urban transport planning within NOIDA jurisdiction"}
+{"position_id": 3150, "domain": "transport", "power_over_citizen": "Vehicle registration, driving licenses, permits, fitness certificates, enforcement of Motor Vehicles Act, and regulation of public transport operators"}
+{"position_id": 3152, "domain": "transport", "power_over_citizen": "State transport policy, regulation of transport services, oversight of RTOs, vehicle taxation, and implementation of Motor Vehicles Act in the state"}
+{"position_id": 3153, "domain": "transport", "power_over_citizen": "Development, maintenance, and management of national highways passing through the area, toll collection on national highways, and highway safety measures"}
+{"position_id": 3151, "domain": "transport", "power_over_citizen": "Operation of state-owned public bus services, fare determination for state buses, and inter-city/intra-city bus connectivity"}
+{"position_id": 3158, "domain": "housing", "power_over_citizen": "Building plan approval, construction permits, occupancy certificates, property tax assessment, water and sewerage connections for residential properties, enforcement of building bye-laws"}
+{"position_id": 3159, "domain": "housing", "power_over_citizen": "Registration and regulation of real estate projects, protection of homebuyer rights, adjudication of complaints against developers, enforcement of RERA compliance for residential projects"}
+{"position_id": 3160, "domain": "housing", "power_over_citizen": "Land revenue matters affecting housing, mutation of property records, conversion of agricultural land for residential use, coordination of housing schemes, disaster management affecting housing"}
+{"position_id": 3161, "domain": "housing", "power_over_citizen": "Appellate authority for land revenue and housing-related disputes, supervision of district housing administration, coordination of state housing schemes at divisional level"}
+{"position_id": 3162, "domain": "housing", "power_over_citizen": "State-level urban planning policy, approval of master plans affecting residential zoning, regulation of colonizers and housing developments, licensing of real estate projects"}
+{"position_id": 3163, "domain": "housing", "power_over_citizen": "State housing policy formulation, affordable housing schemes (PMAY implementation), regulation of urban development authorities, slum rehabilitation policy"}
+{"position_id": 3166, "domain": "justice", "power_over_citizen": "Original and appellate jurisdiction over civil and criminal cases within district; sessions trials for serious offenses; appeals from subordinate courts"}
+{"position_id": 3167, "domain": "justice", "power_over_citizen": "Trial jurisdiction for civil suits and criminal cases below sessions level; subordinate to District and Sessions Judge"}
+{"position_id": 3168, "domain": "justice", "power_over_citizen": "Appellate and original jurisdiction over district courts; writ jurisdiction under Article 226; supervisory authority over subordinate courts"}
+{"position_id": 3169, "domain": "justice", "power_over_citizen": "Alternative dispute resolution for civil and criminal matters referred by courts; mediated settlements have force of court decree"}
+{"position_id": 3170, "domain": "justice", "power_over_citizen": "Provides free legal aid to eligible citizens; organizes Lok Adalats for dispute resolution; legal awareness programs"}
+{"position_id": 216, "domain": "justice", "power_over_citizen": "Apex court: final appeals (Art 136), fundamental rights (Art 32)"}
+{"position_id": 343, "domain": "taxation", "power_over_citizen": "Enacts central taxation laws including Income Tax, Central GST, Customs Duty, Central Excise, and other Union taxes applicable to Coimbatore residents"}
+{"position_id": 2830, "domain": "welfare", "power_over_citizen": "Implements urban welfare schemes including maternity benefits, old age pensions, disability pensions, widow pensions, and welfare programs for urban poor under municipal jurisdiction"}
+{"position_id": 3251, "domain": "policing", "power_over_citizen": "First-line law and order implementation, FIR registration, crime prevention and detection, traffic regulation, public meeting/procession control in station jurisdiction"}
+{"position_id": 3252, "domain": "policing", "power_over_citizen": "Supervision of multiple police stations, grave crime report preparation, personal investigation of PCR and dowry death cases, public grievance enquiry"}
+{"position_id": 2815, "domain": "policing", "power_over_citizen": "Direct operational control over all policing functions including law and order, crime investigation, traffic management, and public safety within city limits"}
+{"position_id": 3253, "domain": "policing", "power_over_citizen": "Law and order administration, crime prevention and detection, public grievance redressal in rural areas of Coimbatore District outside city commissionerate jurisdiction"}
+{"position_id": 420, "domain": "policing", "power_over_citizen": "Heads state police; supervises districts/commissionerates"}
+{"position_id": 2209, "domain": "policing", "power_over_citizen": "Enacts police laws (Tamil Nadu Police Act, amendments), appropriates police budget, oversight through questions and committees"}
+{"position_id": 343, "domain": "policing", "power_over_citizen": "Enacts central police laws (CrPC, IPC/BNS, UAPA, central agency laws), appropriates central police forces budget, can legislate on policing under Concurrent List or national security"}
+{"position_id": 3254, "domain": "policing", "power_over_citizen": "Operational control of CBI, NIA, IB, and other central police agencies that may investigate cases in Coimbatore; policy on internal security; coordination with state police"}
+{"position_id": 3255, "domain": "education", "power_over_citizen": "Manages 82 Corporation schools (16 higher secondary, 10 high, 15 middle, 40 elementary, 1 special school for differently abled) within CCMC limits; oversees noon meal programme for 9,927 students; administers 865 teachers and 104 non-teaching staff"}
+{"position_id": 3256, "domain": "education", "power_over_citizen": "Administers government and aided schools across Coimbatore District; oversees teacher appointments, transfers, and school administration; implements state education policies at district level"}
+{"position_id": 3257, "domain": "education", "power_over_citizen": "Fixes and approves fee structure for private schools (aided and unaided) across Tamil Nadu including Coimbatore; reviews fee proposals and objections"}
+{"position_id": 3258, "domain": "education", "power_over_citizen": "Sets curriculum, examination standards, teacher qualifications, and education policy for all schools in Tamil Nadu; operates through Directorate of School Education and Directorate of Government Examinations; manages government schools and regulates private schools"}
+{"position_id": 3259, "domain": "education", "power_over_citizen": "Sets national education policy framework; operates Kendriya Vidyalayas (2 in Coimbatore: Sowripalayam and Sulur); administers central board (CBSE) curriculum; provides funding for centrally-sponsored schemes like Samagra Shiksha"}
+{"position_id": 3260, "domain": "health", "power_over_citizen": "Operates 13 government hospitals including GHQH Pollachi, GH Mettupalayam, GH Valparai; provides dialysis, trauma care, mental health, palliative care, family planning, NCD treatment, CMCHIS implementation, and rural health services across district"}
+{"position_id": 2852, "domain": "health", "power_over_citizen": "Coordinates district health programs, disaster health response, epidemic control, oversees implementation of state and national health schemes, chairs District Health Society"}
+{"position_id": 3261, "domain": "health", "power_over_citizen": "Administers all government hospitals, primary health centers, community health centers, and rural health services across Tamil Nadu; implements state health policies and programs"}
+{"position_id": 2852, "domain": "taxation", "power_over_citizen": "Administers land revenue, stamp duty collection, and coordinates state tax collection at district level; supervises revenue officials"}
+{"position_id": 2209, "domain": "taxation", "power_over_citizen": "Enacts state taxation laws including municipal tax frameworks (CCMC Act 1981), land revenue laws, stamp duties, profession tax ceilings, GST (state component), excise duties, and motor vehicle taxes applicable in Coimbatore"}
+{"position_id": 3262, "domain": "taxation", "power_over_citizen": "Administers and collects state GST, stamp duty, land revenue, excise duty, motor vehicle tax, profession tax (state share), and entertainment tax; sets rates within legislative framework; appoints Collectors and municipal commissioners"}
+{"position_id": 3263, "domain": "taxation", "power_over_citizen": "Administers and collects Income Tax, Central GST, Customs Duty, and other Union taxes through field offices including those in Coimbatore; sets rates and rules within parliamentary framework"}
+{"position_id": 2863, "domain": "justice", "power_over_citizen": "Adjudicates serious criminal cases (sessions trials), hears appeals from subordinate courts, civil suits above specified pecuniary jurisdiction, exercises supervisory powers over subordinate courts in district"}
+{"position_id": 2815, "domain": "justice", "power_over_citizen": "Law enforcement, FIR registration, preventive detention orders, traffic regulation, public order maintenance within city commissionerate limits"}
+{"position_id": 3264, "domain": "justice", "power_over_citizen": "Law enforcement in rural areas outside city commissionerate, FIR registration, investigation supervision, public order in district rural jurisdiction"}
+{"position_id": 420, "domain": "justice", "power_over_citizen": "Superintendence of all police forces in Tamil Nadu, policy direction for law enforcement, crime investigation oversight, police discipline"}
+{"position_id": 2816, "domain": "justice", "power_over_citizen": "Executive control over police and law enforcement policy, remission of sentences, preventive detention approvals, public order policy for state"}
+{"position_id": 2817, "domain": "justice", "power_over_citizen": "Central police forces (CBI, NIA for terrorism/national security cases), internal security policy, coordination with state police, central laws enforcement (UAPA, NDPS in serious cases)"}
+{"position_id": 3265, "domain": "justice", "power_over_citizen": "Free legal aid to eligible citizens, Lok Adalat (alternative dispute resolution) for settlement of cases, legal awareness programs"}
+{"position_id": 3266, "domain": "welfare", "power_over_citizen": "Represents ward-level welfare needs and grievances to Corporation; influences allocation of local welfare schemes and benefits within municipal boundaries"}
+{"position_id": 2841, "domain": "welfare", "power_over_citizen": "Administers municipal welfare schemes including maternity benefits, child health programs, dispensaries, and social welfare services within Corporation limits"}
+{"position_id": 2852, "domain": "welfare", "power_over_citizen": "Oversees district-level welfare schemes including Public Distribution System (PDS), social security pensions, rural welfare programs, disaster relief, and coordinates welfare delivery across all taluks"}
+{"position_id": 3267, "domain": "welfare", "power_over_citizen": "Represents constituency in Tamil Nadu Legislative Assembly; influences state welfare policy, budget allocations for constituency welfare schemes, and raises citizen welfare issues in Assembly"}
+{"position_id": 3268, "domain": "welfare", "power_over_citizen": "Represents constituency in Parliament; influences national welfare legislation, MPLADS fund allocation for local welfare projects, and raises constituency welfare issues in Lok Sabha"}
+{"position_id": 2815, "domain": "transport", "power_over_citizen": "Enforces traffic rules, issues challans/fines for traffic violations, regulates traffic flow, manages traffic police stations within city limits"}
+{"position_id": 2886, "domain": "transport", "power_over_citizen": "Issues driving licenses, vehicle registration certificates, permits for commercial vehicles; conducts vehicle fitness tests; enforces Motor Vehicles Act; manages transport taxation"}
+{"position_id": 2841, "domain": "transport", "power_over_citizen": "Manages city roads, issues permits for construction affecting roads, regulates parking zones, coordinates with traffic police on road infrastructure"}
+{"position_id": 2852, "domain": "transport", "power_over_citizen": "Coordinates inter-departmental transport matters, oversees district road safety committee, handles land acquisition for transport projects, general administrative oversight"}
+{"position_id": 3270, "domain": "transport", "power_over_citizen": "Administers Motor Vehicles Act across state, sets transport policy, oversees all RTOs, manages state transport authority, issues state-level permits and approvals, enforces vehicle taxation"}
+{"position_id": 3271, "domain": "transport", "power_over_citizen": "Administers Transport Department, implements transport policy, coordinates state transport undertakings, manages inter-state transport agreements"}
+{"position_id": 3273, "domain": "housing", "power_over_citizen": "Issues building licenses for residential buildings up to 10,000 sq.ft and up to 8 dwelling units not exceeding 12 meters in height (under delegated power from LPA); enforces building parameters; coordinates with LPA on planning permission"}
+{"position_id": 3274, "domain": "housing", "power_over_citizen": "Issues planning permission under Section 49 of T&CP Act for residential buildings above 10,000 sq.ft and commercial buildings above 2,000 sq.ft; enforces Town and Country Planning Act provisions; approves Master Plan and Detailed Development Plans; no development can proceed without LPA planning permission in notified planning area (1276 sq.km)"}
+{"position_id": 3275, "domain": "housing", "power_over_citizen": "Processes planning permission applications; conducts site inspections; scrutinizes applications against Master Plan and Detailed Development Plans; enforces Tamil Nadu Combined Development and Building Rules, 2019"}
+{"position_id": 3276, "domain": "housing", "power_over_citizen": "Issues planning permission for residential buildings above 10,000 sq.ft and commercial buildings above 2,000 sq.ft (directly or through delegation); supervises Local Planning Authorities; enforces Town and Country Planning Act statewide; planning permission valid for 8 years"}
+{"position_id": 3277, "domain": "housing", "power_over_citizen": "Hears appeals when planning permission is refused by local body or DTCP; formulates housing policy; approves Master Plans; issues government orders on planning and building rules; supervises DTCP"}
+{"position_id": 2209, "domain": "housing", "power_over_citizen": "Enacts housing and urban planning legislation including Town and Country Planning Act and building rules; amends planning laws; approves state housing budget"}
+{"position_id": 3278, "domain": "employment", "power_over_citizen": "Maintains employment exchange registration, issues seniority certificates for government job nominations, manages live register of job seekers, provides employment facilitation services"}
+{"position_id": 3279, "domain": "employment", "power_over_citizen": "Supervises district employment offices, coordinates employment schemes, oversees vocational guidance and career counseling services in the region"}
+{"position_id": 2841, "domain": "employment", "power_over_citizen": "Hires and manages municipal employees, controls employment in city services (sanitation, health, engineering, education departments), enforces labor regulations for municipal contractors"}
+{"position_id": 2841, "domain": "utilities", "power_over_citizen": "Water supply, sewage/UGD, solid waste management, street lighting, and other municipal utilities within corporation limits"}
+{"position_id": 2852, "domain": "employment", "power_over_citizen": "Implements state and central employment schemes (MGNREGA, skill development), coordinates with employment offices, oversees district-level recruitment for revenue and development departments, manages daily-wage workers in district administration"}
+{"position_id": 3280, "domain": "employment", "power_over_citizen": "Administers state employment exchange system, formulates employment policies, manages vocational training programs, oversees all district employment offices, publishes employment statistics and seniority lists"}
+{"position_id": 3033, "domain": "employment", "power_over_citizen": "Oversees all state government employment, coordinates inter-departmental employment policies, supervises state civil service appointments, implements central employment schemes at state level"}
+{"position_id": 3281, "domain": "employment", "power_over_citizen": "Coordinates national employment exchange network, implements central employment schemes, collects employment statistics, provides vocational guidance framework, supervises regional employment offices"}
+{"position_id": 126, "domain": "employment", "power_over_citizen": "Sets national employment policy direction, chairs cabinet decisions on employment schemes, allocates resources for national employment programs, appoints ministers responsible for employment"}
+{"position_id": 3283, "domain": "environment", "power_over_citizen": "Municipal solid waste management, sanitation, public health nuisances, drainage within corporation limits"}
+{"position_id": 3284, "domain": "environment", "power_over_citizen": "Air and water pollution control, industrial emissions consent, environmental clearances for industries in Coimbatore North taluks (Coimbatore North, Mettupalayam, Annur)"}
+{"position_id": 517, "domain": "environment", "power_over_citizen": "Consent to operate; air/water pollution; closure"}
+{"position_id": 3285, "domain": "environment", "power_over_citizen": "Forest conservation, wildlife protection, environmental policy formulation, climate change programs, coastal zone regulation, biodiversity conservation"}
+{"position_id": 3287, "domain": "environment", "power_over_citizen": "National pollution monitoring standards, coordination of State Pollution Control Boards, technical guidance, inter-state pollution matters, national ambient air quality standards"}
+{"position_id": 2852, "domain": "utilities", "power_over_citizen": "Oversight of rural water supply schemes, coordination of utilities in panchayat areas, disaster management affecting utilities infrastructure"}
+{"position_id": 3288, "domain": "utilities", "power_over_citizen": "Supervises all municipal corporations and municipalities in Tamil Nadu; issues policy directives for urban utilities; approves major utilities projects"}
+{"position_id": 3289, "domain": "utilities", "power_over_citizen": "Implements water supply and sewerage schemes in municipalities and rural areas; operates water treatment plants; supplies bulk water to urban local bodies"}
+{"position_id": 3290, "domain": "utilities", "power_over_citizen": "Electricity distribution, billing, connections, and service in Coimbatore; operates distribution network"}
+{"position_id": 3291, "domain": "utilities", "power_over_citizen": "Implements Jal Jeevan Mission (rural water supply); sets national drinking water standards and guidelines affecting Coimbatore rural areas"}
+{"position_id": 3292, "domain": "identity", "power_over_citizen": "Issues birth certificates, death certificates, community certificates, income certificates, residence certificates; maintains vital statistics registers at taluk level"}
+{"position_id": 2852, "domain": "identity", "power_over_citizen": "Supervises all identity document issuance in district; appellate authority for certificate disputes; coordinates Aadhaar enrollment; oversees electoral roll preparation as District Election Officer"}
+{"position_id": 2969, "domain": "identity", "power_over_citizen": "Maintains electoral rolls, issues Voter ID cards (EPIC), manages voter identity verification for democratic participation"}
+{"position_id": 338, "domain": "identity", "power_over_citizen": "Issues passports (international travel identity document); maintains passport database; verifies citizenship and identity for international travel"}
+{"position_id": 247, "domain": "identity", "power_over_citizen": "Supervises electoral roll preparation nationwide; sets standards for Electoral Photo Identity Cards; oversees voter registration and identity verification for elections"}
+{"position_id": 3296, "domain": "elections", "power_over_citizen": "Coordinates all election activities in the district; supervises EROs and ROs; manages electoral rolls; oversees voter education; coordinates with police and administration for election security; operates District Election Control Room"}
+{"position_id": 3297, "domain": "elections", "power_over_citizen": "Conducts Lok Sabha elections for PC #20 (comprising 6 ACs: Palladam-115, Sulur-116, Kavundampalayam-117, Coimbatore North-118, Coimbatore South-120, Singanallur-121); receives and scrutinizes nomination papers; allots symbols; supervises polling and counting; declares results"}
+{"position_id": 3298, "domain": "elections", "power_over_citizen": "Conducts Lok Sabha elections for PC #21 (comprising 6 ACs: Thondamuthur-119, Kinathukadavu-122, Pollachi-123, Valparai-124, Udumalpet-125, Madathukkulam-126); receives and scrutinizes nomination papers; allots symbols; supervises polling and counting; declares results"}
+{"position_id": 2974, "domain": "elections", "power_over_citizen": "Administers and supervises all elections in Tamil Nadu including preparation of electoral rolls, conduct of Assembly and Lok Sabha elections, and enforcement of Model Code of Conduct"}
+{"position_id": 247, "domain": "elections", "power_over_citizen": "Superintends Parliament and Assembly elections the citizen votes in"}
+{"position_id": 3299, "domain": "consumer_finance", "power_over_citizen": "Adjudicates consumer complaints involving goods or services with compensation claims up to Rs. 20 lakhs; orders remedies including refund, replacement, compensation for deficiency in service or defective goods"}
+{"position_id": 3300, "domain": "consumer_finance", "power_over_citizen": "Coordinates consumer protection activities; receives petitions regarding defects and initiates legal action through concerned departments; promotes consumer awareness and education"}
+{"position_id": 699, "domain": "consumer_finance", "power_over_citizen": "Adjudicates consumer complaints; compensation"}
+{"position_id": 3301, "domain": "consumer_finance", "power_over_citizen": "Hears appeals from State Commissions; adjudicates original complaints with compensation claims exceeding Rs. 1 crore; exercises supervisory jurisdiction over all consumer forums"}
+{"position_id": 2984, "domain": "consumer_finance", "power_over_citizen": "Regulates securities markets, mutual funds, stock brokers, and investment advisors; protects investor interests; enforces disclosure norms and prevents fraudulent practices in capital markets"}
+{"position_id": 2985, "domain": "consumer_finance", "power_over_citizen": "Regulates insurance companies and intermediaries; protects policyholder interests; sets standards for insurance products; operates grievance redressal mechanism for insurance disputes"}
+{"position_id": 3302, "domain": "sanitation", "power_over_citizen": "Daily street sweeping, garbage collection from dustbins and containers, removal of dead animals, cleaning of public toilets, enforcement of sanitation standards at ward/zone level"}
+{"position_id": 3283, "domain": "sanitation", "power_over_citizen": "Overall solid waste management policy for city (500 tonnes/day), supervision of 2740 sanitary workers, management of 1549 dustbins and 2423 containers, night sweeping in bus stands and markets, special conservancy during festivals, bulk waste clearance"}
+{"position_id": 3303, "domain": "sanitation", "power_over_citizen": "Supervision of municipal sanitation standards, issuance of guidelines for solid waste management under SWM Rules 2016, approval of major sanitation projects, capacity building for municipal sanitation staff"}
+{"position_id": 3010, "domain": "fire_emergency", "power_over_citizen": "Overall command and control of fire emergency services statewide, policy formulation, resource allocation, training standards, and emergency response coordination"}
+{"position_id": 3305, "domain": "fire_emergency", "power_over_citizen": "Administrative oversight of Fire and Rescue Services Department, policy formulation, budget allocation for fire services"}
+{"position_id": 517, "domain": "sanitation", "power_over_citizen": "Regulation of sanitary landfills, waste processing facilities, enforcement of environmental standards for waste disposal, authorization of waste-to-energy plants, monitoring of biomedical waste from sanitation facilities"}
+{"position_id": 3307, "domain": "child_welfare", "power_over_citizen": "Decides care and protection orders for children in need; issues individual care plans; places children in institutional or non-institutional care; monitors rehabilitation"}
+{"position_id": 3308, "domain": "child_welfare", "power_over_citizen": "Adjudicates cases of children in conflict with law; passes final orders including rehabilitation plans; transfers children found to be in need of care and protection to Child Welfare Committee; exercises magisterial powers"}
+{"position_id": 3309, "domain": "child_welfare", "power_over_citizen": "Implements JJ Act provisions at district level; coordinates child protection services; manages applications for CWC/JJB appointments; employs Protection Officers for institutional care; coordinates with police, probation, and care institutions"}
+{"position_id": 3310, "domain": "child_welfare", "power_over_citizen": "First contact for children in conflict with law or as victims; coordinates with JJB and CWC; headed by DSP or above with Child Welfare Police Officers (CWPO rank ASI+); includes two social workers (one woman)"}
+{"position_id": 3311, "domain": "child_welfare", "power_over_citizen": "Inspects JJB activities at least once in six months; serves as Vigilance Officer for complaints against JJB Principal Magistrate, social workers, and staff; arranges quarterly review meetings of JJB; reports to Government and High Court"}
+{"position_id": 3312, "domain": "child_welfare", "power_over_citizen": "Receives applications for CWC Chairperson appointments; coordinates state-level child welfare policy implementation; oversees district child protection units; administers children's homes and care institutions"}
+{"position_id": 3313, "domain": "child_welfare", "power_over_citizen": "Provides free legal assistance to children in conflict with law; Chairperson serves as Chairperson of High Level Committee for JJ Act implementation; coordinates legal aid for child welfare cases"}
+{"position_id": 3314, "domain": "child_welfare", "power_over_citizen": "Reviews implementation of JJ Act in Tamil Nadu every six months; coordinates between state departments, judiciary, police, and NGOs on child welfare; monitors district-level child protection activities"}
+{"position_id": 3262, "domain": "child_welfare", "power_over_citizen": "Appoints CWC and JJB members; establishes DCPUs; frames Tamil Nadu JJ Rules; allocates budget for child welfare; establishes and regulates children's homes and care institutions; final appointing authority for child welfare bodies"}
+{"position_id": 3263, "domain": "child_welfare", "power_over_citizen": "Enacts national child welfare legislation; frames Model JJ Rules; allocates central funds for child protection; monitors state implementation of JJ Act; establishes national child welfare standards and policies"}
+{"position_id": 2815, "domain": "disaster", "power_over_citizen": "Law and order during disasters within city police commissionerate; evacuation enforcement; traffic management during emergencies; coordinates with DDMA"}
+{"position_id": 3315, "domain": "disaster", "power_over_citizen": "Law and order during disasters in rural areas of district outside city commissionerate; evacuation; coordinates with DDMA for rural disaster response"}
+{"position_id": 2852, "domain": "disaster", "power_over_citizen": "Chairs District Disaster Management Authority (DDMA); coordinates all disaster preparedness, response, and relief across district; maintains relief centres, first responders, equipment inventory; issues disaster warnings and evacuation orders; allocates relief funds"}
+{"position_id": 3316, "domain": "disaster", "power_over_citizen": "Plans, coordinates, and implements disaster management measures across district; prepares district disaster management plan; reviews preparedness; coordinates response during disasters; supervises relief distribution"}
+{"position_id": 3317, "domain": "higher_education", "power_over_citizen": "Administers government colleges, aided colleges, and self-financing colleges in the region; implements state higher education policies; coordinates admissions, examinations, and academic standards; inspects and monitors college functioning; processes college affiliation matters"}
+{"position_id": 3340, "domain": "transport", "power_over_citizen": "Oversees all transport regulatory functions statewide including vehicle registration, licensing, permits, taxation; supervises 6 Zonal offices, 19 RTOs and 77 ARTOs; implements VAHAN 4.0 system and e-challan enforcement"}
+{"position_id": 3318, "domain": "higher_education", "power_over_citizen": "Directs all collegiate education in Tamil Nadu; oversees government, aided, and self-financing colleges; implements curriculum reforms; manages faculty appointments and transfers; coordinates with universities on affiliation; enforces Tamil Nadu Private Colleges Regulation Act; administers admissions policies"}
+{"position_id": 3319, "domain": "higher_education", "power_over_citizen": "Formulates and implements higher education policy for Tamil Nadu; oversees universities, colleges, and higher education institutions; allocates budgets; issues government orders on admissions, fees, reservations; regulates private colleges; coordinates with central government on higher education schemes"}
+{"position_id": 619, "domain": "higher_education", "power_over_citizen": "Recognizes universities; degree standards"}
+{"position_id": 3259, "domain": "higher_education", "power_over_citizen": "Formulates national policy on higher education; oversees central universities and institutions of national importance; coordinates with state governments and UGC; implements central schemes for higher education (RUSA, etc.); regulates technical and professional education through AICTE, MCI, etc.; administers National Education Policy 2020"}
+{"position_id": 3320, "domain": "agriculture", "power_over_citizen": "Front-line extension services, farmer registration, input distribution (seeds, fertilizers), scheme enrollment at village/block level, soil health card issuance, crop insurance facilitation"}
+{"position_id": 3321, "domain": "agriculture", "power_over_citizen": "Horticultural crop promotion (coconut, fruits, vegetables), nursery management, horticulture scheme implementation, plantation crop support for district's 85,831 Ha coconut area"}
+{"position_id": 2852, "domain": "agriculture", "power_over_citizen": "Chairs Agricultural Technology Management Agency (ATMA), approves district agricultural plans, coordinates National Food Security Mission (NFSM), disaster relief for crop loss, land-use decisions affecting agriculture"}
+{"position_id": 3322, "domain": "agriculture", "power_over_citizen": "State-level agricultural policy implementation, technical standards for farming practices, state scheme design, coordination of all district agricultural offices, agricultural statistics compilation"}
+{"position_id": 3323, "domain": "agriculture", "power_over_citizen": "Formulates state agricultural policy, administers state agricultural budget, designs farmer welfare schemes, coordinates with central government on agriculture, issues administrative orders affecting farming practices and support"}
+{"position_id": 3324, "domain": "agriculture", "power_over_citizen": "Political oversight of agriculture policy, presents agricultural budget to legislature, announces farmer welfare schemes, ministerial decisions on agricultural priorities, crop pricing advocacy"}
+{"position_id": 3068, "domain": "immigration", "power_over_citizen": "Issues, renews, and manages passports for Indian citizens in Coimbatore district; controls citizens' ability to travel internationally"}
+{"position_id": 3264, "domain": "immigration", "power_over_citizen": "Conducts police verification for passport applications for residents in rural Coimbatore district areas; monitors foreign nationals residing in rural jurisdiction"}
+{"position_id": 2815, "domain": "immigration", "power_over_citizen": "Conducts police verification for passport applications for residents within Coimbatore City Police Commissionerate limits; monitors foreign nationals residing in city jurisdiction"}
+{"position_id": 2852, "domain": "culture_recreation", "power_over_citizen": "Coordinates district-level cultural events, oversees panchayat-level cultural activities in rural areas, facilitates cultural programs through district administration"}
+{"position_id": 3326, "domain": "culture_recreation", "power_over_citizen": "Formulates and implements state cultural policy, manages Tamil Nadu Regional Cultural Centres, Tamil Nadu Eyal Isai Nataka Manram, Folk Artistes Welfare Board, oversees art group registration and artist welfare schemes"}
+{"position_id": 3327, "domain": "culture_recreation", "power_over_citizen": "Sets policy direction for state cultural programs, approves major cultural initiatives, oversees Department of Art and Culture budget and programs"}
+{"position_id": 3328, "domain": "culture_recreation", "power_over_citizen": "Formulates national cultural policy, funds major cultural institutions and programs, manages national-level cultural schemes that may benefit Coimbatore artists and institutions"}
+{"position_id": 342, "domain": "media", "power_over_citizen": "Regulates broadcasting and cable services tariffs, quality of service standards for TV distribution, issues recommendations on broadcasting policy affecting citizen access to media channels and pricing"}
+{"position_id": 342, "domain": "telecom", "power_over_citizen": "Tariffs, quality, interconnection, consumer telecom rules"}
+{"position_id": 3329, "domain": "employment", "power_over_citizen": "Operates district employment exchange, registers job seekers, facilitates employment matching, issues unemployment certificates, implements employment schemes at district level"}
+{"position_id": 3330, "domain": "employment", "power_over_citizen": "Oversees implementation of central and state employment schemes (MGNREGA, skill development programs), coordinates district-level employment generation initiatives, supervises district employment machinery"}
+{"position_id": 3331, "domain": "employment", "power_over_citizen": "Administers employment exchanges statewide, formulates state employment policy, implements central employment schemes, provides vocational training, maintains employment statistics, issues employment-related regulations"}
+{"position_id": 3332, "domain": "employment", "power_over_citizen": "Formulates state employment policy, allocates budget for employment schemes, enacts state employment legislation, implements central employment programs with state adaptations"}
+{"position_id": 3333, "domain": "welfare", "power_over_citizen": "Implements social welfare schemes at block level including old age pensions, disability pensions, widow pensions, scholarships for SC/ST/OBC students, and other welfare programs under state and central schemes"}
+{"position_id": 3334, "domain": "welfare", "power_over_citizen": "Supervises and coordinates welfare schemes across blocks within Araria sub-division; handles appeals from block-level welfare decisions"}
+{"position_id": 3335, "domain": "welfare", "power_over_citizen": "Oversees all welfare schemes in Araria district; sanctions welfare benefits; coordinates between block welfare officers and state welfare department; handles district-level welfare policy implementation"}
+{"position_id": 3330, "domain": "welfare", "power_over_citizen": "Overall administrative control of welfare schemes in district; appellate authority for welfare disputes; coordinates all welfare departments; sanctions major welfare expenditures"}
+{"position_id": 3336, "domain": "welfare", "power_over_citizen": "Supervises welfare administration across Purnea division (including Araria district); appellate authority for district-level welfare decisions; coordinates divisional welfare policy"}
+{"position_id": 3339, "domain": "transport", "power_over_citizen": "Issues driving licenses, registers motor vehicles, grants and renews permits, collects motor vehicle taxes and fees, enforces road safety regulations, issues e-challans for traffic violations within the district"}
+{"position_id": 3341, "domain": "utilities", "power_over_citizen": "Coordination and oversight of utilities provision at district level; escalation point for unresolved utility grievances; emergency powers over essential services"}
+{"position_id": 3342, "domain": "utilities", "power_over_citizen": "Tariff determination, licensing of distribution companies, electricity supply code enforcement, and regulatory oversight of power sector in Uttar Pradesh including Noida"}
+{"position_id": 3343, "domain": "utilities", "power_over_citizen": "National electricity policy, inter-state power transmission, central electricity authority oversight, and national power sector regulation framework"}
+{"position_id": 2209, "domain": "agriculture", "power_over_citizen": "Enacts state agricultural laws, approves agricultural budgets, policies on agricultural marketing, irrigation, agricultural credit, and state-level agricultural schemes"}
+{"position_id": 739, "domain": "housing", "power_over_citizen": "Directly-elected councillors set housing policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 739, "domain": "transport", "power_over_citizen": "Directly-elected councillors set transport policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 739, "domain": "culture_recreation", "power_over_citizen": "Directly-elected councillors set culture_recreation policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 739, "domain": "health", "power_over_citizen": "Public-health regulation, sanitation-linked disease control, municipal health services"}
+{"position_id": 2841, "domain": "sanitation", "power_over_citizen": "Implements and manages solid waste management, drainage systems, public toilets, street cleaning, and sanitation infrastructure within city limits"}
+{"position_id": 2841, "domain": "taxation", "power_over_citizen": "Administers and collects property tax, professional tax (within municipal limits), water charges, and other municipal taxes/fees as levied by the Corporation Council"}
+{"position_id": 2841, "domain": "disaster", "power_over_citizen": "Implements local disaster response, coordinates emergency services, manages relief camps, executes evacuation plans, and provides immediate relief within municipal limits under District Disaster Management Authority guidance"}
+{"position_id": 2841, "domain": "housing", "power_over_citizen": "Approves building plans, issues building permits, enforces building bylaws, implements housing schemes, manages slum clearance and urban housing projects within corporation limits"}
+{"position_id": 2841, "domain": "culture_recreation", "power_over_citizen": "Manages and maintains public parks, playgrounds, community halls, libraries, cultural centers, and organizes local cultural events and recreational programs within municipal limits"}
+{"position_id": 2841, "domain": "environment", "power_over_citizen": "Implements solid waste management, drainage, sewerage, pollution control measures, tree protection, and environmental sanitation within city limits; enforces municipal environmental bylaws"}
+{"position_id": 743, "domain": "utilities", "power_over_citizen": "Municipal water supply and drainage oversight"}
+{"position_id": 743, "domain": "housing", "power_over_citizen": "Directly-elected councillors set housing policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 743, "domain": "transport", "power_over_citizen": "Directly-elected councillors set transport policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 743, "domain": "culture_recreation", "power_over_citizen": "Directly-elected councillors set culture_recreation policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 743, "domain": "health", "power_over_citizen": "Governs municipal primary health, birth-death registration, disease control"}
+{"position_id": 738, "domain": "education", "power_over_citizen": "Runs corporation primary/middle schools"}
+{"position_id": 738, "domain": "housing", "power_over_citizen": "Directly-elected councillors set housing policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 738, "domain": "transport", "power_over_citizen": "Directly-elected councillors set transport policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 738, "domain": "culture_recreation", "power_over_citizen": "Directly-elected councillors set culture_recreation policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 738, "domain": "health", "power_over_citizen": "Urban primary health centres, maternity/child-health, disease control"}
+{"position_id": 741, "domain": "housing", "power_over_citizen": "Directly-elected councillors set housing policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 741, "domain": "transport", "power_over_citizen": "Directly-elected councillors set transport policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 741, "domain": "culture_recreation", "power_over_citizen": "Directly-elected councillors set culture_recreation policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 741, "domain": "health", "power_over_citizen": "Municipal dispensaries/maternity homes, urban health posts, epidemic response"}
+{"position_id": 742, "domain": "housing", "power_over_citizen": "Directly-elected councillors set housing policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 742, "domain": "transport", "power_over_citizen": "Directly-elected councillors set transport policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 742, "domain": "culture_recreation", "power_over_citizen": "Directly-elected councillors set culture_recreation policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 742, "domain": "health", "power_over_citizen": "Municipal health/sanitation services, urban primary-health provision"}
+{"position_id": 343, "domain": "education", "power_over_citizen": "Enacts national education legislation (like Right to Education Act), approves central education schemes and budgets, sets standards for professional and technical education"}
+{"position_id": 343, "domain": "child_welfare", "power_over_citizen": "Enacts national laws on child welfare including Juvenile Justice Act, POCSO Act, Right to Education Act, Child Labour Act; approves national budget for child welfare"}
+{"position_id": 343, "domain": "higher_education", "power_over_citizen": "Enacts laws on higher education standards, creates regulatory bodies like UGC and AICTE, establishes central universities, sets national education policies through legislation"}
+{"position_id": 343, "domain": "agriculture", "power_over_citizen": "Enacts national agricultural laws, approves central agricultural schemes and budgets, legislation on agricultural trade, food security, minimum support prices framework, and concurrent list agricultural matters"}
+{"position_id": 2209, "domain": "education", "power_over_citizen": "Enacts state education laws, approves education budget, oversees education policy through debates and committees"}
+{"position_id": 2209, "domain": "child_welfare", "power_over_citizen": "Enacts state laws on child welfare, approves budget for child welfare schemes, can amend implementation of central laws within state jurisdiction"}
+{"position_id": 2209, "domain": "higher_education", "power_over_citizen": "Enacts laws governing state universities, colleges, fee structures, reservation policies in higher education, creates or amends university acts"}
+{"position_id": 740, "domain": "housing", "power_over_citizen": "Directly-elected councillors set housing policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 740, "domain": "transport", "power_over_citizen": "Directly-elected councillors set transport policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 740, "domain": "culture_recreation", "power_over_citizen": "Directly-elected councillors set culture_recreation policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 744, "domain": "housing", "power_over_citizen": "Directly-elected councillors set housing policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 744, "domain": "transport", "power_over_citizen": "Directly-elected councillors set transport policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 744, "domain": "culture_recreation", "power_over_citizen": "Directly-elected councillors set culture_recreation policy, budgets and charges at municipal level (Art.243R elected local body)"}
+{"position_id": 2816, "domain": "fire_emergency", "power_over_citizen": "Executive authority over fire emergency services through Home Department; approves major policy decisions and resource allocation"}
+{"position_id": 2816, "domain": "sanitation", "power_over_citizen": "Overall executive authority over state sanitation policy and municipal administration"}
+{"position_id": 2816, "domain": "housing", "power_over_citizen": "Overall executive authority over state housing policy, approves major housing projects, chairs cabinet decisions on housing schemes and urban development"}
+{"position_id": 2816, "domain": "education", "power_over_citizen": "Overall executive authority over state education system, approves major education policies and budgets, chairs cabinet decisions on education"}
+{"position_id": 2816, "domain": "employment", "power_over_citizen": "Sets state employment policy, approves major employment schemes, chairs cabinet decisions on government recruitment, allocates resources for employment programs"}
+{"position_id": 2816, "domain": "welfare", "power_over_citizen": "Heads state government; formulates and implements state welfare policies including social security schemes, health programs, education welfare, food security, and poverty alleviation programs"}
+{"position_id": 2852, "domain": "housing", "power_over_citizen": "Oversees implementation of state and central housing schemes (PMAY, etc.), coordinates land acquisition for housing projects, manages housing welfare schemes for economically weaker sections"}
+{"position_id": 2852, "domain": "environment", "power_over_citizen": "Coordinates district environmental programs, disaster management related to environmental issues, enforcement of environmental laws, chairs District Environment Committee"}
+{"position_id": 372, "domain": "health", "power_over_citizen": "Municipal health services, ward health units, communicable-disease control"}
+{"position_id": 372, "domain": "utilities", "power_over_citizen": "Domestic water supply and drainage"}
+{"position_id": 392, "domain": "health", "power_over_citizen": "Civic hospitals/dispensaries, sanitation, registration, public-health measures"}
+{"position_id": 392, "domain": "culture_recreation", "power_over_citizen": "Parks, gardens, sports grounds, cultural halls; fees"}
+{"position_id": 769, "domain": "welfare", "power_over_citizen": "Directly-elected village head implements MGNREGA works, PDS oversight, welfare beneficiary selection"}
+{"position_id": 769, "domain": "housing", "power_over_citizen": "Directly-elected village head: land-use, housing scheme (PMAY-G) beneficiary selection, local building"}
+{"position_id": 3018, "domain": "agriculture", "power_over_citizen": "Implements agricultural schemes, coordinates agricultural development programs, disaster relief for farmers, land revenue matters related to agricultural land, and oversees district-level agricultural administration"}
+{"position_id": 3018, "domain": "identity", "power_over_citizen": "Issues various identity certificates (income, community, nativity certificates), oversees revenue records that establish property-based identity"}
+{"position_id": 689, "domain": "welfare", "power_over_citizen": "Oversees ICDS, child nutrition programs, maternity benefits, child protection, and women welfare schemes nationally; provides policy framework and funding to states"}
+{"position_id": 424, "domain": "culture_recreation", "power_over_citizen": "Parks, playgrounds, cultural facilities; fees"}
+{"position_id": 126, "domain": "welfare", "power_over_citizen": "Heads Union government; ultimate authority over central welfare policies, approves major welfare schemes, and coordinates welfare implementation across ministries"}
+{"position_id": 2880, "domain": "child_welfare", "power_over_citizen": "Policy formulation for child welfare, budgetary allocation for child welfare schemes, oversight of Social Welfare Department"}
