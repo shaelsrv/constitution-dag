@@ -39,16 +39,16 @@ git clone https://github.com/shaelsrv/constitution-dag
 cd constitution-dag
 
 # how does the Constitution of India reach Kotdwar?
-python dag.py dumps/india-0.1.0 paths kotdwar
+python dag.py dumps/india-0.1.1 paths kotdwar
 
 # one plate of food, five jurisdictions
-python dag.py dumps/india-0.1.0 object food
+python dag.py dumps/india-0.1.1 object food
 
 # what can a citizen invoke — and what does NOT exist
-python dag.py dumps/india-0.1.0 rights
+python dag.py dumps/india-0.1.1 rights
 
 # export a mermaid diagram
-python dag.py dumps/india-0.1.0 paths kotdwar --mermaid kotdwar.md
+python dag.py dumps/india-0.1.1 paths kotdwar --mermaid kotdwar.md
 ```
 
 `dag.py` is stdlib-only Python 3.10+. The dumps are plain JSONL — load them into
@@ -73,7 +73,8 @@ Start from [AGENTS.md](AGENTS.md). The short version:
 
 | dump | contents | source |
 |---|---|---|
-| `dumps/india-0.1.0` | India pilot: genealogy layer + Kotdwar-grounded office graph | [nationAtlas](https://emergencemachine.com) (private during beta) |
+| `dumps/india-0.1.1` | **current** — India pilot: genealogy layer + Kotdwar-grounded office graph | [nationAtlas](https://emergencemachine.com) (private during beta) |
+| `dumps/india-0.1.0` | superseded (integrity bug caught by validate.py — see CHANGELOG) | — |
 
 Dumps mirror to Kaggle for data-science use — see `kaggle/`. Format spec in
 [SCHEMA.md](SCHEMA.md). Every dump directory carries `manifest.json` (version,
@@ -105,7 +106,7 @@ what make the data trustworthy enough to merge:
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) — including how domain experts (the
+Quality is enforced in layers — CI validation, provenance gates, adversarial scans, scoped authorities, versioned accountability: see [QUALITY.md](QUALITY.md). Then see [CONTRIBUTING.md](CONTRIBUTING.md) — including how domain experts (the
 forest-department case) contribute what they know, how attribution works, and
 the signing scheme that lets downstream users verify who vouched for what.
 

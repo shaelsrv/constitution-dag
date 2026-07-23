@@ -1,5 +1,17 @@
 # Changelog
 
+## india-0.1.1 (2026-07-22)
+
+Integrity fix, caught by the new `validate.py` on its FIRST run (layer-0 gate
+working as designed): the 0.1.0 exporter dropped divisions that cover a place
+but have no serving office yet — 37 broken `place_divisions` references.
+0.1.1 exports the full referenced-division union (+37 divisions). 0.1.0 stays
+published as the honest record; downstream users should pin 0.1.1.
+
+Also added: `validate.py` (mechanical quality gate), `QUALITY.md` (the five-layer
+enforcement stack), CI workflow, `pivots.json` (falsifiability registry),
+`ledgers/corrections.jsonl`.
+
 ## india-0.1.0 (2026-07-22)
 
 First public dump. India pilot, pivot city Kotdwar (Uttarakhand):
