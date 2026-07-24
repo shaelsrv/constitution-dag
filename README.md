@@ -54,6 +54,33 @@ python dag.py dumps/india-0.3.0 paths kotdwar --mermaid kotdwar.md
 `dag.py` is stdlib-only Python 3.10+. The dumps are plain JSONL — load them into
 pandas, DuckDB, Neo4j, or anything else.
 
+## The 3D navigable map
+
+```bash
+python -m http.server 8000   # from the repo root
+# open http://localhost:8000/viewer3d.html
+```
+
+`viewer3d.html` renders any dump as a flyable 3D graph: **Constitution at the
+top, the place at the bottom** (altitude = layer: instruments → amendments →
+statutes → national/state/district/local offices → divisions → place), free
+orbit in between. Click any node for its full wiring; search flies you to an
+office.
+
+- **The hypergraph** shows two ways: the overlapping divisions render as
+  distinct colored funnels into the place (each funnel is one "door"), and the
+  **object lens** dropdown lights up a hyperedge — pick *food* or *roads* and
+  the offices+grants carrying that scope stay lit while everything else dims.
+  Objects stay non-nodes here too; a lens is a highlighted subset, exactly like
+  the schema.
+- **Feedback loops** are the red curved edges with particles flowing
+  controller → controlled (impeach, review, audit, no-confidence). Reciprocal
+  checks (President ⇄ Speaker) braid with opposite curvature so closed loops
+  read at a glance. Toggle them off to see pure power-granting flow.
+
+Uses three.js + 3d-force-graph from a CDN; for offline/self-host use, download
+those two files beside the page and repoint the script tags.
+
 ## Build your own country's map
 
 Start from [AGENTS.md](AGENTS.md). The short version:

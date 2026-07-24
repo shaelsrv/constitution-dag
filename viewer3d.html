@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>constitution-dag — 3D navigable map</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- Serve this over http (python -m http.server) so the dump files can load.
+     Offline/self-host: download the two scripts below next to this file and
+     change the src attributes — no other network use. -->
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script src="https://unpkg.com/3d-force-graph@1.73.4/dist/3d-force-graph.min.js"></script>
+<style>
+  :root { --bg:#0b0f14; --panel:#131a22cc; --ink:#e6e1d5; --dim:#8b96a0;
+          --teal:#3db3a9; --gold:#c9a35a; --check:#ff5966; --line:#2a333c; }
+  html,body { margin:0; height:100%; background:var(--bg); color:var(--ink);
+    font:14px/1.45 system-ui,'Segoe UI',sans-serif; overflow:hidden; }
+  #graph { position:absolute; inset:0; }
+  .panel { position:absolute; z-index:10; background:var(--panel);
+    border:1px solid var(--line); border-radius:10px; padding:12px 14px;
+    backdrop-filter: blur(6px); }
+  #ctl { top:12px; left:12px; width:270px; }
+  #ctl h1 { font-size:15px; margin:0 0 2px; color:var(--gold);
+    font-family:Georgia,serif; }
+  #ctl .sub { color:var(--dim); font-size:11.5px; margin-bottom:10px; }
+  #ctl label { display:block; font-size:11px; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--dim); margin:10px 0 3px; }
+  #ctl select, #ctl input[type=text] { width:100%; background:#0e141b;
+    color:var(--ink); border:1px solid var(--line); border-radius:6px;
+    padding:5px 8px; font-size:13px; }
+  .tog { display:flex; align-items:center; gap:8px; margin:6px 0; font-size:13px;
+    cursor:pointer; }
+  .tog input { accent-color: var(--teal); }
+  #legend { bottom:12px; left:12px; font-size:11.5px; color:var(--dim);
+    max-width:270px; }
+  #legend .row { display:flex; gap:7px; align-items:center; margin:2px 0; }
+  .dot { width:9px; height:9px; border-radius:50%; display:inline-block; }
+  #info { top:12px; right:12px; width:330px; max-height:80vh; overflow-y:auto;
+    display:none; }
+  #info h2 { font-size:14px; margin:0 0 2px; color:var(--teal); }
+  #info .kind { font-size:10.5px; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--dim); }
+  #info .edge { border-top:1px solid var(--line); padding:6px 0; font-size:12.5px; }
+  #info .edge .et { color:var(--teal); font-size:11px; }
+  #info .edge .ctx { color:var(--dim); font-family:ui-monospace,Consolas,monospace;
+    font-size:11px; }
+  #info .edge.check .et { color:var(--check); }
+  #err { top:40%; left:50%; transform:translate(-50%,-50%); display:none;
+    max-width:460px; text-align:center; }
+  #stats { position:absolute; bottom:12px; right:12px; z-index:10;
+    color:var(--dim); font-size:11.5px; text-align:right; }
+</style>
+</head>
+<body>
+<div id="graph"></div>
+
+<div class="panel" id="ctl">
+  <h1>constitution-dag · 3D</h1>
+  <div class="sub">Constitution on top &rarr; the place at the bottom.
+    Drag to orbit, scroll to zoom, click a node for its wiring.</div>
+  <label>dump</label>
+  <select id="dump"><option value="dumps/india-0.3.0">dumps/india-0.3.0</option></select>
+  <label>view</label>
+  <select id="place"></select>
+  <label>object lens (the hypergraph, by aspect)</label>
+  <select id="lens"><option value="">— none —</option></select>
+  <div style="margin-top:10px">
+    <label class="tog"><input type="checkbox" id="checks" checked>
+      feedback loops (checks, animated)</label>
+    <label class="tog"><input type="checkbox" id="deps" checked>
+      office&rarr;office supervision</label>
+    <label class="tog"><input type="checkbox" id="labels">
+      always-on labels</label>
+  </div>
+  <label>find office</label>
+  <input type="text" id="search" placeholder="mayor, forest, speaker &hellip;"/>
+</div>
+
+<div class="panel" id="legend">
+  <div class="row"><span class="dot" style="background:#c9a35a"></span> legal instruments (constitution/amendment/statute/court)</div>
+  <div class="row"><span class="dot" style="background:#fc9000"></span> executive ·
+    <span class="dot" style="background:#5ec8ff"></span> judiciary ·
+    <span class="dot" style="background:#68D391"></span> legislature ·
+    <span class="dot" style="background:#c084fc"></span> services</div>
+  <div class="row"><span class="dot" style="background:#3db3a9"></span> divisions (the overlapping boundaries)</div>
+  <div class="row"><span class="dot" style="background:#ffffff"></span> the place — every colored funnel into it is one “door”</div>
+  <div class="row"><span style="color:#ff5966">⤺ dashed, flowing</span>&nbsp;= a constitutional check (impeach / review / audit&hellip;)</div>
+</div>
+
+<div class="panel" id="info"></div>
+<div class="panel" id="err"></div>
+<div id="stats"></div>
+
+<script>
+"use strict";
+const LAYER_Z = { instrument: 320, amendment: 260, statute: 210,
+  national: 120, state: 40, district: -30, local: -95,
+  division: -180, place: -260 };
+const BRANCH = { executive:"#fc9000", judiciary:"#5ec8ff",
+  legislature:"#68D391", civil_service:"#c084fc" };
+const GENERIC_COMPETENCE = "Art. 245-246 + Seventh Schedule (legislative competence)";
+let D = null, Graph = null, current = { nodes: [], links: [] };
+
+async function loadDump(dir) {
+  const tables = ["nations","legal_instruments","instrument_edges",
+    "constitutional_controls","positions","position_domains","dependencies",
+    "position_divisions","divisions","places","place_divisions",
+    "domain_allocations","citizen_rights"];
+  const d = {};
+  for (const t of tables) {
+    const r = await fetch(dir + "/" + t + ".jsonl");
+    if (!r.ok) throw new Error(t + ".jsonl: HTTP " + r.status);
+    const text = await r.text();
+    d[t] = text.split("\n").filter(x => x.trim()).map(x => JSON.parse(x));
+  }
+  return d;
+}
+
+function instrZ(kind) {
+  if (kind === "constitution" || kind === "convention") return LAYER_Z.instrument;
+  if (kind === "amendment") return LAYER_Z.amendment;
+  return LAYER_Z.statute;
+}
+
+function build(placeSlug) {
+  const nodes = new Map(), links = [];
+  const add = (id, o) => { if (!nodes.has(id)) nodes.set(id, Object.assign({ id }, o)); return nodes.get(id); };
+  const posById = new Map(D.positions.filter(p => !p.deprecated_at).map(p => [p.id, p]));
+  const instrById = new Map(D.legal_instruments.map(i => [i.id, i]));
+  const domsOf = new Map();
+  D.position_domains.forEach(r => {
+    if (!domsOf.has(r.position_id)) domsOf.set(r.position_id, []);
+    domsOf.get(r.position_id).push(r.domain);
+  });
+
+  // which places / divisions / offices are in view
+  const all = placeSlug === "__all__";
+  const places = all ? D.places : D.places.filter(p => p.slug === placeSlug);
+  const plIds = new Set(places.map(p => p.id));
+  const divIds = new Set(D.place_divisions.filter(r => plIds.has(r.place_id))
+                                          .map(r => r.division_id));
+  const serving = new Map();   // position_id -> Set(division_id)
+  D.position_divisions.forEach(r => {
+    if (divIds.has(r.division_id) && posById.has(r.position_id)) {
+      if (!serving.has(r.position_id)) serving.set(r.position_id, new Set());
+      serving.get(r.position_id).add(r.division_id);
+    }
+  });
+
+  places.forEach(p => add("place:" + p.slug,
+    { layer: "place", label: p.name, fz: LAYER_Z.place, color: "#ffffff", size: 9 }));
+  D.divisions.filter(v => divIds.has(v.id)).forEach(v => {
+    add("div:" + v.id, { layer: "division", label: v.name + " (" + v.kind + ")",
+      fz: LAYER_Z.division, color: "#3db3a9", size: 4.5 });
+  });
+  D.place_divisions.forEach(r => {
+    if (plIds.has(r.place_id) && divIds.has(r.division_id)) {
+      const pl = places.find(p => p.id === r.place_id);
+      links.push({ source: "div:" + r.division_id, target: "place:" + pl.slug,
+        etype: "covers", ctx: "", cls: "flow" });
+    }
+  });
+  serving.forEach((dvs, pid) => {
+    const p = posById.get(pid);
+    add("pos:" + p.slug, { layer: "office", label: p.name,
+      fz: LAYER_Z[p.level] !== undefined ? LAYER_Z[p.level] : LAYER_Z.district,
+      color: BRANCH[p.branch] || "#9aa5ae", size: 5, slug: p.slug, pid });
+    dvs.forEach(dv => links.push({ source: "pos:" + p.slug, target: "div:" + dv,
+      etype: "serves", ctx: "", cls: "flow" }));
+  });
+
+  // instrument grants + amends chains + competence bridge
+  const usedInstr = new Set();
+  let root = null;
+  D.instrument_edges.forEach(e => {
+    if (!serving.has(e.position_id)) return;
+    if (e.relation !== "created_by" && e.relation !== "empowered_by"
+        && e.relation !== "constrained_by") return;
+    let i = instrById.get(e.instrument_id);
+    while (i) { usedInstr.add(i.id); i = i.amends_id ? instrById.get(i.amends_id) : null; }
+  });
+  usedInstr.forEach(iid => {
+    const i = instrById.get(iid);
+    add("instr:" + iid, { layer: "instrument", label: i.title, kind: i.kind,
+      fz: instrZ(i.kind), color: "#c9a35a",
+      size: i.kind === "constitution" ? 12 : 6 });
+    if (i.kind === "constitution") root = "instr:" + iid;
+    if (i.amends_id && usedInstr.has(i.amends_id))
+      links.push({ source: "instr:" + i.amends_id, target: "instr:" + iid,
+        etype: "amended by", ctx: i.citation, cls: "grant" });
+  });
+  const alloc = {};
+  D.domain_allocations.forEach(a => { if (!(a.domain in alloc)) alloc[a.domain] = a.provision; });
+  if (root) usedInstr.forEach(iid => {
+    const i = instrById.get(iid);
+    if (i.kind !== "statute" && i.kind !== "order" && i.kind !== "charter") return;
+    const granted = D.instrument_edges.filter(e => e.instrument_id === iid)
+                     .map(e => e.position_id);
+    const ds = new Set(); granted.forEach(p => (domsOf.get(p) || []).forEach(x => ds.add(x)));
+    const ctx = [...ds].sort().map(x => alloc[x]).find(Boolean) || GENERIC_COMPETENCE;
+    links.push({ source: root, target: "instr:" + iid,
+      etype: "competence", ctx, cls: "grant" });
+  });
+  D.instrument_edges.forEach(e => {
+    if (!serving.has(e.position_id) || !usedInstr.has(e.instrument_id)) return;
+    if (!["created_by","empowered_by","constrained_by"].includes(e.relation)) return;
+    const p = posById.get(e.position_id);
+    links.push({ source: "instr:" + e.instrument_id, target: "pos:" + p.slug,
+      etype: e.relation.replace("_", " "),
+      ctx: e.provision + (e.scope ? " | " + e.scope : ""),
+      scope: e.scope || "", cls: e.relation === "constrained_by" ? "constrain" : "grant" });
+  });
+
+  // office->office supervision (grants of power downward)
+  D.dependencies.forEach(r => {
+    if (serving.has(r.provider_id) && serving.has(r.dependent_id)
+        && r.provider_id !== r.dependent_id) {
+      links.push({ source: "pos:" + posById.get(r.provider_id).slug,
+        target: "pos:" + posById.get(r.dependent_id).slug,
+        etype: r.dep_type, ctx: "", cls: "dep" });
+    }
+  });
+
+  // feedback controls (checks) — the loops
+  const ctrlSeen = new Set();
+  D.constitutional_controls.forEach(c => {
+    const a = posById.get(c.controller_id), b = posById.get(c.controlled_id);
+    if (!a || !b) return;
+    if (!serving.has(c.controller_id) && !serving.has(c.controlled_id)) return;
+    [a, b].forEach(p => add("pos:" + p.slug, { layer: "office", label: p.name,
+      fz: LAYER_Z[p.level] !== undefined ? LAYER_Z[p.level] : LAYER_Z.district,
+      color: BRANCH[p.branch] || "#9aa5ae", size: 5, slug: p.slug, pid: p.id }));
+    const key = a.slug + ">" + b.slug + ">" + c.mechanism;
+    if (ctrlSeen.has(key)) return; ctrlSeen.add(key);
+    const reciprocal = D.constitutional_controls.some(x =>
+      x.controller_id === c.controlled_id && x.controlled_id === c.controller_id);
+    links.push({ source: "pos:" + a.slug, target: "pos:" + b.slug,
+      etype: c.mechanism, ctx: (c.provision || "") + (c.scope ? " | " + c.scope : ""),
+      note: c.note || "", cls: "check", curv: reciprocal ? 0.45 : 0.25 });
+  });
+  return { nodes: [...nodes.values()], links };
+}
+
+function lensScopes() {
+  const s = new Set();
+  D.instrument_edges.forEach(e => {
+    const m = /^([a-z_]+)\s*:/.exec(e.scope || "");
+    if (m) s.add(m[1]);
+  });
+  return [...s].sort();
+}
+
+function render() {
+  const placeSel = document.getElementById("place").value;
+  current = build(placeSel);
+  const lens = document.getElementById("lens").value;
+  const showChecks = document.getElementById("checks").checked;
+  const showDeps = document.getElementById("deps").checked;
+  let links = current.links.filter(l =>
+    (showChecks || l.cls !== "check") && (showDeps || l.cls !== "dep"));
+  // the object lens: highlight the hyperedge (offices+grants carrying the scope)
+  const lensPos = new Set();
+  if (lens) current.links.forEach(l => {
+    if (l.scope && l.scope.startsWith(lens + ":"))
+      lensPos.add(typeof l.target === "object" ? l.target.id : l.target);
+  });
+  Graph.graphData({ nodes: current.nodes, links })
+    .nodeColor(n => lens ? (lensPos.has(n.id) || n.layer !== "office"
+        ? n.color : "#3a444e") : n.color)
+    .nodeOpacity(0.95)
+    .linkColor(l => {
+      if (l.cls === "check") return "#ff5966";
+      if (l.cls === "constrain") return "#d47f76";
+      if (lens && l.scope && l.scope.startsWith(lens + ":")) return "#ffe9a8";
+      if (lens) return "#2a333c";
+      return l.cls === "grant" ? "#c9a35a" : l.cls === "dep" ? "#5a6672" : "#39525c";
+    })
+    .linkOpacity(0.55)
+    .linkWidth(l => (lens && l.scope && l.scope.startsWith(lens + ":")) ? 2.5
+      : l.cls === "check" ? 1.6 : l.cls === "grant" ? 1.1 : 0.5)
+    .linkCurvature(l => l.curv || (l.cls === "check" ? 0.25 : 0))
+    .linkDirectionalParticles(l => l.cls === "check" ? 3
+      : (lens && l.scope && l.scope.startsWith(lens + ":")) ? 2 : 0)
+    .linkDirectionalParticleWidth(1.8)
+    .linkDirectionalParticleColor(l => l.cls === "check" ? "#ff5966" : "#ffe9a8");
+  document.getElementById("stats").textContent =
+    current.nodes.length + " nodes · " + links.length + " edges · " +
+    links.filter(l => l.cls === "check").length + " checks";
+}
+
+function showInfo(node) {
+  const el = document.getElementById("info");
+  const rows = [];
+  current.links.forEach(l => {
+    const s = typeof l.source === "object" ? l.source : { id: l.source };
+    const t = typeof l.target === "object" ? l.target : { id: l.target };
+    const other = s.id === node.id ? t : t.id === node.id ? s : null;
+    if (!other) return;
+    const dirIn = t.id === node.id;
+    rows.push('<div class="edge ' + (l.cls === "check" ? "check" : "") + '">'
+      + '<span class="et">' + (dirIn ? "&larr; " : "&rarr; ") + l.etype + "</span> "
+      + (other.label || other.id)
+      + (l.ctx ? '<div class="ctx">' + l.ctx + "</div>" : "")
+      + (l.note ? '<div class="ctx">' + l.note + "</div>" : "") + "</div>");
+  });
+  el.innerHTML = '<div class="kind">' + node.layer + "</div><h2>" + node.label
+    + "</h2>" + rows.join("");
+  el.style.display = "block";
+}
+
+async function main() {
+  try {
+    D = await loadDump(document.getElementById("dump").value);
+  } catch (e) {
+    const er = document.getElementById("err");
+    er.innerHTML = "<b>Could not load the dump</b><br><span style='color:var(--dim)'>"
+      + e.message + "<br><br>Serve this folder over http first:<br>"
+      + "<code>python -m http.server 8000</code><br>then open "
+      + "<code>http://localhost:8000/viewer3d.html</code></span>";
+    er.style.display = "block";
+    return;
+  }
+  const psel = document.getElementById("place");
+  const withDivs = new Set(D.place_divisions.map(r => r.place_id));
+  D.places.filter(p => withDivs.has(p.id))
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .forEach(p => {
+      const o = document.createElement("option");
+      o.value = p.slug; o.textContent = p.name;
+      if (p.slug === "kotdwar") o.selected = true;
+      psel.appendChild(o);
+    });
+  const oAll = document.createElement("option");
+  oAll.value = "__all__"; oAll.textContent = "— the FULL map (heavy) —";
+  psel.appendChild(oAll);
+  const lsel = document.getElementById("lens");
+  lensScopes().forEach(s => {
+    const o = document.createElement("option");
+    o.value = s; o.textContent = s; lsel.appendChild(o);
+  });
+
+  Graph = ForceGraph3D()(document.getElementById("graph"))
+    .backgroundColor("#0b0f14")
+    .nodeVal(n => n.size)
+    .nodeLabel(n => n.label)
+    .onNodeClick(n => { showInfo(n);
+      Graph.cameraPosition({ x: n.x * 1.4, y: n.y * 1.4, z: (n.z || 0) + 160 },
+        n, 900); })
+    .onBackgroundClick(() => document.getElementById("info").style.display = "none");
+  ["place","lens","checks","deps"].forEach(id =>
+    document.getElementById(id).addEventListener("change", render));
+  document.getElementById("labels").addEventListener("change", ev => {
+    Graph.nodeThreeObjectExtend(true).nodeThreeObject(ev.target.checked ? n => {
+      const sprite = new THREE.Sprite(new THREE.SpriteMaterial({
+        map: makeLabel(n.label), depthWrite: false, transparent: true }));
+      sprite.scale.set(46, 11, 1); sprite.position.set(0, 8, 0);
+      return sprite;
+    } : undefined);
+  });
+  document.getElementById("search").addEventListener("keydown", ev => {
+    if (ev.key !== "Enter") return;
+    const q = ev.target.value.toLowerCase();
+    const n = current.nodes.find(x => x.label.toLowerCase().includes(q));
+    if (n) { showInfo(n);
+      Graph.cameraPosition({ x: n.x * 1.4, y: n.y * 1.4, z: (n.z || 0) + 160 }, n, 900); }
+  });
+  render();
+}
+
+function makeLabel(text) {
+  const c = document.createElement("canvas");
+  c.width = 512; c.height = 118;
+  const x = c.getContext("2d");
+  x.font = "44px system-ui"; x.fillStyle = "#e6e1d5";
+  x.textAlign = "center";
+  x.fillText(text.length > 26 ? text.slice(0, 25) + "…" : text, 256, 70);
+  const tx = new THREE.CanvasTexture(c);
+  tx.minFilter = THREE.LinearFilter;
+  return tx;
+}
+
+main();
+</script>
+</body>
+</html>
