@@ -1,5 +1,24 @@
 # Changelog
 
+## india-0.5.0 (2026-07-24)
+
+**The grounding invariant: every live office now reaches the Constitution.**
+0 ungrounded (was 489 in 0.4.0; 96% of the dump two versions ago). Achieved in
+two honest stages, never by fabrication:
+
+- Specific rules (+124): Union ministries/ministers (Art. 74-75, 77), state
+  ministers (Art. 163-164, 166), High Courts (Art. 214-217), municipal organs
+  (Art. 243Q/243W + Twelfth Schedule), panchayat organs (Art. 243B-243G).
+- Channel grounding (+384, medium confidence): offices whose specific creating
+  statute is not yet identified are grounded through the constitutional channel
+  their authority actually flows through — Union executive power (Art. 53, 73,
+  77(3)), state executive power (Art. 154, 162, 166(3)), or the legislature/
+  judiciary Parts. The note on every such edge states the backlog explicitly.
+  This is TRUE but unspecific — upgrading channel grants to named statutes is
+  the standing contribution opportunity.
+- validate.py now enforces the invariant: ungrounded live offices warn in PR
+  mode and BLOCK --strict releases. india-0.5.0 passes strict with 0 warnings.
+
 ## india-0.4.0 (2026-07-24)
 
 Coverage pass — answering "are these all the nodes?" with a census and two

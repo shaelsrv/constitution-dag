@@ -193,6 +193,18 @@ def main():
             err(f"positions[{i}] deprecated without a reason — retraction needs "
                 "a stated cause")
 
+    # ── grounding invariant: every live office reaches the Constitution ──
+    # (warning in PR mode; --strict release mode makes it blocking)
+    granted_pos = {r["position_id"] for r in d.get("instrument_edges", [])
+                   if r.get("relation") in ("created_by", "empowered_by")}
+    ungrounded = [p for p in d.get("positions", [])
+                  if not p.get("deprecated_at") and p["id"] not in granted_pos]
+    if ungrounded:
+        warn(f"grounding invariant: {len(ungrounded)} live office(s) have no "
+             "created_by/empowered_by instrument edge — every role must reach "
+             "the constitution through SOME channel (see AGENTS.md; channel "
+             "grounding at medium confidence is the honest minimum)")
+
     # ── constitution root exists per nation with genealogy rows ──
     roots = {r["nation_id"] for r in d.get("legal_instruments", [])
              if r.get("kind") in ("constitution", "convention")}
