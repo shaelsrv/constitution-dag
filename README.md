@@ -47,6 +47,9 @@ python dag.py dumps/india-0.5.0 object food
 # what can a citizen invoke — and what does NOT exist
 python dag.py dumps/india-0.5.0 rights
 
+# HOW does an office reach you: directly, or through command chains?
+python dag.py dumps/india-0.5.0 effect kotdwar "prime minister"
+
 # export a mermaid diagram
 python dag.py dumps/india-0.5.0 paths kotdwar --mermaid kotdwar.md
 ```

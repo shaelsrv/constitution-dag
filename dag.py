@@ -8,7 +8,8 @@ Load a dump directory (JSONL files + manifest.json) and answer:
   * the RIGHTS view: what a citizen can invoke, cannot invoke, or holds demoted
 
 Usage:
-  python dag.py dumps/india-0.1.0 paths kotdwar
+  python dag.py <dump> paths kotdwar
+  python dag.py <dump> effect kotdwar ["prime minister"]
   python dag.py dumps/india-0.1.0 object food kotdwar
   python dag.py dumps/india-0.1.0 rights
   python dag.py dumps/india-0.1.0 paths kotdwar --mermaid out.md
@@ -226,6 +227,78 @@ def rights_report(d):
                 print(f"    invoke before: {g['name']} ({g['level']})")
 
 
+
+
+def effect_report(d, place_slug, office_query=None, depth=4):
+    """Citizen-effect: HOW an office reaches a person — directly (its own
+    declared power over citizens), through command chains (appoint/supervise),
+    or not at all as recorded (structural — a gap, not harmlessness)."""
+    from collections import deque
+    COMMAND = {"appoint", "supervise", "dissolve", "remove"}
+    pos = {p["id"]: p for p in d["positions"] if not p.get("deprecated_at")}
+    direct = {}
+    for r in d["position_domains"]:
+        if r.get("power_over_citizen"):
+            direct.setdefault(r["position_id"], []).append(
+                (r["domain"], r["power_over_citizen"]))
+    for e in d["instrument_edges"]:
+        if e["relation"] == "empowered_by" and e.get("scope"):
+            direct.setdefault(e["position_id"], []).append(
+                ("(scoped grant)", e["scope"]))
+    g = {}
+    for r in d["dependencies"]:
+        if r["provider_id"] != r["dependent_id"]:
+            g.setdefault(r["provider_id"], []).append(
+                (r["dependent_id"], r["dep_type"]))
+    for c in d["constitutional_controls"]:
+        if c["mechanism"] in COMMAND:
+            g.setdefault(c["controller_id"], []).append(
+                (c["controlled_id"], c["mechanism"]))
+
+    def profile(pid):
+        chains, seen, q = [], {pid}, deque([(pid, [])])
+        while q:
+            cur, path = q.popleft()
+            if len(path) >= depth:
+                continue
+            for to, label in g.get(cur, []):
+                if to in seen or to not in pos:
+                    continue
+                seen.add(to)
+                np = path + [label]
+                if to in direct:
+                    chains.append((len(np), " -> ".join(np), pos[to]["name"],
+                                   direct[to][0][1][:70]))
+                q.append((to, np))
+        dr = direct.get(pid, [])
+        mode = ("mixed" if dr and chains else "direct" if dr
+                else "mediated" if chains else "structural")
+        return mode, dr, sorted(chains)
+
+    if office_query:
+        p = next((p for p in pos.values()
+                  if office_query.lower() in p["name"].lower()), None)
+        if not p:
+            print("no office matches:", office_query); return
+        mode, dr, chains = profile(p["id"])
+        print(f"{p['name']}  [{mode.upper()}]  (level: {p['level']})")
+        for dom, resp in dr[:6]:
+            print(f"  DIRECT — {dom}: {resp[:100]}")
+        for hops, via, name, resp in chains[:10]:
+            print(f"  [{hops} hop] --{via}--> {name}")
+            print(f"       touches you via: {resp}")
+        return
+    plc = next((p for p in d["places"] if p["slug"] == place_slug), None)
+    divs = {r["division_id"] for r in d["place_divisions"]
+            if r["place_id"] == plc["id"]}
+    ids = {r["position_id"] for r in d["position_divisions"]
+           if r["division_id"] in divs and r["position_id"] in pos}
+    modes = {"direct": 0, "mixed": 0, "mediated": 0, "structural": 0}
+    for pid in ids:
+        modes[profile(pid)[0]] += 1
+    print(f"citizen-effect modes for offices serving {place_slug}: {modes}")
+
+
 def main():
     if len(sys.argv) < 3:
         print(__doc__)
@@ -241,6 +314,9 @@ def main():
         object_report(d, sys.argv[3], sys.argv[4] if len(sys.argv) > 4 else None)
     elif cmd == "rights":
         rights_report(d)
+    elif cmd == "effect":
+        q = sys.argv[4] if len(sys.argv) > 4 else None
+        effect_report(d, sys.argv[3], q)
     else:
         print(__doc__)
 
