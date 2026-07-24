@@ -98,6 +98,15 @@ ministerial / group-d); `rank` (0 = head, higher = lower); `decision_power`
 Modeled as office-CLASS templates: one ladder instantiated across every office
 of a class.
 
+**Field replicas & `instance_count`.** Field posts (a Tehsildar per tehsil, a
+Lekhpal per village, an SHO per station) recur many times in one office. The DB
+holds every instance; the DUMP ships a small SAMPLE (a few rows per base post)
+and records the true total in `instance_count` — so a 900-Lekhpal collectorate
+is one row saying `instance_count: 900`, not 900 rows. Counts flagged this way
+are ESTIMATES (medium confidence), scaled from typical district figures; a
+contributor replaces them with their district's sanctioned strength. Analyzers
+sum `instance_count` to report the real scale ("1,065 sanctioned posts").
+
 ### post_reports
 The internal reporting ladder = the internal power structure. `subordinate_id`
 -> `superior_id` (both office_posts), `relation` (reports_to | delegated_by |

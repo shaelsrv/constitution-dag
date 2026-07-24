@@ -58,7 +58,7 @@
   <div class="sub">Constitution on top &rarr; the place at the bottom.
     Drag to orbit, scroll to zoom, click a node for its wiring.</div>
   <label>dump</label>
-  <select id="dump"><option value="dumps/india-0.6.0">dumps/india-0.6.0</option><option value="dumps/india-0.5.0">dumps/india-0.5.0</option><option value="dumps/india-0.4.0">dumps/india-0.4.0</option><option value="dumps/india-0.3.0">dumps/india-0.3.0</option></select>
+  <select id="dump"><option value="dumps/india-0.7.0">dumps/india-0.7.0</option><option value="dumps/india-0.6.0">dumps/india-0.6.0</option><option value="dumps/india-0.5.0">dumps/india-0.5.0</option><option value="dumps/india-0.4.0">dumps/india-0.4.0</option><option value="dumps/india-0.3.0">dumps/india-0.3.0</option></select>
   <label>view</label>
   <select id="place"></select>
   <label>object lens (the hypergraph, by aspect)</label>
@@ -187,21 +187,36 @@ function build(placeSlug) {
       hasInterior: nposts });
     dvs.forEach(dv => links.push({ source: "pos:" + p.slug, target: "div:" + dv,
       etype: "serves", ctx: "", cls: "flow" }));
-    // draw the internal post-ladder as attached nodes hanging below the office
+    // draw the internal post-ladder as attached nodes hanging below the office.
+    // Estimated replicas ("Tehsildar #3") collapse to ONE node with a ×N badge
+    // so a 900-Lekhpal office stays navigable.
     if (showInteriors && nposts) {
-      const posts = postsByPos[pid].slice()
-        .sort((a, b) => (a.rank || 0) - (b.rank || 0));
+      const baseName = n => n.split(" #")[0];
+      const groups = {};
+      postsByPos[pid].forEach(pt => {
+        const b = baseName(pt.post_name);
+        const g = groups[b] || (groups[b] = { post: pt, rows: 0, ic: 0 });
+        g.rows++;
+        g.ic = Math.max(g.ic, pt.instance_count || 0);
+        if ((pt.rank || 0) <= (g.post.rank || 0)) g.post = pt;
+      });
+      Object.values(groups).forEach(g => { g.count = g.ic || g.rows; });
+      const posts = Object.values(groups)
+        .sort((a, b) => (a.post.rank || 0) - (b.post.rank || 0))
+        .map(g => Object.assign({}, g.post, { _count: g.count,
+          _base: baseName(g.post.post_name) }));
       posts.forEach(pt => {
         const nid = "post:" + pt.id;
         postNodeId[pt.id] = nid;
         const dp = (pt.decision_power || "").toLowerCase();
         const decides = !["no decision", "no independent", "no substantive"]
-          .some(x => dp.includes(x));
-        add(nid, { layer: "post", label: pt.post_name,
-          // interior floats just under its office, indented by rank
+          .some(x => dp.includes(x)) && dp;
+        add(nid, { layer: "post",
+          label: pt._base + (pt._count > 1 ? " ×" + pt._count : ""),
           fz: oz - 14 - (pt.rank || 0) * 9,
           color: decides ? "#e8b24a" : "#6b7580",
-          size: decides ? 3.2 : 2.2, post: pt, ofSlug: p.slug });
+          size: (decides ? 3.2 : 2.2) + Math.min(Math.log10(pt._count || 1), 2),
+          post: pt, ofSlug: p.slug });
       });
       // office -> its head post
       const head = posts[0];

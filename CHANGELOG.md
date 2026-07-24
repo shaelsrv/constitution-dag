@@ -1,5 +1,31 @@
 # Changelog
 
+## india-0.7.0 (2026-07-24)
+
+**Full internal office structure at real scale — from the DM to the peon, and
+every one of the ~900 Lekhpals.** Six office-class templates, researched from
+actual service rules by fan-out agents, instantiated across every matching
+office: 322 -> 278,390 sanctioned posts across 508 offices.
+
+- district-collectorate (40 post-types): DM/ADM/SDM/Tehsildar/Lekhpal/nazarat/
+  treasury/establishment - ~1,065 posts per collectorate (UP LR Act, BNSS/CrPC,
+  Financial Handbook, Manual of Office Procedure)
+- police-district (25): SP/CO/SHO/SI/constable + reserve/traffic/crime/malkhana
+  - ~375 posts per district (Police Act 1861, Police Regulations, CrPC)
+- rural-panchayat (24): Zila/Kshettra/Gram tiers + BDO/VDO/Rozgar Sevak
+  (Part IX, Panchayat Raj Act, MGNREGA)
+- district-court (27): D&S Judge -> magistrates -> Nazir/Ahlmad/process server
+  (Arts.233-237, District Court Service Rules)
+- municipal-corporation (27) & secretariat-department (15) rebuilt richer;
+  district-health (23) added
+- Each post carries cadre, decision power (who SIGNS vs who moves files),
+  citizen-facing responsibility, file scope, reporting line, and the service
+  rule grounding it.
+- Dump uses `instance_count` sampling: field replicas collapse to a few sample
+  rows carrying the true total, keeping the dump at 14 MB (was 162 MB raw) and
+  git/browser-friendly. Analyzers and the 3D viewer sum it to show real scale.
+- Non-pollution holds (internal tables never touch the power engine).
+
 ## india-0.6.0 (2026-07-24)
 
 **Inside the office: the internal power structure.** Grounding and effect map

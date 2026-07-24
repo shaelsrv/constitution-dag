@@ -322,7 +322,7 @@ def inside_report(d, office_query):
                 if t not in seen:
                     seen.add(t); print("   -", t)
         return
-    posts = sorted(posts_by_pos[hit], key=lambda p: (p.get("rank") or 0, p["post_name"]))
+    raw = posts_by_pos[hit]
     pid_to_post = {p["id"]: p for p in d.get("office_posts", [])}
     reports = {}
     for r in d.get("post_reports", []):
@@ -330,19 +330,40 @@ def inside_report(d, office_query):
         sup = pid_to_post.get(r["superior_id"])
         if sub and sup:
             reports[sub["post_name"]] = sup["post_name"]
+    # collapse "<base> #N" estimated replicas into one row with a count
+    def base(name):
+        return name.split(" #")[0]
+    groups = {}
+    for p in raw:
+        b = base(p["post_name"])
+        g = groups.setdefault(b, {"post": p, "rows": 0, "ic": 0})
+        g["rows"] += 1
+        g["ic"] = max(g["ic"], p.get("instance_count") or 0)
+        if (p.get("rank") or 0) <= (g["post"].get("rank") or 0):
+            g["post"] = p
+    for g in groups.values():
+        # true count = carried instance_count if present, else number of rows
+        g["count"] = g["ic"] or g["rows"]
+    rows = sorted(groups.values(),
+                  key=lambda g: (g["post"].get("rank") or 0, base(g["post"]["post_name"])))
+    total_posts = sum(g["count"] for g in rows)
     print("INSIDE:", pos[hit]["name"])
-    print(f"  {len(posts)} post-types (the internal power structure)\n")
-    for p in posts:
+    print(f"  {len(rows)} post-types across {total_posts} sanctioned posts "
+          "(the internal power structure)\n")
+    for g in rows:
+        p = g["post"]
+        b = base(p["post_name"])
         ind = "  " + "  " * min(p.get("rank") or 0, 6)
         dp = p.get("decision_power") or ""
         nodec = any(x in dp.lower() for x in ("no decision", "no independent",
-                                              "no substantive"))
+                                              "no substantive")) or not dp
         line = ("no decision power" if nodec else "DECIDES: " + dp)
-        print(f"{ind}{p['post_name']}  [{p.get('cadre','')}]")
+        mult = f"  ×{g['count']} (est.)" if g["count"] > 1 else ""
+        print(f"{ind}{b}  [{p.get('cadre','')}]{mult}")
         print(f"{ind}   {line[:96]}")
         print(f"{ind}   does: {(p.get('responsibility') or '')[:92]}")
-        if p["post_name"] in reports:
-            print(f"{ind}   reports to: {reports[p['post_name']]}")
+        if b in reports:
+            print(f"{ind}   reports to: {base(reports[b])}")
         print()
 
 
