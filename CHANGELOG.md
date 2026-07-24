@@ -1,5 +1,27 @@
 # Changelog
 
+## india-0.4.0 (2026-07-24)
+
+Coverage pass — answering "are these all the nodes?" with a census and two
+mass additions:
+
+- `coverage.py`: the incompleteness census (depth per state, repeating office
+  TEMPLATES, bare division kinds, grounding backlog). It found the lever: the
+  dump's offices cluster into 32 repeating templates whose creating provisions
+  are uniform.
+- **Template grounding** (nationAtlas `app/ground_templates.py`): 9 rules
+  grounded 625 offices in one pass — every District Magistrate (CrPC ss.
+  107-144), SP (Police Act s. 4), District & Sessions Court (Art. 233-237),
+  Public Prosecutor (CrPC s. 24), Sarpanch/Zila Parishad (Art. 243B), municipal
+  commissioner/council (Part IXA). Grounding backlog: 96% -> 42%.
+- **National regulators** (+7 offices, +7 instruments): RBI Governor (RBI Act
+  1934 s. 8), SEBI, TRAI, CPCB, EPFO CPFC, Railway Board, and the CBI Director
+  with its tripartite PM+LoP+CJI selection (DSPE Act s. 4A) — the third
+  independence design (committee appointment) now in the control web.
+- Known artifact: the pivot path enumeration hits the 400-path cap, which
+  undercounts "grounded via path membership" — the census's direct grounding
+  count is authoritative.
+
 ## india-0.3.0 (2026-07-24)
 
 Part XVIII (Emergency) + Part IX (Panchayats) read + loop-closing pass:

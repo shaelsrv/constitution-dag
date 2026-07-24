@@ -39,16 +39,16 @@ git clone https://github.com/shaelsrv/constitution-dag
 cd constitution-dag
 
 # how does the Constitution of India reach Kotdwar?
-python dag.py dumps/india-0.3.0 paths kotdwar
+python dag.py dumps/india-0.4.0 paths kotdwar
 
 # one plate of food, five jurisdictions
-python dag.py dumps/india-0.3.0 object food
+python dag.py dumps/india-0.4.0 object food
 
 # what can a citizen invoke — and what does NOT exist
-python dag.py dumps/india-0.3.0 rights
+python dag.py dumps/india-0.4.0 rights
 
 # export a mermaid diagram
-python dag.py dumps/india-0.3.0 paths kotdwar --mermaid kotdwar.md
+python dag.py dumps/india-0.4.0 paths kotdwar --mermaid kotdwar.md
 ```
 
 `dag.py` is stdlib-only Python 3.10+. The dumps are plain JSONL — load them into
@@ -100,7 +100,8 @@ Start from [AGENTS.md](AGENTS.md). The short version:
 
 | dump | contents | source |
 |---|---|---|
-| `dumps/india-0.3.0` | **current** — Emergency + Panchayat parts; loop completeness 0.974, one honest gap | [nationAtlas](https://emergencemachine.com) (private during beta) |
+| `dumps/india-0.4.0` | **current** — coverage pass: 625 template-grounded offices + 7 national regulators; backlog 96%→42% | [nationAtlas](https://emergencemachine.com) (private during beta) |
+| `dumps/india-0.3.0` | Emergency + Panchayat parts; loop completeness 0.974, one honest gap | [nationAtlas](https://emergencemachine.com) (private during beta) |
 | `dumps/india-0.2.0` | constitutional-completeness pass (all 24 domains allocated; 9 constitutional bodies added) | [nationAtlas](https://emergencemachine.com) (private during beta) |
 | `dumps/india-0.1.1` | India pilot: genealogy layer + Kotdwar-grounded office graph | [nationAtlas](https://emergencemachine.com) (private during beta) |
 | `dumps/india-0.1.0` | superseded (integrity bug caught by validate.py — see CHANGELOG) | — |
