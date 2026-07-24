@@ -70,6 +70,8 @@
       office&rarr;office supervision</label>
     <label class="tog"><input type="checkbox" id="labels">
       always-on labels</label>
+    <label class="tog"><input type="checkbox" id="interiors">
+      show office interiors (posts inside)</label>
   </div>
   <label>find office</label>
   <input type="text" id="search" placeholder="mayor, forest, speaker &hellip;"/>
@@ -84,6 +86,8 @@
   <div class="row"><span class="dot" style="background:#3db3a9"></span> divisions (the overlapping boundaries)</div>
   <div class="row"><span class="dot" style="background:#ffffff"></span> the place — every colored funnel into it is one “door”</div>
   <div class="row"><span style="color:#ff5966">⤺ dashed, flowing</span>&nbsp;= a constitutional check (impeach / review / audit&hellip;)</div>
+  <div class="row"><span class="dot" style="background:#e8b24a"></span> a post INSIDE an office (decides) ·
+    <span class="dot" style="background:#6b7580"></span> support post (moves files) — toggle “show office interiors”</div>
 </div>
 
 <div class="panel" id="info"></div>
@@ -167,13 +171,52 @@ function build(placeSlug) {
         etype: "covers", ctx: "", cls: "flow" });
     }
   });
+  const showInteriors = document.getElementById("interiors")
+    && document.getElementById("interiors").checked;
+  const postsByPos = {};
+  (D.office_posts || []).forEach(p => {
+    (postsByPos[p.position_id] = postsByPos[p.position_id] || []).push(p);
+  });
+  const postNodeId = {};   // office_post.id -> graph node id
   serving.forEach((dvs, pid) => {
     const p = posById.get(pid);
+    const oz = LAYER_Z[p.level] !== undefined ? LAYER_Z[p.level] : LAYER_Z.district;
+    const nposts = (postsByPos[pid] || []).length;
     add("pos:" + p.slug, { layer: "office", label: p.name,
-      fz: LAYER_Z[p.level] !== undefined ? LAYER_Z[p.level] : LAYER_Z.district,
-      color: BRANCH[p.branch] || "#9aa5ae", size: 5, slug: p.slug, pid });
+      fz: oz, color: BRANCH[p.branch] || "#9aa5ae", size: 5, slug: p.slug, pid,
+      hasInterior: nposts });
     dvs.forEach(dv => links.push({ source: "pos:" + p.slug, target: "div:" + dv,
       etype: "serves", ctx: "", cls: "flow" }));
+    // draw the internal post-ladder as attached nodes hanging below the office
+    if (showInteriors && nposts) {
+      const posts = postsByPos[pid].slice()
+        .sort((a, b) => (a.rank || 0) - (b.rank || 0));
+      posts.forEach(pt => {
+        const nid = "post:" + pt.id;
+        postNodeId[pt.id] = nid;
+        const dp = (pt.decision_power || "").toLowerCase();
+        const decides = !["no decision", "no independent", "no substantive"]
+          .some(x => dp.includes(x));
+        add(nid, { layer: "post", label: pt.post_name,
+          // interior floats just under its office, indented by rank
+          fz: oz - 14 - (pt.rank || 0) * 9,
+          color: decides ? "#e8b24a" : "#6b7580",
+          size: decides ? 3.2 : 2.2, post: pt, ofSlug: p.slug });
+      });
+      // office -> its head post
+      const head = posts[0];
+      if (head) links.push({ source: "pos:" + p.slug,
+        target: "post:" + head.id, etype: "contains", cls: "interior" });
+      // reporting ladder among posts (subordinate -> superior)
+      (D.post_reports || []).forEach(r => {
+        if (postNodeId[r.subordinate_id] && postNodeId[r.superior_id]
+            && posts.some(x => x.id === r.subordinate_id)) {
+          links.push({ source: postNodeId[r.superior_id],
+            target: postNodeId[r.subordinate_id],
+            etype: "reports to", cls: "interior" });
+        }
+      });
+    }
   });
 
   // instrument grants + amends chains + competence bridge
@@ -278,13 +321,15 @@ function render() {
     .linkColor(l => {
       if (l.cls === "check") return "#ff5966";
       if (l.cls === "constrain") return "#d47f76";
+      if (l.cls === "interior") return "#e8b24a";
       if (lens && l.scope && l.scope.startsWith(lens + ":")) return "#ffe9a8";
       if (lens) return "#2a333c";
       return l.cls === "grant" ? "#c9a35a" : l.cls === "dep" ? "#5a6672" : "#39525c";
     })
     .linkOpacity(0.55)
     .linkWidth(l => (lens && l.scope && l.scope.startsWith(lens + ":")) ? 2.5
-      : l.cls === "check" ? 1.6 : l.cls === "grant" ? 1.1 : 0.5)
+      : l.cls === "check" ? 1.6 : l.cls === "interior" ? 0.9
+      : l.cls === "grant" ? 1.1 : 0.5)
     .linkCurvature(l => l.curv || (l.cls === "check" ? 0.25 : 0))
     .linkDirectionalParticles(l => l.cls === "check" ? 3
       : (lens && l.scope && l.scope.startsWith(lens + ":")) ? 2 : 0)
@@ -326,6 +371,30 @@ function showInfo(node) {
   el.style.display = "block";
   const drill = document.getElementById("drill");
   if (drill) drill.onclick = () => showInterior(node);
+}
+
+function showPost(node) {
+  const el = document.getElementById("info");
+  const p = node.post;
+  const esc = s => (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  const dp = (p.decision_power || "").toLowerCase();
+  const nodec = ["no decision", "no independent", "no substantive"]
+    .some(x => dp.includes(x));
+  const office = D.positions.find(x => x.slug === node.ofSlug);
+  el.innerHTML = '<div class="kind">post inside an office</div><h2>'
+    + esc(p.post_name) + "</h2>"
+    + '<div class="ctx" style="margin-bottom:6px">' + esc(p.cadre) + " &middot; "
+    + (office ? esc(office.name) : "") + "</div>"
+    + '<div class="edge"><span class="et" style="color:'
+    + (nodec ? "#8b96a0" : "#e8b24a") + '">'
+    + (nodec ? "no decision power" : "DECIDES") + "</span>"
+    + (nodec ? "" : ": " + esc(p.decision_power)) + "</div>"
+    + '<div class="edge">does: ' + esc(p.responsibility) + "</div>"
+    + (p.file_scope ? '<div class="edge ctx">handles: ' + esc(p.file_scope)
+        + "</div>" : "")
+    + (p.provision ? '<div class="edge ctx">grounded in: ' + esc(p.provision)
+        + "</div>" : "");
+  el.style.display = "block";
 }
 
 function showInterior(node) {
@@ -398,11 +467,11 @@ async function main() {
     .backgroundColor("#0b0f14")
     .nodeVal(n => n.size)
     .nodeLabel(n => n.label)
-    .onNodeClick(n => { showInfo(n);
+    .onNodeClick(n => { n.layer === "post" ? showPost(n) : showInfo(n);
       Graph.cameraPosition({ x: n.x * 1.4, y: n.y * 1.4, z: (n.z || 0) + 160 },
         n, 900); })
     .onBackgroundClick(() => document.getElementById("info").style.display = "none");
-  ["place","lens","checks","deps"].forEach(id =>
+  ["place","lens","checks","deps","interiors"].forEach(id =>
     document.getElementById(id).addEventListener("change", render));
   document.getElementById("labels").addEventListener("change", ev => {
     Graph.nodeThreeObjectExtend(true).nodeThreeObject(ev.target.checked ? n => {
