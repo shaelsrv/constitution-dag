@@ -1,5 +1,28 @@
 # Changelog
 
+## india-0.2.0 (2026-07-24)
+
+Constitutional-completeness pass — the Constitution's own structural map read
+back against the data (articles cross-checked against published
+constitutional-bodies references):
+
+- +9 offices the Constitution itself creates that were missing: Vice-President
+  (Art. 63-68), Attorney-General (Art. 76), Governor of Uttarakhand (Art.
+  153-156), Advocate-General UK (Art. 165), UPSC Chairman (Art. 315-320,
+  removal via SC inquiry Art. 317), Finance Commission Chairman (Art. 280),
+  GST Council Chair (Art. 279A / 101st Amendment 2016), NCSC Chairman
+  (Art. 338), State Election Commissioner UK (Art. 243K/243ZA)
+- +15 control edges closing their loops — incl. the structurally important
+  SEC fact: the Mayor's election answers to the STATE Election Commission,
+  not the ECI (Art. 243ZA)
+- +7 domain allocations: EVERY domain in the 24-domain vocabulary now has a
+  constitutional allocation, incl. taxation-via-GST (Art. 246A/279A — the
+  101st Amendment as a domain-level power shift)
+- +3 Part III rights: Art. 17 (untouchability), Art. 23 (forced labour),
+  Art. 24 (child labour) with district-level guarantor offices
+- +2 instruments (86th Amendment 2002, 101st Amendment 2016)
+- pivot: 47/47 Kotdwar-serving offices grounded
+
 ## india-0.1.1 (2026-07-22)
 
 Integrity fix, caught by the new `validate.py` on its FIRST run (layer-0 gate
