@@ -165,6 +165,12 @@ def main():
         for f in ("subordinate_id", "superior_id"):
             if r.get(f) not in post_ids:
                 err(f"post_reports[{i}] {f}={r.get(f)} not an office_post in the dump")
+    for i, r in enumerate(d.get("post_controls", [])):
+        for f in ("controller_id", "controlled_id"):
+            if r.get(f) not in post_ids:
+                err(f"post_controls[{i}] {f}={r.get(f)} not an office_post in the dump")
+        if not (r.get("mechanism") or "").strip():
+            err(f"post_controls[{i}] missing mechanism")
 
     # ── per-table structure / enums / provenance / uniqueness ──
     for t in GENEALOGY:

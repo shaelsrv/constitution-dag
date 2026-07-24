@@ -366,6 +366,30 @@ def inside_report(d, office_query):
             print(f"{ind}   reports to: {base(reports[b])}")
         print()
 
+    # internal feedback loops (checks) — the internal analog of the
+    # constitutional control web, between post-types inside this office
+    pc = d.get("post_controls", [])
+    if pc:
+        checks = []
+        seen_c = set()
+        for c in pc:
+            a, t = pid_to_post.get(c["controller_id"]), pid_to_post.get(c["controlled_id"])
+            if not a or not t or a["position_id"] != hit:
+                continue
+            key = (base(a["post_name"]), c["mechanism"], base(t["post_name"]))
+            if key in seen_c:
+                continue
+            seen_c.add(key)
+            checks.append((base(a["post_name"]), c["mechanism"],
+                           base(t["post_name"]), c.get("scope") or ""))
+        if checks:
+            print(f"  THE INTERNAL FEEDBACK LOOPS — {len(checks)} checks "
+                  "(who audits/verifies/inspects whom inside the office):\n")
+            for a, mech, t, scope in sorted(checks, key=lambda x: x[1]):
+                print(f"    {a}  --{mech}-->  {t}")
+                if scope:
+                    print(f"        {scope[:88]}")
+
 
 def main():
     if len(sys.argv) < 3:

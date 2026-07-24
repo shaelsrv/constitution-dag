@@ -58,7 +58,7 @@
   <div class="sub">Constitution on top &rarr; the place at the bottom.
     Drag to orbit, scroll to zoom, click a node for its wiring.</div>
   <label>dump</label>
-  <select id="dump"><option value="dumps/india-0.7.0">dumps/india-0.7.0</option><option value="dumps/india-0.6.0">dumps/india-0.6.0</option><option value="dumps/india-0.5.0">dumps/india-0.5.0</option><option value="dumps/india-0.4.0">dumps/india-0.4.0</option><option value="dumps/india-0.3.0">dumps/india-0.3.0</option></select>
+  <select id="dump"><option value="dumps/india-0.8.0">dumps/india-0.8.0</option><option value="dumps/india-0.7.0">dumps/india-0.7.0</option><option value="dumps/india-0.6.0">dumps/india-0.6.0</option><option value="dumps/india-0.5.0">dumps/india-0.5.0</option><option value="dumps/india-0.4.0">dumps/india-0.4.0</option><option value="dumps/india-0.3.0">dumps/india-0.3.0</option></select>
   <label>view</label>
   <select id="place"></select>
   <label>object lens (the hypergraph, by aspect)</label>
@@ -88,6 +88,7 @@
   <div class="row"><span style="color:#ff5966">⤺ dashed, flowing</span>&nbsp;= a constitutional check (impeach / review / audit&hellip;)</div>
   <div class="row"><span class="dot" style="background:#e8b24a"></span> a post INSIDE an office (decides) ·
     <span class="dot" style="background:#6b7580"></span> support post (moves files) — toggle “show office interiors”</div>
+  <div class="row"><span style="color:#5ec8ff">⟿ flowing blue</span>&nbsp;= an internal feedback loop (audit / verify / inspect / countersign inside the office)</div>
 </div>
 
 <div class="panel" id="info"></div>
@@ -231,6 +232,22 @@ function build(placeSlug) {
             etype: "reports to", cls: "interior" });
         }
       });
+      // internal feedback loops (checks) — map onto representative nodes by base
+      const byId = {}; (D.office_posts || []).forEach(x => byId[x.id] = x);
+      const baseNode = {};   // base name -> the representative node id in view
+      posts.forEach(pt => { baseNode[pt._base] = "post:" + pt.id; });
+      const seenChk = new Set();
+      (D.post_controls || []).forEach(c => {
+        const a = byId[c.controller_id], t = byId[c.controlled_id];
+        if (!a || !t || a.position_id !== pid) return;
+        const an = baseNode[baseName(a.post_name)];
+        const tn = baseNode[baseName(t.post_name)];
+        if (!an || !tn || an === tn) return;
+        const k = an + ">" + c.mechanism + ">" + tn;
+        if (seenChk.has(k)) return; seenChk.add(k);
+        links.push({ source: an, target: tn, etype: c.mechanism,
+          ctx: c.scope || "", cls: "post_check", curv: 0.3 });
+      });
     }
   });
 
@@ -335,6 +352,7 @@ function render() {
     .nodeOpacity(0.95)
     .linkColor(l => {
       if (l.cls === "check") return "#ff5966";
+      if (l.cls === "post_check") return "#5ec8ff";
       if (l.cls === "constrain") return "#d47f76";
       if (l.cls === "interior") return "#e8b24a";
       if (lens && l.scope && l.scope.startsWith(lens + ":")) return "#ffe9a8";
@@ -343,13 +361,14 @@ function render() {
     })
     .linkOpacity(0.55)
     .linkWidth(l => (lens && l.scope && l.scope.startsWith(lens + ":")) ? 2.5
-      : l.cls === "check" ? 1.6 : l.cls === "interior" ? 0.9
-      : l.cls === "grant" ? 1.1 : 0.5)
+      : l.cls === "check" ? 1.6 : l.cls === "post_check" ? 1.1
+      : l.cls === "interior" ? 0.9 : l.cls === "grant" ? 1.1 : 0.5)
     .linkCurvature(l => l.curv || (l.cls === "check" ? 0.25 : 0))
-    .linkDirectionalParticles(l => l.cls === "check" ? 3
+    .linkDirectionalParticles(l => (l.cls === "check" || l.cls === "post_check") ? 3
       : (lens && l.scope && l.scope.startsWith(lens + ":")) ? 2 : 0)
     .linkDirectionalParticleWidth(1.8)
-    .linkDirectionalParticleColor(l => l.cls === "check" ? "#ff5966" : "#ffe9a8");
+    .linkDirectionalParticleColor(l => l.cls === "check" ? "#ff5966"
+      : l.cls === "post_check" ? "#5ec8ff" : "#ffe9a8");
   document.getElementById("stats").textContent =
     current.nodes.length + " nodes · " + links.length + " edges · " +
     links.filter(l => l.cls === "check").length + " checks";

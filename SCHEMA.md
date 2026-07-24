@@ -108,7 +108,22 @@ contributor replaces them with their district's sanctioned strength. Analyzers
 sum `instance_count` to report the real scale ("1,065 sanctioned posts").
 
 ### post_reports
-The internal reporting ladder = the internal power structure. `subordinate_id`
+The internal reporting ladder = the internal power structure (the COMMAND chain). `subordinate_id`
 -> `superior_id` (both office_posts), `relation` (reports_to | delegated_by |
 routes_files_to). Together with `rank`, this answers "who decides my file, and
 who do they answer to inside the office."
+
+
+### post_controls (v0.8.0+)
+The INTERNAL feedback loops — the internal analog of `constitutional_controls`,
+between post-types inside ONE office. Where `post_reports` is the command chain
+(who instructs whom), this is the CHECK web: who AUDITS, VERIFIES, INSPECTS,
+COUNTERSIGNS, SANCTIONS, or handles GRIEVANCE/APPEAL against whom.
+`controller_id` -> `controlled_id` (both office_posts), `mechanism`
+(audit|countersign|verify|inspect|sanction|vigilance|grievance|concurrence|
+appeal|report_back), `scope` (what is checked), `provision` (the rule creating
+the check — e.g. UP Land Records Manual, Financial Handbook, Police Regulations).
+Modeled once per office between the representative post-types (a check on a
+cadre, not on each of 900 replicas). Example: the Treasury Officer AUDITS the
+Nazir's cash; the Sadar Kanungo AUDITS the Lekhpal's land records; the Circle
+Officer INSPECTS the SHO's station.

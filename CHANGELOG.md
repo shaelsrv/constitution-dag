@@ -1,5 +1,36 @@
 # Changelog
 
+## india-0.8.0 (2026-07-24)
+
+**Internal feedback loops — the checks INSIDE each office.** Where 0.6/0.7 gave
+the command ladder (who reports to whom), this adds the internal CHECK web: who
+audits, verifies, inspects, countersigns, sanctions, or can raise grievance
+against whom, inside one office. The internal analog of the constitutional
+control web, one level deeper. 10,186 internal-check edges across 6 office
+classes, researched from real rules by fan-out agents:
+
+- collectorate (31 checks): Treasury Officer AUDITS the Nazir's cash; Sadar
+  Kanungo AUDITS the Lekhpal's land records; Revenue Inspector INSPECTS field
+  records; SDM hears APPEALS against Tehsildar mutations (UP Land Records
+  Manual, Financial Handbook Vol.V, District Office Manual)
+- police (20): Circle Officer INSPECTS the SHO's station; RI AUDITS the kote
+  armoury register; SHO VERIFIES the Moharrir's General Diary (Police
+  Regulations, CrPC s.172)
+- court (18): District Judge AUDITS the Nazir's cash book; Sadar Munsarim
+  VERIFIES plaint registration (General Rules Civil, HC Rules)
+- panchayat (16): the Gram Sabha SOCIAL-AUDITS the Pradhan; two-signature
+  CONCURRENCE on the Gram Fund; DPRO AUDITS GP accounts (MGNREGA s.17,
+  Panchayat Raj Act s.27/s.32(4), Art.243A/243J)
+- municipal (15): Chief Accounts Officer PRE-AUDITS bills; AE check-measures
+  the JE's Measurement Book (MC Act ss.142-144)
+- secretariat (14): Review Officer VETS the ARO's noting; Finance-Dept
+  CONCURRENCE on expenditure (Manual of Office Procedure, Rules of Business)
+
+Also: fast batched ingest (execute_values) — a full 278k-post rebuild now takes
+~30s instead of hours. Dump carries `post_controls`; dag.py `inside` prints the
+feedback loops; the 3D viewer draws them as flowing blue check-edges among the
+interior post-nodes. validate --strict clean.
+
 ## india-0.7.0 (2026-07-24)
 
 **Full internal office structure at real scale — from the DM to the peon, and
