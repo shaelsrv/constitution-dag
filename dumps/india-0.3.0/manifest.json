@@ -1,0 +1,30 @@
+{
+  "format": "constitution-dag-dump/1",
+  "version": "0.3.0",
+  "nations": [
+    "IN"
+  ],
+  "generated_at": "2026-07-24T05:58:59.046488+00:00",
+  "generator": "nationAtlas app.export_dag_dump",
+  "license": "CC-BY-4.0",
+  "counts": {
+    "nations": 1,
+    "legal_instruments": 34,
+    "division_kind_grants": 10,
+    "domain_allocations": 33,
+    "citizen_rights": 15,
+    "instrument_edges": 71,
+    "constitutional_controls": 55,
+    "positions": 1153,
+    "position_domains": 1269,
+    "dependencies": 4565,
+    "delegations": 1312,
+    "personnel": 9,
+    "position_divisions": 1606,
+    "places": 110,
+    "place_divisions": 194,
+    "divisions": 185,
+    "jurisdictions": 116
+  },
+  "provenance_note": "every row carries source + confidence; confidence='high' rows were verified against primary law (see verified_ledger in the source project); everything else is a labeled candidate"
+}

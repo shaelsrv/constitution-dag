@@ -1,0 +1,116 @@
+{"id": 49, "nation_id": 17, "parent_id": null, "level": "national", "name": "India", "code": "IN"}
+{"id": 50, "nation_id": 17, "parent_id": 49, "level": "state", "name": "Maharashtra", "code": "IN-MH"}
+{"id": 51, "nation_id": 17, "parent_id": 49, "level": "state", "name": "Uttarakhand", "code": "IN-UK"}
+{"id": 52, "nation_id": 17, "parent_id": 51, "level": "district", "name": "Pauri Garhwal", "code": "IN-UK-PG"}
+{"id": 53, "nation_id": 17, "parent_id": 52, "level": "local", "name": "Kotdwar (Nagar Nigam)", "code": "IN-UK-PG-KOT"}
+{"id": 57, "nation_id": 17, "parent_id": 49, "level": "state", "name": "Telangana", "code": "IN-TG"}
+{"id": 58, "nation_id": 17, "parent_id": 57, "level": "district", "name": "Hyderabad District", "code": "IN-TG-HYD"}
+{"id": 59, "nation_id": 17, "parent_id": 58, "level": "local", "name": "Greater Hyderabad (GHMC)", "code": "IN-TG-HYD-GHMC"}
+{"id": 67, "nation_id": 17, "parent_id": null, "level": "local", "name": "Kolkata", "code": null}
+{"id": 68, "nation_id": 17, "parent_id": null, "level": "local", "name": "Pune", "code": null}
+{"id": 72, "nation_id": 17, "parent_id": null, "level": "local", "name": "Chennai", "code": null}
+{"id": 73, "nation_id": 17, "parent_id": null, "level": "local", "name": "Jaipur", "code": null}
+{"id": 74, "nation_id": 17, "parent_id": null, "level": "local", "name": "Bhopal", "code": null}
+{"id": 77, "nation_id": 17, "parent_id": null, "level": "local", "name": "Gangauli", "code": null}
+{"id": 78, "nation_id": 17, "parent_id": null, "level": "local", "name": "Banauli", "code": null}
+{"id": 79, "nation_id": 17, "parent_id": null, "level": "local", "name": "Hanumanganj", "code": null}
+{"id": 80, "nation_id": 17, "parent_id": null, "level": "local", "name": "Chiuti Para", "code": null}
+{"id": 81, "nation_id": 17, "parent_id": null, "level": "local", "name": "Pura Khurda", "code": null}
+{"id": 82, "nation_id": 17, "parent_id": null, "level": "local", "name": "Jalokhar", "code": null}
+{"id": 83, "nation_id": 17, "parent_id": null, "level": "local", "name": "Mirzapur Ramnath", "code": null}
+{"id": 84, "nation_id": 17, "parent_id": null, "level": "local", "name": "Purwa", "code": null}
+{"id": 85, "nation_id": 17, "parent_id": null, "level": "local", "name": "Govardhan", "code": null}
+{"id": 86, "nation_id": 17, "parent_id": null, "level": "local", "name": "Amraudhaa", "code": null}
+{"id": 87, "nation_id": 17, "parent_id": null, "level": "local", "name": "Sarsawan", "code": null}
+{"id": 88, "nation_id": 17, "parent_id": null, "level": "local", "name": "Etah", "code": null}
+{"id": 89, "nation_id": 17, "parent_id": null, "level": "local", "name": "Suriyawan", "code": null}
+{"id": 90, "nation_id": 17, "parent_id": null, "level": "local", "name": "Gauriganj", "code": null}
+{"id": 91, "nation_id": 17, "parent_id": null, "level": "local", "name": "Nanauta", "code": null}
+{"id": 92, "nation_id": 17, "parent_id": null, "level": "local", "name": "Pt. Deen Dayal Upadhyaya Nagar", "code": null}
+{"id": 93, "nation_id": 17, "parent_id": null, "level": "local", "name": "Lalitpur", "code": null}
+{"id": 94, "nation_id": 17, "parent_id": null, "level": "local", "name": "Dhanore", "code": null}
+{"id": 95, "nation_id": 17, "parent_id": null, "level": "local", "name": "Waluj", "code": null}
+{"id": 96, "nation_id": 17, "parent_id": null, "level": "local", "name": "Samandarwadi", "code": null}
+{"id": 97, "nation_id": 17, "parent_id": null, "level": "local", "name": "Thorandale", "code": null}
+{"id": 98, "nation_id": 17, "parent_id": null, "level": "local", "name": "Municipal Council Gadchiroli", "code": null}
+{"id": 99, "nation_id": 17, "parent_id": null, "level": "local", "name": "Chiplun", "code": null}
+{"id": 100, "nation_id": 17, "parent_id": null, "level": "local", "name": "Karanja Wardha", "code": null}
+{"id": 101, "nation_id": 17, "parent_id": null, "level": "local", "name": "Ballarpur", "code": null}
+{"id": 102, "nation_id": 17, "parent_id": null, "level": "local", "name": "Butibori", "code": null}
+{"id": 103, "nation_id": 17, "parent_id": null, "level": "local", "name": "Digras", "code": null}
+{"id": 104, "nation_id": 17, "parent_id": null, "level": "local", "name": "Ratwara", "code": null}
+{"id": 105, "nation_id": 17, "parent_id": null, "level": "local", "name": "Pipra Khurd", "code": null}
+{"id": 106, "nation_id": 17, "parent_id": null, "level": "local", "name": "Samho Akha Kurha", "code": null}
+{"id": 107, "nation_id": 17, "parent_id": null, "level": "local", "name": "Punhad", "code": null}
+{"id": 108, "nation_id": 17, "parent_id": null, "level": "local", "name": "KAKO", "code": null}
+{"id": 109, "nation_id": 17, "parent_id": null, "level": "local", "name": "Maharajganj", "code": null}
+{"id": 110, "nation_id": 17, "parent_id": null, "level": "local", "name": "Warisaliganj", "code": null}
+{"id": 111, "nation_id": 17, "parent_id": null, "level": "local", "name": "Rahui", "code": null}
+{"id": 112, "nation_id": 17, "parent_id": null, "level": "local", "name": "Bairgania", "code": null}
+{"id": 113, "nation_id": 17, "parent_id": null, "level": "local", "name": "Jagadanandspur", "code": null}
+{"id": 114, "nation_id": 17, "parent_id": null, "level": "local", "name": "Binnaguri", "code": null}
+{"id": 115, "nation_id": 17, "parent_id": null, "level": "local", "name": "Paschim Bardhaman", "code": null}
+{"id": 116, "nation_id": 17, "parent_id": null, "level": "local", "name": "English Bazar", "code": null}
+{"id": 117, "nation_id": 17, "parent_id": null, "level": "local", "name": "Serampore", "code": null}
+{"id": 118, "nation_id": 17, "parent_id": null, "level": "local", "name": "Pujali", "code": null}
+{"id": 119, "nation_id": 17, "parent_id": null, "level": "local", "name": "Champdany", "code": null}
+{"id": 120, "nation_id": 17, "parent_id": null, "level": "local", "name": "Chandrakona", "code": null}
+{"id": 121, "nation_id": 17, "parent_id": null, "level": "local", "name": "Khajuriya", "code": null}
+{"id": 122, "nation_id": 17, "parent_id": null, "level": "local", "name": "Mandavi", "code": null}
+{"id": 123, "nation_id": 17, "parent_id": null, "level": "local", "name": "Devri", "code": null}
+{"id": 124, "nation_id": 17, "parent_id": null, "level": "local", "name": "Indore", "code": null}
+{"id": 125, "nation_id": 17, "parent_id": null, "level": "local", "name": "Jiran", "code": null}
+{"id": 126, "nation_id": 17, "parent_id": null, "level": "local", "name": "Buxwaha", "code": null}
+{"id": 127, "nation_id": 17, "parent_id": null, "level": "local", "name": "Puliyakudy", "code": null}
+{"id": 128, "nation_id": 17, "parent_id": null, "level": "local", "name": "Chinnanagapudi", "code": null}
+{"id": 129, "nation_id": 17, "parent_id": null, "level": "local", "name": "Vaitheeswarankoil", "code": null}
+{"id": 130, "nation_id": 17, "parent_id": null, "level": "local", "name": "Tirupathur", "code": null}
+{"id": 131, "nation_id": 17, "parent_id": null, "level": "local", "name": "Sentharapatti", "code": null}
+{"id": 132, "nation_id": 17, "parent_id": null, "level": "local", "name": "Vellore", "code": null}
+{"id": 133, "nation_id": 17, "parent_id": null, "level": "local", "name": "Hulmanakalan", "code": null}
+{"id": 134, "nation_id": 17, "parent_id": null, "level": "local", "name": "Peepali", "code": null}
+{"id": 135, "nation_id": 17, "parent_id": null, "level": "local", "name": "Roopbas", "code": null}
+{"id": 136, "nation_id": 17, "parent_id": null, "level": "local", "name": "Amet", "code": null}
+{"id": 137, "nation_id": 17, "parent_id": null, "level": "local", "name": "Kathumar", "code": null}
+{"id": 138, "nation_id": 17, "parent_id": null, "level": "local", "name": "Pilani", "code": null}
+{"id": 139, "nation_id": 17, "parent_id": null, "level": "local", "name": "Angondahalli", "code": null}
+{"id": 140, "nation_id": 17, "parent_id": null, "level": "local", "name": "Amatur", "code": null}
+{"id": 141, "nation_id": 17, "parent_id": null, "level": "local", "name": "Puttur", "code": null}
+{"id": 142, "nation_id": 17, "parent_id": null, "level": "local", "name": "Koratagere", "code": null}
+{"id": 143, "nation_id": 17, "parent_id": null, "level": "local", "name": "Hoovina Hadagalli", "code": null}
+{"id": 144, "nation_id": 17, "parent_id": null, "level": "local", "name": "Taklipada (Pipalaidevi)", "code": null}
+{"id": 145, "nation_id": 17, "parent_id": null, "level": "local", "name": "Hariyawada", "code": null}
+{"id": 146, "nation_id": 17, "parent_id": null, "level": "local", "name": "Una", "code": null}
+{"id": 147, "nation_id": 17, "parent_id": null, "level": "local", "name": "Godhra", "code": null}
+{"id": 148, "nation_id": 17, "parent_id": null, "level": "local", "name": "Kadi", "code": null}
+{"id": 149, "nation_id": 17, "parent_id": null, "level": "local", "name": "Thatiguntapalle", "code": null}
+{"id": 150, "nation_id": 17, "parent_id": null, "level": "local", "name": "V.Kota", "code": null}
+{"id": 151, "nation_id": 17, "parent_id": null, "level": "local", "name": "Venkatagiri", "code": null}
+{"id": 152, "nation_id": 17, "parent_id": null, "level": "local", "name": "Visakhapatnam", "code": null}
+{"id": 153, "nation_id": 17, "parent_id": null, "level": "local", "name": "Narsipatnam", "code": null}
+{"id": 154, "nation_id": 17, "parent_id": null, "level": "local", "name": "Mohara", "code": null}
+{"id": 155, "nation_id": 17, "parent_id": null, "level": "local", "name": "Udala", "code": null}
+{"id": 156, "nation_id": 17, "parent_id": null, "level": "local", "name": "Kendujhar", "code": null}
+{"id": 157, "nation_id": 17, "parent_id": null, "level": "local", "name": "Shikarkhana", "code": null}
+{"id": 158, "nation_id": 17, "parent_id": null, "level": "local", "name": "Khanapur", "code": null}
+{"id": 159, "nation_id": 17, "parent_id": null, "level": "local", "name": "Yellandu", "code": null}
+{"id": 160, "nation_id": 17, "parent_id": null, "level": "local", "name": "Uzhavoor", "code": null}
+{"id": 161, "nation_id": 17, "parent_id": null, "level": "local", "name": "Koothattukulam", "code": null}
+{"id": 162, "nation_id": 17, "parent_id": null, "level": "local", "name": "Parappanangadi", "code": null}
+{"id": 163, "nation_id": 17, "parent_id": null, "level": "local", "name": "Chhuchhi", "code": null}
+{"id": 164, "nation_id": 17, "parent_id": null, "level": "local", "name": "Kodarma", "code": null}
+{"id": 165, "nation_id": 17, "parent_id": null, "level": "local", "name": "Medininagar (Daltonganj) Municipal Corporation", "code": null}
+{"id": 166, "nation_id": 17, "parent_id": null, "level": "local", "name": "Duttapur Bagcherra", "code": null}
+{"id": 167, "nation_id": 17, "parent_id": null, "level": "local", "name": "Nazira", "code": null}
+{"id": 168, "nation_id": 17, "parent_id": null, "level": "local", "name": "Gohpur", "code": null}
+{"id": 169, "nation_id": 17, "parent_id": null, "level": "local", "name": "Manak Majra", "code": null}
+{"id": 170, "nation_id": 17, "parent_id": null, "level": "local", "name": "Raja Sansi", "code": null}
+{"id": 171, "nation_id": 17, "parent_id": null, "level": "local", "name": "Sankara", "code": null}
+{"id": 172, "nation_id": 17, "parent_id": null, "level": "local", "name": "Mahasamund", "code": null}
+{"id": 173, "nation_id": 17, "parent_id": null, "level": "local", "name": "Ranjit Nagar", "code": null}
+{"id": 174, "nation_id": 17, "parent_id": null, "level": "local", "name": "Pehowa", "code": null}
+{"id": 175, "nation_id": 17, "parent_id": null, "level": "local", "name": "South Delhi Municipal Corporation", "code": null}
+{"id": 217, "nation_id": 17, "parent_id": null, "level": "local", "name": "Coimbatore", "code": null}
+{"id": 218, "nation_id": 17, "parent_id": null, "level": "local", "name": "Araria", "code": null}
+{"id": 220, "nation_id": 17, "parent_id": null, "level": "local", "name": "noida sector 10", "code": null}
+{"id": 221, "nation_id": 17, "parent_id": null, "level": "local", "name": "Gurgaon", "code": null}

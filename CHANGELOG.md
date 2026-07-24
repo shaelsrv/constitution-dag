@@ -1,5 +1,30 @@
 # Changelog
 
+## india-0.3.0 (2026-07-24)
+
+Part XVIII (Emergency) + Part IX (Panchayats) read + loop-closing pass:
+
+- President's rule (Art. 356) as the Union's heaviest check on a state —
+  President dissolve -> state CM, Governor's report as trigger, both edges
+  carrying the S.R. Bommai (1994) judicial-review constraint (new
+  court_decision instrument)
+- 44th Amendment's emergency tightening as a constrained_by edge ('armed
+  rebellion' standard, written cabinet advice) — the 42nd/44th axis now spans
+  advice, property AND emergency
+- Part IX grounding for the discovered panchayat institutions (Art. 243B +
+  UP Panchayat Raj Act 1947 / Kshettra-Zila Adhiniyam 1961) with SEC election
+  supervision (Art. 243K)
+- Loop-closing: FSSAI (FSS Act s. 5), consumer commission (CPA s. 42(3)),
+  civil supplies (NFSA ss. 14-15), CMO, mandi board; education chain
+  (Art. 164(1) + UP Basic Education Act); MH HC chief (Art. 217 collegium);
+  and the classic DUAL CONTROL: district police under the DM's general control
+  and direction (Police Act 1861 s. 4)
+- Pivot loop completeness 0.974 with a SINGLE honest gap: the GST Council
+  chair, whose weighted-mutual-voting control (Art. 279A(4)) is a shape the
+  mechanism vocabulary cannot yet express — recorded as a format TODO
+- +3 instruments (Bommai, UP Panchayat Raj Act 1947, UP KP/ZP Adhiniyam 1961),
+  +8 edges, +18 controls total across the pass
+
 ## india-0.2.0 (2026-07-24)
 
 Constitutional-completeness pass — the Constitution's own structural map read
