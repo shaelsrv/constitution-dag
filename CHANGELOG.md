@@ -1,5 +1,29 @@
 # Changelog
 
+## india-0.6.0 (2026-07-24)
+
+**Inside the office: the internal power structure.** Grounding and effect map
+the office as a point; this opens it up. Every office now contains a LADDER of
+post-types — from the IAS head down to the peon — each with its decision power,
+responsibility, file scope, and reporting line.
+
+- Two tables: `office_posts` (the post-types of an office) and `post_reports`
+  (the internal reporting ladder = the internal power structure).
+- Modeled as office-CLASS templates (same doctrine as office grounding, one
+  level deeper): one template describes the ladder of ALL ~99 District
+  Collectorates, ~103 police districts, ~64 municipal corporations, ~50
+  secretariat departments. 322 offices x their ladder = 2,569 posts, 2,247
+  reporting edges. Each post grounded in the service rule / rules of business
+  that creates it (Tehsildar -> UP LR Act; SHO -> CrPC ss.154-157; Section
+  Officer -> manual of office procedure).
+- `dag.py inside "<office>"` renders the ladder; the 3D viewer's office panel
+  gains "open the interior" to drill into the post structure.
+- Decision power is explicit per post: who can SIGN (DM, Tehsildar, SHO) vs who
+  only moves files (Section Officer, Dealing Assistant, Peon) — the citizen's
+  real question of "who actually decides my file" is now answerable.
+- Non-pollution invariant holds: internal-structure tables never touch the
+  power engine (asserted). validate.py enforces post/report integrity.
+
 ## india-0.5.0 (2026-07-24)
 
 **The grounding invariant: every live office now reaches the Constitution.**

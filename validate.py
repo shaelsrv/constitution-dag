@@ -148,6 +148,23 @@ def main():
     check_fk("position_divisions", "division_id", "divisions", False)
     check_fk("place_divisions", "place_id", "places", False)
     check_fk("place_divisions", "division_id", "divisions", False)
+    check_fk("office_posts", "position_id", "positions", False)
+    check_fk("office_posts", "instrument_id", "legal_instruments")
+    # office_posts: every post needs provenance (internal-structure integrity);
+    # post_reports must reference posts that exist in the dump (checked below)
+    for i, p in enumerate(d.get("office_posts", [])):
+        if p.get("post_name") in (None, ""):
+            err(f"office_posts[{i}] missing post_name")
+        if p.get("confidence") not in ENUMS["confidence"]:
+            err(f"office_posts[{i}] bad confidence {p.get('confidence')!r}")
+        if not (p.get("source") or "").strip():
+            warn(f"office_posts[{i}] post '{p.get('post_name')}' has no source")
+    # post_reports must reference posts that exist in the dump
+    post_ids = {p["id"] for p in d.get("office_posts", []) if "id" in p}
+    for i, r in enumerate(d.get("post_reports", [])):
+        for f in ("subordinate_id", "superior_id"):
+            if r.get(f) not in post_ids:
+                err(f"post_reports[{i}] {f}={r.get(f)} not an office_post in the dump")
 
     # ── per-table structure / enums / provenance / uniqueness ──
     for t in GENEALOGY:

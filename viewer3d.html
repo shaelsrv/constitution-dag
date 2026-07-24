@@ -58,7 +58,7 @@
   <div class="sub">Constitution on top &rarr; the place at the bottom.
     Drag to orbit, scroll to zoom, click a node for its wiring.</div>
   <label>dump</label>
-  <select id="dump"><option value="dumps/india-0.5.0">dumps/india-0.5.0</option><option value="dumps/india-0.4.0">dumps/india-0.4.0</option><option value="dumps/india-0.3.0">dumps/india-0.3.0</option></select>
+  <select id="dump"><option value="dumps/india-0.6.0">dumps/india-0.6.0</option><option value="dumps/india-0.5.0">dumps/india-0.5.0</option><option value="dumps/india-0.4.0">dumps/india-0.4.0</option><option value="dumps/india-0.3.0">dumps/india-0.3.0</option></select>
   <label>view</label>
   <select id="place"></select>
   <label>object lens (the hypergraph, by aspect)</label>
@@ -105,12 +105,20 @@ async function loadDump(dir) {
     "constitutional_controls","positions","position_domains","dependencies",
     "position_divisions","divisions","places","place_divisions",
     "domain_allocations","citizen_rights"];
+  const optional = ["office_posts","post_reports"];  // internal structure
   const d = {};
   for (const t of tables) {
     const r = await fetch(dir + "/" + t + ".jsonl");
     if (!r.ok) throw new Error(t + ".jsonl: HTTP " + r.status);
     const text = await r.text();
     d[t] = text.split("\n").filter(x => x.trim()).map(x => JSON.parse(x));
+  }
+  for (const t of optional) {
+    try {
+      const r = await fetch(dir + "/" + t + ".jsonl");
+      d[t] = r.ok ? (await r.text()).split("\n").filter(x => x.trim())
+        .map(x => JSON.parse(x)) : [];
+    } catch (e) { d[t] = []; }
   }
   return d;
 }
@@ -302,9 +310,57 @@ function showInfo(node) {
       + (l.ctx ? '<div class="ctx">' + l.ctx + "</div>" : "")
       + (l.note ? '<div class="ctx">' + l.note + "</div>" : "") + "</div>");
   });
+  // internal structure: if this office has post-types, offer to drill inside
+  let interior = "";
+  if (node.slug && node.pid !== undefined) {
+    const posts = (D.office_posts || []).filter(p => p.position_id === node.pid);
+    if (posts.length) {
+      interior = '<button id="drill" style="margin:6px 0 2px;background:#177f77;'
+        + 'color:#fff;border:0;border-radius:6px;padding:5px 10px;cursor:pointer;'
+        + 'font-size:12px">&#9660; open the interior (' + posts.length
+        + ' post-types inside)</button>';
+    }
+  }
   el.innerHTML = '<div class="kind">' + node.layer + "</div><h2>" + node.label
-    + "</h2>" + rows.join("");
+    + "</h2>" + interior + rows.join("");
   el.style.display = "block";
+  const drill = document.getElementById("drill");
+  if (drill) drill.onclick = () => showInterior(node);
+}
+
+function showInterior(node) {
+  const el = document.getElementById("info");
+  const posts = (D.office_posts || []).filter(p => p.position_id === node.pid)
+    .sort((a, b) => (a.rank || 0) - (b.rank || 0) ||
+      a.post_name.localeCompare(b.post_name));
+  const byId = {}; (D.office_posts || []).forEach(p => byId[p.id] = p);
+  const reportsTo = {};
+  (D.post_reports || []).forEach(r => {
+    if (byId[r.subordinate_id] && byId[r.superior_id]
+        && byId[r.subordinate_id].position_id === node.pid)
+      reportsTo[byId[r.subordinate_id].post_name] = byId[r.superior_id].post_name;
+  });
+  const esc = s => (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  const rows = posts.map(p => {
+    const dp = (p.decision_power || "").toLowerCase();
+    const nodec = ["no decision", "no independent", "no substantive"]
+      .some(x => dp.includes(x));
+    const ind = Math.min(p.rank || 0, 6);
+    return '<div class="edge" style="margin-left:' + (ind * 12) + 'px">'
+      + '<b>' + esc(p.post_name) + '</b> '
+      + '<span class="ctx">[' + esc(p.cadre) + ']</span>'
+      + '<div style="font-size:11.5px;color:' + (nodec ? "#8b96a0" : "#3db3a9") + '">'
+      + (nodec ? "no decision power" : "decides: " + esc(p.decision_power)) + "</div>"
+      + '<div class="ctx">does: ' + esc(p.responsibility) + "</div>"
+      + (reportsTo[p.post_name] ? '<div class="ctx">&#8593; reports to: '
+          + esc(reportsTo[p.post_name]) + "</div>" : "") + "</div>";
+  }).join("");
+  el.innerHTML = '<div class="kind">interior &middot; power structure</div><h2>'
+    + esc(node.label) + "</h2>"
+    + '<button id="back" style="margin-bottom:8px;background:transparent;'
+    + 'color:#8b96a0;border:1px solid #2a333c;border-radius:6px;padding:4px 9px;'
+    + 'cursor:pointer;font-size:11.5px">&#8592; back to the office</button>' + rows;
+  document.getElementById("back").onclick = () => showInfo(node);
 }
 
 async function main() {

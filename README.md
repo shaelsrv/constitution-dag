@@ -39,19 +39,22 @@ git clone https://github.com/shaelsrv/constitution-dag
 cd constitution-dag
 
 # how does the Constitution of India reach Kotdwar?
-python dag.py dumps/india-0.5.0 paths kotdwar
+python dag.py dumps/india-0.6.0 paths kotdwar
 
 # one plate of food, five jurisdictions
-python dag.py dumps/india-0.5.0 object food
+python dag.py dumps/india-0.6.0 object food
 
 # what can a citizen invoke — and what does NOT exist
-python dag.py dumps/india-0.5.0 rights
+python dag.py dumps/india-0.6.0 rights
 
 # HOW does an office reach you: directly, or through command chains?
-python dag.py dumps/india-0.5.0 effect kotdwar "prime minister"
+python dag.py dumps/india-0.6.0 effect kotdwar "prime minister"
+
+# INSIDE an office: the ladder from the head down to the peon
+python dag.py dumps/india-0.6.0 inside "district collector"
 
 # export a mermaid diagram
-python dag.py dumps/india-0.5.0 paths kotdwar --mermaid kotdwar.md
+python dag.py dumps/india-0.6.0 paths kotdwar --mermaid kotdwar.md
 ```
 
 `dag.py` is stdlib-only Python 3.10+. The dumps are plain JSONL — load them into
@@ -103,7 +106,8 @@ Start from [AGENTS.md](AGENTS.md). The short version:
 
 | dump | contents | source |
 |---|---|---|
-| `dumps/india-0.5.0` | **current** — the grounding invariant: 1,178/1,178 offices reach the Constitution (0 ungrounded); strict-clean | [nationAtlas](https://emergencemachine.com) (private during beta) |
+| `dumps/india-0.6.0` | **current** — internal office structure: 2,569 post-types (DM down to peon) with reporting ladders | [nationAtlas](https://emergencemachine.com) (private during beta) |
+| `dumps/india-0.5.0` | the grounding invariant: 1,178/1,178 offices reach the Constitution (0 ungrounded); strict-clean | [nationAtlas](https://emergencemachine.com) (private during beta) |
 | `dumps/india-0.4.0` | coverage pass: 625 template-grounded offices + 7 national regulators; backlog 96%→42% | [nationAtlas](https://emergencemachine.com) (private during beta) |
 | `dumps/india-0.3.0` | Emergency + Panchayat parts; loop completeness 0.974, one honest gap | [nationAtlas](https://emergencemachine.com) (private during beta) |
 | `dumps/india-0.2.0` | constitutional-completeness pass (all 24 domains allocated; 9 constitutional bodies added) | [nationAtlas](https://emergencemachine.com) (private during beta) |

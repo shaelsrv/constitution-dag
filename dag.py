@@ -10,6 +10,7 @@ Load a dump directory (JSONL files + manifest.json) and answer:
 Usage:
   python dag.py <dump> paths kotdwar
   python dag.py <dump> effect kotdwar ["prime minister"]
+  python dag.py <dump> inside "district collector"   # roles INSIDE an office
   python dag.py dumps/india-0.1.0 object food kotdwar
   python dag.py dumps/india-0.1.0 rights
   python dag.py dumps/india-0.1.0 paths kotdwar --mermaid out.md
@@ -299,6 +300,52 @@ def effect_report(d, place_slug, office_query=None, depth=4):
     print(f"citizen-effect modes for offices serving {place_slug}: {modes}")
 
 
+def inside_report(d, office_query):
+    """The internal ladder of an office: post-types by rank + reporting lines.
+    This is the map INSIDE an office — from the head down to the peon."""
+    posts_by_pos = {}
+    for p in d.get("office_posts", []):
+        posts_by_pos.setdefault(p["position_id"], []).append(p)
+    pos = {p["id"]: p for p in d["positions"] if not p.get("deprecated_at")}
+    # find the office
+    hit = None
+    for pid, plist in posts_by_pos.items():
+        if pid in pos and office_query.lower() in pos[pid]["name"].lower():
+            hit = pid; break
+    if hit is None:
+        print("no office with internal structure matches:", office_query)
+        print("offices that HAVE internal structure:")
+        seen = set()
+        for pid in posts_by_pos:
+            if pid in pos:
+                t = pos[pid]["name"].split(",")[0]
+                if t not in seen:
+                    seen.add(t); print("   -", t)
+        return
+    posts = sorted(posts_by_pos[hit], key=lambda p: (p.get("rank") or 0, p["post_name"]))
+    pid_to_post = {p["id"]: p for p in d.get("office_posts", [])}
+    reports = {}
+    for r in d.get("post_reports", []):
+        sub = pid_to_post.get(r["subordinate_id"])
+        sup = pid_to_post.get(r["superior_id"])
+        if sub and sup:
+            reports[sub["post_name"]] = sup["post_name"]
+    print("INSIDE:", pos[hit]["name"])
+    print(f"  {len(posts)} post-types (the internal power structure)\n")
+    for p in posts:
+        ind = "  " + "  " * min(p.get("rank") or 0, 6)
+        dp = p.get("decision_power") or ""
+        nodec = any(x in dp.lower() for x in ("no decision", "no independent",
+                                              "no substantive"))
+        line = ("no decision power" if nodec else "DECIDES: " + dp)
+        print(f"{ind}{p['post_name']}  [{p.get('cadre','')}]")
+        print(f"{ind}   {line[:96]}")
+        print(f"{ind}   does: {(p.get('responsibility') or '')[:92]}")
+        if p["post_name"] in reports:
+            print(f"{ind}   reports to: {reports[p['post_name']]}")
+        print()
+
+
 def main():
     if len(sys.argv) < 3:
         print(__doc__)
@@ -317,6 +364,8 @@ def main():
     elif cmd == "effect":
         q = sys.argv[4] if len(sys.argv) > 4 else None
         effect_report(d, sys.argv[3], q)
+    elif cmd == "inside":
+        inside_report(d, sys.argv[3])
     else:
         print(__doc__)
 

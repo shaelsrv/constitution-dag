@@ -84,3 +84,22 @@ PATCH = corrections; MINOR = new coverage (places, objects, rights); MAJOR =
 format or semantic changes. `manifest.json` records version, counts, generation
 time, and license. `SHA256SUMS` covers every file; releases are git-tagged and
 the tag is signed by a maintainer (see CONTRIBUTING.md § signing).
+
+
+## Internal office structure (v0.6.0+)
+
+### office_posts
+The post-types INSIDE an office. `position_id` -> the office; `post_name`
+('Tehsildar', 'Section Officer', 'Peon'); `cadre` (IAS / state service /
+ministerial / group-d); `rank` (0 = head, higher = lower); `decision_power`
+(what they can SIGN/decide; empty or 'no decision' = moves files only);
+`responsibility` (the citizen-facing action); `file_scope` (subject matter);
+`instrument_id` + `provision` (the service rule / rules of business creating it).
+Modeled as office-CLASS templates: one ladder instantiated across every office
+of a class.
+
+### post_reports
+The internal reporting ladder = the internal power structure. `subordinate_id`
+-> `superior_id` (both office_posts), `relation` (reports_to | delegated_by |
+routes_files_to). Together with `rank`, this answers "who decides my file, and
+who do they answer to inside the office."
