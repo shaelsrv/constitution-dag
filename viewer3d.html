@@ -110,7 +110,7 @@ async function loadDump(dir) {
     "constitutional_controls","positions","position_domains","dependencies",
     "position_divisions","divisions","places","place_divisions",
     "domain_allocations","citizen_rights"];
-  const optional = ["office_posts","post_reports"];  // internal structure
+  const optional = ["office_posts","post_reports","post_controls"];  // internal structure + checks
   const d = {};
   for (const t of tables) {
     const r = await fetch(dir + "/" + t + ".jsonl");
