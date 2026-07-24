@@ -127,3 +127,16 @@ Modeled once per office between the representative post-types (a check on a
 cadre, not on each of 900 replicas). Example: the Treasury Officer AUDITS the
 Nazir's cash; the Sadar Kanungo AUDITS the Lekhpal's land records; the Circle
 Officer INSPECTS the SHO's station.
+
+## Task flows (v0.9.0+) — the process layer
+
+`task_flows` + `task_steps` answer "how do I get X done." A flow is a citizen
+task (land-mutation, caste-certificate, building-permit, ration-card,
+rte-admission, mgnrega-work) with `office_class`, `legal_basis`, `total_days`,
+`citizen_input`, `outcome`. `task_steps` are the ORDERED steps: `step_no`,
+`post_name` (links to office_posts — a flow is a path through the office's
+posts), `action`, `step_kind` (submit/verify/inspect/decide/approve/sign/
+deliver/check/escalate), `is_approval` (does this step decide the request),
+`time_limit` (statutory), `on_reject` (appeal/escalation path). This is the
+payoff: structure (offices/posts/checks) + process (flows/steps) = an
+answerable "who does what, in what order, with what recourse" workflow.

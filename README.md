@@ -39,22 +39,26 @@ git clone https://github.com/shaelsrv/constitution-dag
 cd constitution-dag
 
 # how does the Constitution of India reach Kotdwar?
-python dag.py dumps/india-0.8.0 paths kotdwar
+python dag.py dumps/india-0.9.0 paths kotdwar
 
 # one plate of food, five jurisdictions
-python dag.py dumps/india-0.8.0 object food
+python dag.py dumps/india-0.9.0 object food
 
 # what can a citizen invoke — and what does NOT exist
-python dag.py dumps/india-0.8.0 rights
+python dag.py dumps/india-0.9.0 rights
 
 # HOW does an office reach you: directly, or through command chains?
-python dag.py dumps/india-0.8.0 effect kotdwar "prime minister"
+python dag.py dumps/india-0.9.0 effect kotdwar "prime minister"
 
 # INSIDE an office: the ladder from the head down to the peon
-python dag.py dumps/india-0.8.0 inside "district collector"
+python dag.py dumps/india-0.9.0 inside "district collector"
+
+# HOW do I get something done: the step-by-step process, officer by officer
+python dag.py dumps/india-0.9.0 task            # list tasks
+python dag.py dumps/india-0.9.0 task land-mutation
 
 # export a mermaid diagram
-python dag.py dumps/india-0.8.0 paths kotdwar --mermaid kotdwar.md
+python dag.py dumps/india-0.9.0 paths kotdwar --mermaid kotdwar.md
 ```
 
 `dag.py` is stdlib-only Python 3.10+. The dumps are plain JSONL — load them into
@@ -106,7 +110,8 @@ Start from [AGENTS.md](AGENTS.md). The short version:
 
 | dump | contents | source |
 |---|---|---|
-| `dumps/india-0.8.0` | **current** — internal feedback loops: 10k+ checks inside offices (who audits/verifies/inspects whom) | [nationAtlas](https://emergencemachine.com) (private during beta) |
+| `dumps/india-0.9.0` | **current** — task flows: how to get 6 real things done (mutation, certificate, permit, ration, RTE, MGNREGA) step by step | [nationAtlas](https://emergencemachine.com) (private during beta) |
+| `dumps/india-0.8.0` | internal feedback loops: 10k+ checks inside offices (who audits/verifies/inspects whom) | [nationAtlas](https://emergencemachine.com) (private during beta) |
 | `dumps/india-0.7.0` | full internal office structure: 278k sanctioned posts (DM to peon) across 6 office classes | [nationAtlas](https://emergencemachine.com) (private during beta) |
 | `dumps/india-0.6.0` | internal office structure: 2,569 post-types (DM down to peon) with reporting ladders | [nationAtlas](https://emergencemachine.com) (private during beta) |
 | `dumps/india-0.5.0` | the grounding invariant: 1,178/1,178 offices reach the Constitution (0 ungrounded); strict-clean | [nationAtlas](https://emergencemachine.com) (private during beta) |

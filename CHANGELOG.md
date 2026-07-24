@@ -1,5 +1,33 @@
 # Changelog
 
+## india-0.9.0 (2026-07-24)
+
+**Task flows — the map now answers "how do I get X done, who does what, in what
+order."** The structural map (offices, posts, checks) plus a new PROCESS layer:
+6 real citizen task flows, 62 ordered steps, each naming the post-type that
+performs it, whether it's an approval, the statutory time limit, and the
+escalation/appeal path. Researched from real rules by fan-out agents:
+
+- land-mutation (13 steps): Clerk -> Diarist -> Lekhpal field report ->
+  Kanungo verify -> Tehsildar proclamation -> Naib Tehsildar/Tehsildar ORDER ->
+  record update -> certified copy. 45-day deadline; appeal to SDM in 30 days.
+  (UP Revenue Code 2006 ss.33-35)
+- caste-certificate (8): field verification -> Tehsildar SIGNS. 7-15 days;
+  appeal in 30/60 days (Janhit Guarantee Adhiniyam 2011)
+- building-permit (10): JE site inspection -> AE/EE bye-law scrutiny -> Town
+  Planning vetting -> Commissioner SANCTIONS. 15-30 days; deemed-approval
+  (Building Bye-Laws / OBPAS)
+- ration-card (10): Supply Inspector verify -> DSO APPROVES. 30 days; appeal
+  DGRO -> State Food Commission (NFSA 2013)
+- rte-admission (9): BEO verify -> lottery -> CEO order -> school admits
+  (RTE Act 2009 s.12)
+- mgnrega-work (12): job card -> dated work demand -> BDO allots in 15 days
+  (else unemployment allowance) -> JE measures -> wages in 15 days (else 0.05%/
+  day) -> Gram Sabha social audit (MGNREGA 2005 s.3)
+
+`dag.py task <slug>` prints the full flow; each step links to the office's
+post-types (office_posts). validate --strict clean.
+
 ## india-0.8.0 (2026-07-24)
 
 **Internal feedback loops — the checks INSIDE each office.** Where 0.6/0.7 gave

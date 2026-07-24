@@ -11,6 +11,7 @@ Usage:
   python dag.py <dump> paths kotdwar
   python dag.py <dump> effect kotdwar ["prime minister"]
   python dag.py <dump> inside "district collector"   # roles INSIDE an office
+  python dag.py <dump> task land-mutation             # the process flow for a task
   python dag.py dumps/india-0.1.0 object food kotdwar
   python dag.py dumps/india-0.1.0 rights
   python dag.py dumps/india-0.1.0 paths kotdwar --mermaid out.md
@@ -391,6 +392,37 @@ def inside_report(d, office_query):
                     print(f"        {scope[:88]}")
 
 
+def task_report(d, task_slug=None):
+    """Answer a task-based question: the ordered process flow — who does what,
+    in what order, who approves, time limits, escalation."""
+    flows = d.get("task_flows", [])
+    if not flows:
+        print("this dump has no task flows"); return
+    if not task_slug:
+        print("Available citizen tasks:\n")
+        for f in sorted(flows, key=lambda x: (x.get("domain") or "", x["task_slug"])):
+            print(f"  {f['task_slug']:20s} [{f.get('domain') or '?':10s}] {f['task_name']}")
+        return
+    fl = next((f for f in flows if f["task_slug"] == task_slug), None)
+    if not fl:
+        print("no task:", task_slug); return
+    steps = sorted([s for s in d.get("task_steps", []) if s["flow_id"] == fl["id"]],
+                   key=lambda s: s["step_no"])
+    print("TASK:", fl["task_name"])
+    print("  legal basis:", fl.get("legal_basis"))
+    if fl.get("citizen_input"): print("  you bring:", fl["citizen_input"])
+    if fl.get("outcome"): print("  you get: ", fl["outcome"])
+    if fl.get("total_days"): print("  total time:", fl["total_days"])
+    print(f"\n  THE FLOW ({len(steps)} steps):\n")
+    for s in steps:
+        mark = "APPROVES" if s.get("is_approval") else (s.get("step_kind") or "").upper()
+        print(f"  {s['step_no']}. [{mark:8s}] {s['post_name']}")
+        print(f"        {s['action']}")
+        if s.get("time_limit"): print(f"        time: {s['time_limit']}")
+        if s.get("on_reject"): print(f"        if rejected/stuck: {s['on_reject']}")
+    print("\n  (candidate analysis — verify against the current official process)")
+
+
 def main():
     if len(sys.argv) < 3:
         print(__doc__)
@@ -411,6 +443,8 @@ def main():
         effect_report(d, sys.argv[3], q)
     elif cmd == "inside":
         inside_report(d, sys.argv[3])
+    elif cmd == "task":
+        task_report(d, sys.argv[3] if len(sys.argv) > 3 else None)
     else:
         print(__doc__)
 
