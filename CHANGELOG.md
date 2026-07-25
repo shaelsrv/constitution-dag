@@ -1,5 +1,21 @@
 # Changelog
 
+## india-0.11.0 (2026-07-24)
+
+**Stable external IDs for every role + 32 more task flows (loop round 2).**
+
+- Every role-bearing row now carries a `stable_id` — a deterministic,
+  content-derived URN identical across every dump, so external documents can
+  durably reference a role, check, or process step (the SERIAL `id` is
+  reassigned each rebuild and must never be cited). See SCHEMA.md.
+  Proven stable: a role kept `role:in/in-pauri-garhwal-dm/tehsildar#1` through a
+  serial-id reassignment. Validator enforces presence + uniqueness.
+- Enrichment loop round 2 landed 32 new task flows (14 -> 46, 471 steps):
+  Ayushman card, Aadhaar correction, scholarships, disability pension,
+  immunization, PMAY housing, RTI, trade licence, tenant verification, land
+  conversion, vehicle transfer, and more. Each source-grounded and
+  review-corrected.
+
 ## india-0.10.0 (2026-07-24)
 
 **Self-improving enrichment loop — 6 -> 14 task flows in one round.** A

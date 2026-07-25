@@ -152,9 +152,17 @@ def main():
     check_fk("office_posts", "instrument_id", "legal_instruments")
     # office_posts: every post needs provenance (internal-structure integrity);
     # post_reports must reference posts that exist in the dump (checked below)
+    seen_stable = {}
     for i, p in enumerate(d.get("office_posts", [])):
         if p.get("post_name") in (None, ""):
             err(f"office_posts[{i}] missing post_name")
+        sid = p.get("stable_id")
+        if not sid:
+            err(f"office_posts[{i}] missing stable_id (external reference)")
+        elif sid in seen_stable:
+            err(f"office_posts[{i}] duplicate stable_id {sid!r}")
+        else:
+            seen_stable[sid] = i
         if p.get("confidence") not in ENUMS["confidence"]:
             err(f"office_posts[{i}] bad confidence {p.get('confidence')!r}")
         if not (p.get("source") or "").strip():

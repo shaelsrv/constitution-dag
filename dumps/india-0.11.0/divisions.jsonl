@@ -1,0 +1,185 @@
+{"id": 14, "nation_id": 17, "slug": "in-tg-state", "name": "Telangana", "kind": "state", "level_rank": 2}
+{"id": 15, "nation_id": 17, "slug": "in-hyd-district", "name": "Hyderabad District", "kind": "district", "level_rank": 1}
+{"id": 16, "nation_id": 17, "slug": "in-ghmc", "name": "Greater Hyderabad Municipal Corporation", "kind": "municipal", "level_rank": 0}
+{"id": 17, "nation_id": 17, "slug": "in-hyd-police-comm", "name": "Hyderabad City Police Commissionerate", "kind": "police_commissionerate", "level_rank": 1}
+{"id": 18, "nation_id": 17, "slug": "in-tg-assembly-seg", "name": "Telangana Assembly segment (Hyderabad)", "kind": "electoral_assembly", "level_rank": 2}
+{"id": 19, "nation_id": 17, "slug": "in-hyd-school-zone", "name": "Hyderabad District School Education zone", "kind": "school_district", "level_rank": 1}
+{"id": 44, "nation_id": 17, "slug": "in-telangana-state-36", "name": "Telangana", "kind": "state", "level_rank": 2}
+{"id": 45, "nation_id": 17, "slug": "in-hyderabad-district-507", "name": "Hyderabad", "kind": "district", "level_rank": 1}
+{"id": 46, "nation_id": 17, "slug": "in-hyderabad-lok-sabha-pc-422", "name": "Hyderabad (Lok Sabha)", "kind": "electoral_house", "level_rank": 3}
+{"id": 47, "nation_id": 17, "slug": "in-bahdurpura-assembly-ac-3243", "name": "Bahdurpura (Assembly)", "kind": "electoral_assembly", "level_rank": 2}
+{"id": 48, "nation_id": 17, "slug": "in-chandrayangutta-assembly-ac-3244", "name": "Chandrayangutta (Assembly)", "kind": "electoral_assembly", "level_rank": 2}
+{"id": 49, "nation_id": 17, "slug": "in-charminar-assembly-ac-3245", "name": "Charminar (Assembly)", "kind": "electoral_assembly", "level_rank": 2}
+{"id": 50, "nation_id": 17, "slug": "in-goshamahal-assembly-ac-3246", "name": "Goshamahal (Assembly)", "kind": "electoral_assembly", "level_rank": 2}
+{"id": 51, "nation_id": 17, "slug": "in-karwan-assembly-ac-3247", "name": "Karwan (Assembly)", "kind": "electoral_assembly", "level_rank": 2}
+{"id": 52, "nation_id": 17, "slug": "in-malakpet-assembly-ac-3248", "name": "Malakpet (Assembly)", "kind": "electoral_assembly", "level_rank": 2}
+{"id": 53, "nation_id": 17, "slug": "in-yakutpura-assembly-ac-3249", "name": "Yakutpura (Assembly)", "kind": "electoral_assembly", "level_rank": 2}
+{"id": 54, "nation_id": 17, "slug": "in-uttarakhand-state-5", "name": "Uttarakhand", "kind": "state", "level_rank": 2}
+{"id": 55, "nation_id": 17, "slug": "in-pauri-garhwal-district-52", "name": "Pauri Garhwal", "kind": "district", "level_rank": 1}
+{"id": 56, "nation_id": 17, "slug": "in-garhwal-lok-sabha-pc-26", "name": "Garhwal (Lok Sabha)", "kind": "electoral_house", "level_rank": 3}
+{"id": 62, "nation_id": 17, "slug": "in-kotdwar-assembly-ac-293", "name": "Kotdwar (Assembly)", "kind": "electoral_assembly", "level_rank": 2}
+{"id": 81, "nation_id": 17, "slug": "in-kolkata", "name": "Kolkata", "kind": "local", "level_rank": 1}
+{"id": 82, "nation_id": 17, "slug": "in-west-bengal", "name": "West Bengal", "kind": "state", "level_rank": 2}
+{"id": 84, "nation_id": 17, "slug": "in-pune", "name": "Pune", "kind": "local", "level_rank": 1}
+{"id": 85, "nation_id": 17, "slug": "in-pune-district", "name": "Pune District", "kind": "county", "level_rank": 2}
+{"id": 86, "nation_id": 17, "slug": "in-maharashtra", "name": "Maharashtra", "kind": "state", "level_rank": 3}
+{"id": 95, "nation_id": 17, "slug": "in-chennai", "name": "Chennai", "kind": "local", "level_rank": 1}
+{"id": 97, "nation_id": 17, "slug": "in-jaipur", "name": "Jaipur", "kind": "local", "level_rank": 1}
+{"id": 98, "nation_id": 17, "slug": "in-rajasthan", "name": "Rajasthan", "kind": "state", "level_rank": 2}
+{"id": 99, "nation_id": 17, "slug": "in-bhopal", "name": "Bhopal", "kind": "local", "level_rank": 1}
+{"id": 100, "nation_id": 17, "slug": "in-madhya-pradesh", "name": "Madhya Pradesh", "kind": "state", "level_rank": 2}
+{"id": 105, "nation_id": 17, "slug": "in-gangauli-div-uttar-pradesh", "name": "Gangauli", "kind": "local", "level_rank": 1}
+{"id": 106, "nation_id": 17, "slug": "in-banauli-div-uttar-pradesh", "name": "Banauli", "kind": "local", "level_rank": 1}
+{"id": 107, "nation_id": 17, "slug": "in-hanumanganj-div-uttar-pradesh", "name": "Hanumanganj", "kind": "local", "level_rank": 1}
+{"id": 108, "nation_id": 17, "slug": "in-chiuti-para-div-uttar-pradesh", "name": "Chiuti Para", "kind": "local", "level_rank": 1}
+{"id": 109, "nation_id": 17, "slug": "in-pura-khurda-div-uttar-pradesh", "name": "Pura Khurda", "kind": "local", "level_rank": 1}
+{"id": 110, "nation_id": 17, "slug": "in-jalokhar-div-uttar-pradesh", "name": "Jalokhar", "kind": "local", "level_rank": 1}
+{"id": 111, "nation_id": 17, "slug": "in-mirzapur-ramnath-div-uttar-pradesh", "name": "Mirzapur Ramnath", "kind": "local", "level_rank": 1}
+{"id": 112, "nation_id": 17, "slug": "in-purwa-div-uttar-pradesh", "name": "Purwa", "kind": "local", "level_rank": 1}
+{"id": 113, "nation_id": 17, "slug": "in-govardhan-div-uttar-pradesh", "name": "Govardhan", "kind": "local", "level_rank": 1}
+{"id": 114, "nation_id": 17, "slug": "in-amraudhaa-div-uttar-pradesh", "name": "Amraudhaa", "kind": "local", "level_rank": 1}
+{"id": 115, "nation_id": 17, "slug": "in-sarsawan-div-uttar-pradesh", "name": "Sarsawan", "kind": "local", "level_rank": 1}
+{"id": 116, "nation_id": 17, "slug": "in-etah-div-uttar-pradesh", "name": "Etah", "kind": "local", "level_rank": 1}
+{"id": 117, "nation_id": 17, "slug": "in-suriyawan-div-uttar-pradesh", "name": "Suriyawan", "kind": "local", "level_rank": 1}
+{"id": 118, "nation_id": 17, "slug": "in-gauriganj-div-uttar-pradesh", "name": "Gauriganj", "kind": "local", "level_rank": 1}
+{"id": 119, "nation_id": 17, "slug": "in-nanauta-div-uttar-pradesh", "name": "Nanauta", "kind": "local", "level_rank": 1}
+{"id": 120, "nation_id": 17, "slug": "in-pt-deen-dayal-upadhyaya-nagar-div-uttar-pradesh", "name": "Pt. Deen Dayal Upadhyaya Nagar", "kind": "local", "level_rank": 1}
+{"id": 121, "nation_id": 17, "slug": "in-lalitpur-div-uttar-pradesh", "name": "Lalitpur", "kind": "local", "level_rank": 1}
+{"id": 122, "nation_id": 17, "slug": "in-dhanore-div-maharashtra", "name": "Dhanore", "kind": "local", "level_rank": 1}
+{"id": 123, "nation_id": 17, "slug": "in-waluj-div-maharashtra", "name": "Waluj", "kind": "local", "level_rank": 1}
+{"id": 124, "nation_id": 17, "slug": "in-samandarwadi-div-maharashtra", "name": "Samandarwadi", "kind": "local", "level_rank": 1}
+{"id": 125, "nation_id": 17, "slug": "in-thorandale-div-maharashtra", "name": "Thorandale", "kind": "local", "level_rank": 1}
+{"id": 96, "nation_id": 17, "slug": "in-tamil-nadu", "name": "Tamil Nadu", "kind": "state", "level_rank": 2}
+{"id": 126, "nation_id": 17, "slug": "in-municipal-council-gadchiroli-div-maharashtra", "name": "Municipal Council Gadchiroli", "kind": "local", "level_rank": 1}
+{"id": 127, "nation_id": 17, "slug": "in-chiplun-div-maharashtra", "name": "Chiplun", "kind": "local", "level_rank": 1}
+{"id": 128, "nation_id": 17, "slug": "in-karanja-wardha-div-maharashtra", "name": "Karanja Wardha", "kind": "local", "level_rank": 1}
+{"id": 129, "nation_id": 17, "slug": "in-ballarpur-div-maharashtra", "name": "Ballarpur", "kind": "local", "level_rank": 1}
+{"id": 130, "nation_id": 17, "slug": "in-butibori-div-maharashtra", "name": "Butibori", "kind": "local", "level_rank": 1}
+{"id": 131, "nation_id": 17, "slug": "in-digras-div-maharashtra", "name": "Digras", "kind": "local", "level_rank": 1}
+{"id": 132, "nation_id": 17, "slug": "in-ratwara-div-bihar", "name": "Ratwara", "kind": "local", "level_rank": 1}
+{"id": 133, "nation_id": 17, "slug": "in-pipra-khurd-div-bihar", "name": "Pipra Khurd", "kind": "local", "level_rank": 1}
+{"id": 134, "nation_id": 17, "slug": "in-samho-akha-kurha-div-bihar", "name": "Samho Akha Kurha", "kind": "local", "level_rank": 1}
+{"id": 135, "nation_id": 17, "slug": "in-punhad-div-bihar", "name": "Punhad", "kind": "local", "level_rank": 1}
+{"id": 136, "nation_id": 17, "slug": "in-kako-div-bihar", "name": "KAKO", "kind": "local", "level_rank": 1}
+{"id": 137, "nation_id": 17, "slug": "in-maharajganj-div-bihar", "name": "Maharajganj", "kind": "local", "level_rank": 1}
+{"id": 138, "nation_id": 17, "slug": "in-warisaliganj-div-bihar", "name": "Warisaliganj", "kind": "local", "level_rank": 1}
+{"id": 139, "nation_id": 17, "slug": "in-rahui-div-bihar", "name": "Rahui", "kind": "local", "level_rank": 1}
+{"id": 140, "nation_id": 17, "slug": "in-bairgania-div-bihar", "name": "Bairgania", "kind": "local", "level_rank": 1}
+{"id": 141, "nation_id": 17, "slug": "in-jagadanandspur-div-west-bengal", "name": "Jagadanandspur", "kind": "local", "level_rank": 1}
+{"id": 142, "nation_id": 17, "slug": "in-binnaguri-div-west-bengal", "name": "Binnaguri", "kind": "local", "level_rank": 1}
+{"id": 143, "nation_id": 17, "slug": "in-paschim-bardhaman-div-west-bengal", "name": "Paschim Bardhaman", "kind": "local", "level_rank": 1}
+{"id": 144, "nation_id": 17, "slug": "in-english-bazar-div-west-bengal", "name": "English Bazar", "kind": "local", "level_rank": 1}
+{"id": 145, "nation_id": 17, "slug": "in-serampore-div-west-bengal", "name": "Serampore", "kind": "local", "level_rank": 1}
+{"id": 146, "nation_id": 17, "slug": "in-pujali-div-west-bengal", "name": "Pujali", "kind": "local", "level_rank": 1}
+{"id": 147, "nation_id": 17, "slug": "in-champdany-div-west-bengal", "name": "Champdany", "kind": "local", "level_rank": 1}
+{"id": 148, "nation_id": 17, "slug": "in-chandrakona-div-west-bengal", "name": "Chandrakona", "kind": "local", "level_rank": 1}
+{"id": 149, "nation_id": 17, "slug": "in-khajuriya-div-madhya-pradesh", "name": "Khajuriya", "kind": "local", "level_rank": 1}
+{"id": 150, "nation_id": 17, "slug": "in-mandavi-div-madhya-pradesh", "name": "Mandavi", "kind": "local", "level_rank": 1}
+{"id": 151, "nation_id": 17, "slug": "in-devri-div-madhya-pradesh", "name": "Devri", "kind": "local", "level_rank": 1}
+{"id": 152, "nation_id": 17, "slug": "in-indore-div-madhya-pradesh", "name": "Indore", "kind": "local", "level_rank": 1}
+{"id": 153, "nation_id": 17, "slug": "in-jiran-div-madhya-pradesh", "name": "Jiran", "kind": "local", "level_rank": 1}
+{"id": 154, "nation_id": 17, "slug": "in-buxwaha-div-madhya-pradesh", "name": "Buxwaha", "kind": "local", "level_rank": 1}
+{"id": 155, "nation_id": 17, "slug": "in-puliyakudy-div-tamil-nadu", "name": "Puliyakudy", "kind": "local", "level_rank": 1}
+{"id": 156, "nation_id": 17, "slug": "in-chinnanagapudi-div-tamil-nadu", "name": "Chinnanagapudi", "kind": "local", "level_rank": 1}
+{"id": 157, "nation_id": 17, "slug": "in-vaitheeswarankoil-div-tamil-nadu", "name": "Vaitheeswarankoil", "kind": "local", "level_rank": 1}
+{"id": 158, "nation_id": 17, "slug": "in-tirupathur-div-tamil-nadu", "name": "Tirupathur", "kind": "local", "level_rank": 1}
+{"id": 159, "nation_id": 17, "slug": "in-sentharapatti-div-tamil-nadu", "name": "Sentharapatti", "kind": "local", "level_rank": 1}
+{"id": 160, "nation_id": 17, "slug": "in-vellore-div-tamil-nadu", "name": "Vellore", "kind": "local", "level_rank": 1}
+{"id": 161, "nation_id": 17, "slug": "in-hulmanakalan-div-rajasthan", "name": "Hulmanakalan", "kind": "local", "level_rank": 1}
+{"id": 162, "nation_id": 17, "slug": "in-peepali-div-rajasthan", "name": "Peepali", "kind": "local", "level_rank": 1}
+{"id": 163, "nation_id": 17, "slug": "in-roopbas-div-rajasthan", "name": "Roopbas", "kind": "local", "level_rank": 1}
+{"id": 164, "nation_id": 17, "slug": "in-amet-div-rajasthan", "name": "Amet", "kind": "local", "level_rank": 1}
+{"id": 165, "nation_id": 17, "slug": "in-kathumar-div-rajasthan", "name": "Kathumar", "kind": "local", "level_rank": 1}
+{"id": 166, "nation_id": 17, "slug": "in-pilani-div-rajasthan", "name": "Pilani", "kind": "local", "level_rank": 1}
+{"id": 167, "nation_id": 17, "slug": "in-angondahalli-div-karnataka", "name": "Angondahalli", "kind": "local", "level_rank": 1}
+{"id": 168, "nation_id": 17, "slug": "in-amatur-div-karnataka", "name": "Amatur", "kind": "local", "level_rank": 1}
+{"id": 169, "nation_id": 17, "slug": "in-puttur-div-karnataka", "name": "Puttur", "kind": "local", "level_rank": 1}
+{"id": 170, "nation_id": 17, "slug": "in-koratagere-div-karnataka", "name": "Koratagere", "kind": "local", "level_rank": 1}
+{"id": 171, "nation_id": 17, "slug": "in-hoovina-hadagalli-div-karnataka", "name": "Hoovina Hadagalli", "kind": "local", "level_rank": 1}
+{"id": 172, "nation_id": 17, "slug": "in-taklipada-pipalaidevi-div-gujarat", "name": "Taklipada (Pipalaidevi)", "kind": "local", "level_rank": 1}
+{"id": 173, "nation_id": 17, "slug": "in-hariyawada-div-gujarat", "name": "Hariyawada", "kind": "local", "level_rank": 1}
+{"id": 174, "nation_id": 17, "slug": "in-una-div-gujarat", "name": "Una", "kind": "local", "level_rank": 1}
+{"id": 175, "nation_id": 17, "slug": "in-godhra-div-gujarat", "name": "Godhra", "kind": "local", "level_rank": 1}
+{"id": 176, "nation_id": 17, "slug": "in-kadi-div-gujarat", "name": "Kadi", "kind": "local", "level_rank": 1}
+{"id": 177, "nation_id": 17, "slug": "in-thatiguntapalle-div-andhra-pradesh", "name": "Thatiguntapalle", "kind": "local", "level_rank": 1}
+{"id": 178, "nation_id": 17, "slug": "in-v-kota-div-andhra-pradesh", "name": "V.Kota", "kind": "local", "level_rank": 1}
+{"id": 179, "nation_id": 17, "slug": "in-venkatagiri-div-andhra-pradesh", "name": "Venkatagiri", "kind": "local", "level_rank": 1}
+{"id": 180, "nation_id": 17, "slug": "in-visakhapatnam-div-andhra-pradesh", "name": "Visakhapatnam", "kind": "local", "level_rank": 1}
+{"id": 181, "nation_id": 17, "slug": "in-narsipatnam-div-andhra-pradesh", "name": "Narsipatnam", "kind": "local", "level_rank": 1}
+{"id": 182, "nation_id": 17, "slug": "in-mohara-div-odisha", "name": "Mohara", "kind": "local", "level_rank": 1}
+{"id": 183, "nation_id": 17, "slug": "in-udala-div-odisha", "name": "Udala", "kind": "local", "level_rank": 1}
+{"id": 184, "nation_id": 17, "slug": "in-kendujhar-div-odisha", "name": "Kendujhar", "kind": "local", "level_rank": 1}
+{"id": 185, "nation_id": 17, "slug": "in-shikarkhana-div-telangana", "name": "Shikarkhana", "kind": "local", "level_rank": 1}
+{"id": 186, "nation_id": 17, "slug": "in-khanapur-div-telangana", "name": "Khanapur", "kind": "local", "level_rank": 1}
+{"id": 187, "nation_id": 17, "slug": "in-yellandu-div-telangana", "name": "Yellandu", "kind": "local", "level_rank": 1}
+{"id": 188, "nation_id": 17, "slug": "in-uzhavoor-div-kerala", "name": "Uzhavoor", "kind": "local", "level_rank": 1}
+{"id": 189, "nation_id": 17, "slug": "in-koothattukulam-div-kerala", "name": "Koothattukulam", "kind": "local", "level_rank": 1}
+{"id": 190, "nation_id": 17, "slug": "in-parappanangadi-div-kerala", "name": "Parappanangadi", "kind": "local", "level_rank": 1}
+{"id": 191, "nation_id": 17, "slug": "in-chhuchhi-div-jharkhand", "name": "Chhuchhi", "kind": "local", "level_rank": 1}
+{"id": 192, "nation_id": 17, "slug": "in-kodarma-div-jharkhand", "name": "Kodarma", "kind": "local", "level_rank": 1}
+{"id": 193, "nation_id": 17, "slug": "in-medininagar-daltonganj-municipal-corporation-div-jharkhand", "name": "Medininagar (Daltonganj) Municipal Corporation", "kind": "local", "level_rank": 1}
+{"id": 194, "nation_id": 17, "slug": "in-duttapur-bagcherra-div-assam", "name": "Duttapur Bagcherra", "kind": "local", "level_rank": 1}
+{"id": 195, "nation_id": 17, "slug": "in-nazira-div-assam", "name": "Nazira", "kind": "local", "level_rank": 1}
+{"id": 196, "nation_id": 17, "slug": "in-gohpur-div-assam", "name": "Gohpur", "kind": "local", "level_rank": 1}
+{"id": 197, "nation_id": 17, "slug": "in-manak-majra-div-punjab", "name": "Manak Majra", "kind": "local", "level_rank": 1}
+{"id": 198, "nation_id": 17, "slug": "in-raja-sansi-div-punjab", "name": "Raja Sansi", "kind": "local", "level_rank": 1}
+{"id": 199, "nation_id": 17, "slug": "in-sankara-div-chhattisgarh", "name": "Sankara", "kind": "local", "level_rank": 1}
+{"id": 200, "nation_id": 17, "slug": "in-mahasamund-div-chhattisgarh", "name": "Mahasamund", "kind": "local", "level_rank": 1}
+{"id": 201, "nation_id": 17, "slug": "in-ranjit-nagar-div-haryana", "name": "Ranjit Nagar", "kind": "local", "level_rank": 1}
+{"id": 202, "nation_id": 17, "slug": "in-pehowa-div-haryana", "name": "Pehowa", "kind": "local", "level_rank": 1}
+{"id": 203, "nation_id": 17, "slug": "in-south-delhi-municipal-corporation-div-delhi", "name": "South Delhi Municipal Corporation", "kind": "local", "level_rank": 1}
+{"id": 255, "nation_id": 17, "slug": "in-coimbatore-city-municipal-corporation", "name": "Coimbatore City Municipal Corporation", "kind": "local", "level_rank": 1}
+{"id": 256, "nation_id": 17, "slug": "in-coimbatore-revenue-district", "name": "Coimbatore Revenue District", "kind": "county", "level_rank": 2}
+{"id": 260, "nation_id": 17, "slug": "in-coimbatore-educational-district", "name": "Coimbatore Educational District", "kind": "national", "level_rank": 8}
+{"id": 268, "nation_id": 17, "slug": "in-kosi-division", "name": "Kosi Division", "kind": "national", "level_rank": 9}
+{"id": 269, "nation_id": 17, "slug": "in-araria", "name": "Araria", "kind": "district", "level_rank": 1}
+{"id": 261, "nation_id": 17, "slug": "in-araria-nagar-parishad", "name": "Araria Nagar Parishad", "kind": "municipal", "level_rank": 0}
+{"id": 284, "nation_id": 17, "slug": "in-uttar-pradesh", "name": "Uttar Pradesh", "kind": "state", "level_rank": 2}
+{"id": 270, "nation_id": 17, "slug": "in-araria-education-district", "name": "Araria Education District", "kind": "school_district", "level_rank": 1}
+{"id": 271, "nation_id": 17, "slug": "in-purnia-division", "name": "Purnia Division", "kind": "district", "level_rank": 1}
+{"id": 282, "nation_id": 17, "slug": "in-noida", "name": "Noida", "kind": "municipal", "level_rank": 0}
+{"id": 283, "nation_id": 17, "slug": "in-gautam-buddha-nagar", "name": "Gautam Buddha Nagar", "kind": "district", "level_rank": 1}
+{"id": 257, "nation_id": 17, "slug": "in-coimbatore-city-police-commissionerate", "name": "Coimbatore City Police Commissionerate", "kind": "police_commissionerate", "level_rank": 0}
+{"id": 285, "nation_id": 17, "slug": "in-noida-police-commissionerate", "name": "Noida Police Commissionerate", "kind": "police_commissionerate", "level_rank": 1}
+{"id": 286, "nation_id": 17, "slug": "in-gautam-buddh-nagar-lok-sabha-constituency", "name": "Gautam Buddh Nagar (Lok Sabha constituency)", "kind": "electoral_house", "level_rank": 3}
+{"id": 287, "nation_id": 17, "slug": "in-noida-vidhan-sabha-constituency", "name": "Noida (Vidhan Sabha constituency)", "kind": "electoral_assembly", "level_rank": 2}
+{"id": 299, "nation_id": 17, "slug": "in-municipal-corporation-gurugram", "name": "Municipal Corporation Gurugram", "kind": "municipal", "level_rank": 0}
+{"id": 300, "nation_id": 17, "slug": "in-gurugram-district-revenue", "name": "Gurugram District (Revenue)", "kind": "district", "level_rank": 1}
+{"id": 301, "nation_id": 17, "slug": "in-gurugram-police-commissionerate", "name": "Gurugram Police Commissionerate", "kind": "police_commissionerate", "level_rank": 1}
+{"id": 302, "nation_id": 17, "slug": "in-gurugram-division-revenue", "name": "Gurugram Division (Revenue)", "kind": "district", "level_rank": 1}
+{"id": 303, "nation_id": 17, "slug": "in-haryana", "name": "Haryana", "kind": "state", "level_rank": 2}
+{"id": 262, "nation_id": 17, "slug": "in-araria-district", "name": "Araria District", "kind": "district", "level_rank": 1}
+{"id": 265, "nation_id": 17, "slug": "in-araria-police-district", "name": "Araria Police District", "kind": "police_commissionerate", "level_rank": 1}
+{"id": 258, "nation_id": 17, "slug": "in-coimbatore-lok-sabha-constituency", "name": "Coimbatore Lok Sabha Constituency", "kind": "electoral_house", "level_rank": 6}
+{"id": 304, "nation_id": 17, "slug": "in-gurgaon-lok-sabha-constituency", "name": "Gurgaon Lok Sabha Constituency", "kind": "electoral_house", "level_rank": 3}
+{"id": 305, "nation_id": 17, "slug": "in-gurgaon-vidhan-sabha-constituency", "name": "Gurgaon Vidhan Sabha Constituency", "kind": "electoral_assembly", "level_rank": 2}
+{"id": 306, "nation_id": 17, "slug": "in-badshahpur-vidhan-sabha-constituency", "name": "Badshahpur Vidhan Sabha Constituency", "kind": "electoral_assembly", "level_rank": 2}
+{"id": 307, "nation_id": 17, "slug": "in-sohna-vidhan-sabha-constituency", "name": "Sohna Vidhan Sabha Constituency", "kind": "electoral_assembly", "level_rank": 2}
+{"id": 308, "nation_id": 17, "slug": "in-pataudi-vidhan-sabha-constituency", "name": "Pataudi Vidhan Sabha Constituency", "kind": "electoral_assembly", "level_rank": 2}
+{"id": 309, "nation_id": 17, "slug": "in-coimbatore-city-municipal-corporation-ccmc", "name": "Coimbatore City Municipal Corporation (CCMC)", "kind": "municipal", "level_rank": 0}
+{"id": 310, "nation_id": 17, "slug": "in-coimbatore-district-revenue-district", "name": "Coimbatore District (Revenue District)", "kind": "district", "level_rank": 1}
+{"id": 311, "nation_id": 17, "slug": "in-coimbatore-district-police-sp-office", "name": "Coimbatore District Police (SP Office)", "kind": "police_commissionerate", "level_rank": 0}
+{"id": 312, "nation_id": 17, "slug": "in-coimbatore-parliamentary-constituency-lok-sabha-pc-20", "name": "Coimbatore Parliamentary Constituency (Lok Sabha PC #20)", "kind": "electoral_house", "level_rank": 3}
+{"id": 313, "nation_id": 17, "slug": "in-pollachi-parliamentary-constituency-lok-sabha-pc-21", "name": "Pollachi Parliamentary Constituency (Lok Sabha PC #21)", "kind": "electoral_house", "level_rank": 3}
+{"id": 314, "nation_id": 17, "slug": "in-assembly-constituencies-within-coimbatore-district-10-total", "name": "Assembly Constituencies within Coimbatore District (10 total)", "kind": "electoral_assembly", "level_rank": 2}
+{"id": 315, "nation_id": 17, "slug": "in-araria-nagar-panchayat", "name": "Araria Nagar Panchayat", "kind": "municipal", "level_rank": 0}
+{"id": 316, "nation_id": 17, "slug": "in-araria-block", "name": "Araria Block", "kind": "district", "level_rank": 0}
+{"id": 317, "nation_id": 17, "slug": "in-araria-sub-division", "name": "Araria Sub-Division", "kind": "district", "level_rank": 1}
+{"id": 318, "nation_id": 17, "slug": "in-purnea-division", "name": "Purnea Division", "kind": "district", "level_rank": 1}
+{"id": 263, "nation_id": 17, "slug": "in-bihar", "name": "Bihar", "kind": "state", "level_rank": 2}
+{"id": 267, "nation_id": 17, "slug": "in-araria-vidhan-sabha-constituency", "name": "Araria Vidhan Sabha Constituency", "kind": "electoral_assembly", "level_rank": 1}
+{"id": 319, "nation_id": 17, "slug": "in-jokihat-vidhan-sabha-constituency", "name": "Jokihat Vidhan Sabha Constituency", "kind": "electoral_assembly", "level_rank": 1}
+{"id": 320, "nation_id": 17, "slug": "in-sikti-vidhan-sabha-constituency", "name": "Sikti Vidhan Sabha Constituency", "kind": "electoral_assembly", "level_rank": 1}
+{"id": 321, "nation_id": 17, "slug": "in-raniganj-vidhan-sabha-constituency-sc", "name": "Raniganj Vidhan Sabha Constituency (SC)", "kind": "electoral_assembly", "level_rank": 1}
+{"id": 322, "nation_id": 17, "slug": "in-forbesganj-vidhan-sabha-constituency", "name": "Forbesganj Vidhan Sabha Constituency", "kind": "electoral_assembly", "level_rank": 1}
+{"id": 323, "nation_id": 17, "slug": "in-narpatganj-vidhan-sabha-constituency", "name": "Narpatganj Vidhan Sabha Constituency", "kind": "electoral_assembly", "level_rank": 1}
+{"id": 266, "nation_id": 17, "slug": "in-araria-lok-sabha-constituency", "name": "Araria Lok Sabha Constituency", "kind": "electoral_house", "level_rank": 2}
+{"id": 324, "nation_id": 17, "slug": "in-noida-municipal-corporation", "name": "Noida Municipal Corporation", "kind": "municipal", "level_rank": 0}
+{"id": 325, "nation_id": 17, "slug": "in-gautam-buddha-nagar-district", "name": "Gautam Buddha Nagar District", "kind": "district", "level_rank": 1}
+{"id": 326, "nation_id": 17, "slug": "in-gautam-buddha-nagar-police-commissionerate", "name": "Gautam Buddha Nagar Police Commissionerate", "kind": "police_commissionerate", "level_rank": 1}
+{"id": 327, "nation_id": 17, "slug": "in-noida-assembly-constituency-ac-61", "name": "Noida Assembly Constituency (AC 61)", "kind": "electoral_assembly", "level_rank": 1}
+{"id": 328, "nation_id": 17, "slug": "in-gautam-buddha-nagar-lok-sabha-constituency-pc", "name": "Gautam Buddha Nagar Lok Sabha Constituency (PC)", "kind": "electoral_house", "level_rank": 2}
+{"id": 83, "nation_id": 17, "slug": "in-india", "name": "India", "kind": "national", "level_rank": 3}
+{"id": 259, "nation_id": 17, "slug": "in-coimbatore-north-assembly-constituency-or-coimbatore-south-assembly-constituency-depending-on-specific-location-within-city", "name": "Coimbatore North Assembly Constituency OR Coimbatore South Assembly Constituency (depending on specific location within city)", "kind": "electoral_assembly", "level_rank": 7}
+{"id": 264, "nation_id": 17, "slug": "in-araria-block-education-zone", "name": "Araria Block Education Zone", "kind": "school_district", "level_rank": 5}
+{"id": 329, "nation_id": 17, "slug": "in-kotdwar-nagar-palika", "name": "Kotdwar Nagar Nigam", "kind": "municipal", "level_rank": 0}
