@@ -1,5 +1,24 @@
 # Changelog
 
+## india-0.10.0 (2026-07-24)
+
+**Self-improving enrichment loop — 6 -> 14 task flows in one round.** A
+three-agent loop (generate citizen queries -> answer from current knowledge ->
+review-and-enrich against real sources) now grows the task-flow coverage. The
+reviewer web-searches the governing rules, CORRECTS the draft (e.g. old-age
+pension: age 60 not 65, quarterly not monthly, DPO signs not the DM, online
+portal not counter), and returns a validated, source-grounded flow.
+
+New flows this round: birth-certificate, death-certificate, disability-
+certificate (UDID), old-age-pension, widow-pension, electricity-connection,
+property-registration (sale deed), file-fir (BNSS 2023 + Lalita Kumari, with the
+full SHO->SP->Magistrate escalation ladder). 14 flows, 150 steps total.
+
+The loop is designed to run in rounds (~30 tasks/round across 8 domain buckets)
+toward broad coverage; each round accumulates against the covered-set so no task
+is duplicated. Every flow is candidate analysis, confidence-labeled, with the
+authoritative sources recorded.
+
 ## india-0.9.0 (2026-07-24)
 
 **Task flows — the map now answers "how do I get X done, who does what, in what
