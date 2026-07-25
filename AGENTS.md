@@ -75,6 +75,55 @@ Repeat forever; each cycle makes the map truer:
 5. **Version and publish** — bump the dump version, regenerate SHA256SUMS,
    tag, release.
 
+## Stage 3 — go deeper: inside the office, and how a citizen gets things done
+
+Stages 1–2 give the constitutional genealogy (offices, controls, rights,
+objects). The pilot then added four more layers, in this order — each is
+optional but each makes the map far more useful. Format details are in
+SCHEMA.md; the tables are `office_posts`, `post_reports`, `post_controls`,
+`task_flows`, `task_steps`.
+
+1. **Internal office structure** (`office_posts` + `post_reports`). An office is
+   a container; inside it is a ladder of post-types — a District Magistrate's
+   office holds the ADM, SDM, Tehsildar, Lekhpal, Section Officer, peon…
+   Model the recurring post-types once per office **class** (all district
+   collectorates share a ladder) and instantiate across every matching office;
+   `post_reports` is the reporting chain. Each post carries its `decision_power`
+   (who can SIGN vs who only moves files), `responsibility`, and the service
+   rule that creates it. Field posts that recur (a Lekhpal per village) are
+   modeled with an `instance_count` estimate rather than 900 literal rows.
+2. **Internal feedback loops** (`post_controls`). The internal analog of
+   `constitutional_controls`, between post-types inside one office: who audits,
+   verifies, inspects, countersigns, or sanctions whom (the Treasury Officer
+   audits the Nazir's cash; the Kanungo verifies the Lekhpal's entries). Same
+   "checks are not grants" discipline — these are a separate layer from the
+   command ladder.
+3. **Task flows** (`task_flows` + `task_steps`) — the payoff. The ordered
+   step-by-step process for a real citizen task ("how do I get a land mutation /
+   ration card / building permit done"): each step names the post-type that
+   performs it, whether it's an approval, the statutory time limit, and the
+   appeal path if rejected. A flow is a *path through the office's posts*.
+   Ground every step in the governing Act and the state Right-to-Public-Services
+   schedule.
+4. **Stable external IDs**. The per-dump integer `id`s are reassigned on every
+   rebuild, so they can't be cited. Give every role-bearing row a deterministic
+   content-derived URN (`role:<nation>/<office>/<post>#N`, `check:…`, `flow:…`,
+   `step:…`) that is identical across dumps — see SCHEMA.md § "Stable external
+   IDs". In the pilot this is `app.assign_stable_ids`; if you build by hand, use
+   the same URN scheme so downstream references stay durable.
+
+### The enrichment loop (scaling task flows)
+
+Task-flow coverage scales through a three-agent loop, which is worth reusing:
+**(1) generate** candidate citizen questions across life-domains (dedup against
+what you already cover); **(2) answer** each from structural knowledge only, no
+search, flagging every uncertainty; **(3) review + enrich** — web-search the
+governing rules, correct the draft, fill gaps, return a source-grounded flow.
+The reviewer is the one that retrieves and corrects — the same propose/verify
+discipline as the nurture loop, one layer up. Run it in rounds, accumulating
+against a covered-set so nothing duplicates. (Pilot implementation:
+`pipelines/task_flow_enrichment.workflow.js` in the nationAtlas repo.)
+
 ## Agent prompt patterns (LLM-assisted drafting)
 
 **Discovery draft** (output is ALWAYS a candidate, confidence=low):

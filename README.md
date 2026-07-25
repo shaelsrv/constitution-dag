@@ -20,11 +20,23 @@ It answers questions a citizen can act on:
   simply *absent*?
 - **Who checks each office** — the feedback loops the constitution wires: impeach,
   review, audit, no-confidence?
+- **What are the roles INSIDE an office** — from the District Magistrate down to
+  the Lekhpal who holds your land record and the peon who moves the file — with
+  each post's decision power and its internal feedback loops (who audits/verifies/
+  inspects whom)?
+- **How do I actually get something done** — the ordered step-by-step process for a
+  real task (land mutation, ration card, FIR, pension…): which officer does what,
+  who approves, the statutory time limit, and where to appeal if stuck?
 
-The first dump covers **India**, pivoted on **Kotdwar, Uttarakhand** (a real
-mid-size city): 29 instruments, 50 grants, 27 control edges, 12 rights, and the
-full office graph context (1,100+ offices, 110 places). Every office serving
-Kotdwar traces to the Constitution — 44/44, across 200+ distinct paths.
+The pilot covers **India**, pivoted on **Kotdwar, Uttarakhand**. Every office
+serving Kotdwar traces to the Constitution. Latest dump (`india-0.11.0`) holds:
+the genealogy layer (instruments → grants → offices → divisions → place, with the
+control web, rights ledger, and Seventh-Schedule domain allocations), the full
+**internal office structure** (~278k sanctioned post-types, DM to peon, across 6
+office classes), **10k+ internal feedback loops**, and **46 citizen task flows**
+(and growing) — every role carrying a **stable external ID** so it can be
+referenced from outside the dump. Layers grow version by version; see the table
+below and CHANGELOG.md.
 
 > This structure will always be incomplete. That is the point of this repo:
 > nobody knows a country's real wiring better than the people inside it — the
