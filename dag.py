@@ -12,6 +12,9 @@ Usage:
   python dag.py <dump> effect kotdwar ["prime minister"]
   python dag.py <dump> inside "district collector"   # roles INSIDE an office
   python dag.py <dump> task land-mutation             # the process flow for a task
+  python dag.py role-spec role_spec/india-0.12.0                       # Universal Role Schema summary
+  python dag.py role-spec role_spec/india-0.12.0 cap:physical_inspection
+  python dag.py role-spec role_spec/india-0.12.0 role:tehsildar
   python dag.py dumps/india-0.1.0 object food kotdwar
   python dag.py dumps/india-0.1.0 rights
   python dag.py dumps/india-0.1.0 paths kotdwar --mermaid out.md
@@ -423,10 +426,89 @@ def task_report(d, task_slug=None):
     print("\n  (candidate analysis — verify against the current official process)")
 
 
+def role_spec_report(specdir, query=None):
+    """Read a Universal Role Schema (Core v1) export and answer capability queries.
+
+    `specdir` is a role_spec/<version> directory (roles.jsonl + linked entities).
+    Without a query: summary. With `cap:<name>`: roles having that capability.
+    With `role:<id-substring>`: the full record with its linked entities resolved.
+    """
+    def jl(name):
+        p = os.path.join(specdir, name + ".jsonl")
+        if not os.path.exists(p):
+            return []
+        with open(p, encoding="utf-8") as f:
+            return [json.loads(x) for x in f if x.strip()]
+
+    roles = jl("roles")
+    if not roles:
+        raise SystemExit(f"no roles.jsonl in {specdir} (expected a role_spec/<version> dir)")
+    resp = {r["resp_id"]: r for r in jl("responsibilities")}
+    auth = {a["auth_id"]: a for a in jl("authorities")}
+    src = {s["src_id"]: s for s in jl("sources")}
+    caps = {c["cap_id"]: c for c in jl("capabilities")}
+
+    if query and query.startswith("cap:"):
+        want = query[4:] if query[4:].startswith("CAP-") else "CAP-" + query[4:]
+        hit = [r for r in roles if want in (r.get("capabilities") or [])]
+        print(f"\nrole-spec/core-v1 -- roles with capability {want}: {len(hit)}\n")
+        for r in hit[:60]:
+            print(f"  {r['name']:52s}  {r['role_id']}")
+        if len(hit) > 60:
+            print(f"  ... and {len(hit) - 60} more")
+        return
+
+    if query and query.startswith("role:"):
+        needle = query[5:].strip('"')
+        hit = [r for r in roles if needle in r["role_id"] or needle.lower() in r["name"].lower()]
+        if not hit:
+            raise SystemExit(f"no role matching {needle!r}")
+        r = hit[0]
+        print(f"\n{r['name']}   [{r['role_id']}]")
+        print(f"  purpose:   {r['purpose']}")
+        print(f"  org:       {r['organization_id']}   type: {r['role_type']}   status: {r['status']}")
+        print(f"  performed: {r['performed_by']['type']} / {r['performed_by']['automation']}")
+        print(f"  confidence:{r['confidence']}")
+        print(f"  capabilities: {', '.join(c[4:] for c in (r.get('capabilities') or []))}")
+        for rid in (r.get("responsibility_ids") or []):
+            print(f"  RESP {rid}: {resp.get(rid, {}).get('text', '?')}")
+        for aid in (r.get("authority_ids") or []):
+            a = auth.get(aid, {})
+            print(f"  AUTH {aid}: {a.get('decision', '?')}  ({a.get('provision') or 'no provision'})")
+        for sid in (r.get("source_ids") or []):
+            print(f"  SRC  {sid}: {src.get(sid, {}).get('citation', '?')}")
+        return
+
+    # summary
+    from collections import Counter
+    print(f"\nrole-spec/core-v1  --  {specdir}")
+    print(f"  roles:            {len(roles)}")
+    print(f"  organizations:    {len(set(r['organization_id'] for r in roles))}")
+    print(f"  responsibilities: {len(resp)}   authorities: {len(auth)}   sources: {len(src)}")
+    byperf = Counter(r["performed_by"]["type"] for r in roles)
+    print(f"  performed_by:     {dict(byperf)}")
+    print("\n  capability profile (roles per capability):")
+    capcount = Counter()
+    for r in roles:
+        for c in (r.get("capabilities") or []):
+            capcount[c] += 1
+    for c, n in capcount.most_common():
+        print(f"    {c[4:]:22s} {n}")
+    print("\n  query:  role-spec <dir> cap:physical_inspection")
+    print("          role-spec <dir> role:tehsildar")
+
+
 def main():
     if len(sys.argv) < 3:
         print(__doc__)
         sys.exit(1)
+    # role-spec reads a role_spec/<version> dir, not a dump dir
+    if sys.argv[2] == "role-spec" or (len(sys.argv) > 1 and sys.argv[1] == "role-spec"):
+        if sys.argv[1] == "role-spec":       # `dag.py role-spec <dir> [query]`
+            role_spec_report(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)
+        else:                                 # `dag.py <dir> role-spec [query]`
+            role_spec_report(sys.argv[1], sys.argv[3] if len(sys.argv) > 3 else None)
+        return
     d = load(sys.argv[1])
     cmd = sys.argv[2]
     if cmd == "paths":

@@ -1,0 +1,110 @@
+{"id": 9, "slug": "hyderabad", "name": "Hyderabad", "nation_id": 17, "jurisdiction_id": 59, "confidence": "high"}
+{"id": 7, "slug": "kotdwar", "name": "Kotdwar", "nation_id": 17, "jurisdiction_id": 53, "confidence": "high"}
+{"id": 15, "slug": "kolkata", "name": "Kolkata", "nation_id": 17, "jurisdiction_id": 67, "confidence": "high"}
+{"id": 16, "slug": "pune", "name": "Pune", "nation_id": 17, "jurisdiction_id": 68, "confidence": "high"}
+{"id": 20, "slug": "chennai", "name": "Chennai", "nation_id": 17, "jurisdiction_id": 72, "confidence": "high"}
+{"id": 21, "slug": "jaipur", "name": "Jaipur", "nation_id": 17, "jurisdiction_id": 73, "confidence": "high"}
+{"id": 22, "slug": "bhopal", "name": "Bhopal", "nation_id": 17, "jurisdiction_id": 74, "confidence": "high"}
+{"id": 26, "slug": "in-gangauli-uttar-pradesh", "name": "Gangauli", "nation_id": 17, "jurisdiction_id": 77, "confidence": "high"}
+{"id": 27, "slug": "in-banauli-uttar-pradesh", "name": "Banauli", "nation_id": 17, "jurisdiction_id": 78, "confidence": "high"}
+{"id": 28, "slug": "in-hanumanganj-uttar-pradesh", "name": "Hanumanganj", "nation_id": 17, "jurisdiction_id": 79, "confidence": "high"}
+{"id": 29, "slug": "in-chiuti-para-uttar-pradesh", "name": "Chiuti Para", "nation_id": 17, "jurisdiction_id": 80, "confidence": "high"}
+{"id": 30, "slug": "in-pura-khurda-uttar-pradesh", "name": "Pura Khurda", "nation_id": 17, "jurisdiction_id": 81, "confidence": "high"}
+{"id": 31, "slug": "in-jalokhar-uttar-pradesh", "name": "Jalokhar", "nation_id": 17, "jurisdiction_id": 82, "confidence": "high"}
+{"id": 32, "slug": "in-mirzapur-ramnath-uttar-pradesh", "name": "Mirzapur Ramnath", "nation_id": 17, "jurisdiction_id": 83, "confidence": "high"}
+{"id": 33, "slug": "in-purwa-uttar-pradesh", "name": "Purwa", "nation_id": 17, "jurisdiction_id": 84, "confidence": "high"}
+{"id": 34, "slug": "in-govardhan-uttar-pradesh", "name": "Govardhan", "nation_id": 17, "jurisdiction_id": 85, "confidence": "high"}
+{"id": 35, "slug": "in-amraudhaa-uttar-pradesh", "name": "Amraudhaa", "nation_id": 17, "jurisdiction_id": 86, "confidence": "high"}
+{"id": 36, "slug": "in-sarsawan-uttar-pradesh", "name": "Sarsawan", "nation_id": 17, "jurisdiction_id": 87, "confidence": "high"}
+{"id": 37, "slug": "in-etah-uttar-pradesh", "name": "Etah", "nation_id": 17, "jurisdiction_id": 88, "confidence": "high"}
+{"id": 38, "slug": "in-suriyawan-uttar-pradesh", "name": "Suriyawan", "nation_id": 17, "jurisdiction_id": 89, "confidence": "high"}
+{"id": 39, "slug": "in-gauriganj-uttar-pradesh", "name": "Gauriganj", "nation_id": 17, "jurisdiction_id": 90, "confidence": "high"}
+{"id": 40, "slug": "in-nanauta-uttar-pradesh", "name": "Nanauta", "nation_id": 17, "jurisdiction_id": 91, "confidence": "high"}
+{"id": 41, "slug": "in-pt-deen-dayal-upadhyaya-nagar-uttar-pradesh", "name": "Pt. Deen Dayal Upadhyaya Nagar", "nation_id": 17, "jurisdiction_id": 92, "confidence": "high"}
+{"id": 42, "slug": "in-lalitpur-uttar-pradesh", "name": "Lalitpur", "nation_id": 17, "jurisdiction_id": 93, "confidence": "high"}
+{"id": 43, "slug": "in-dhanore-maharashtra", "name": "Dhanore", "nation_id": 17, "jurisdiction_id": 94, "confidence": "high"}
+{"id": 44, "slug": "in-waluj-maharashtra", "name": "Waluj", "nation_id": 17, "jurisdiction_id": 95, "confidence": "high"}
+{"id": 45, "slug": "in-samandarwadi-maharashtra", "name": "Samandarwadi", "nation_id": 17, "jurisdiction_id": 96, "confidence": "high"}
+{"id": 46, "slug": "in-thorandale-maharashtra", "name": "Thorandale", "nation_id": 17, "jurisdiction_id": 97, "confidence": "high"}
+{"id": 47, "slug": "in-municipal-council-gadchiroli-maharashtra", "name": "Municipal Council Gadchiroli", "nation_id": 17, "jurisdiction_id": 98, "confidence": "high"}
+{"id": 48, "slug": "in-chiplun-maharashtra", "name": "Chiplun", "nation_id": 17, "jurisdiction_id": 99, "confidence": "high"}
+{"id": 49, "slug": "in-karanja-wardha-maharashtra", "name": "Karanja Wardha", "nation_id": 17, "jurisdiction_id": 100, "confidence": "high"}
+{"id": 50, "slug": "in-ballarpur-maharashtra", "name": "Ballarpur", "nation_id": 17, "jurisdiction_id": 101, "confidence": "high"}
+{"id": 51, "slug": "in-butibori-maharashtra", "name": "Butibori", "nation_id": 17, "jurisdiction_id": 102, "confidence": "high"}
+{"id": 52, "slug": "in-digras-maharashtra", "name": "Digras", "nation_id": 17, "jurisdiction_id": 103, "confidence": "high"}
+{"id": 53, "slug": "in-ratwara-bihar", "name": "Ratwara", "nation_id": 17, "jurisdiction_id": 104, "confidence": "high"}
+{"id": 54, "slug": "in-pipra-khurd-bihar", "name": "Pipra Khurd", "nation_id": 17, "jurisdiction_id": 105, "confidence": "high"}
+{"id": 55, "slug": "in-samho-akha-kurha-bihar", "name": "Samho Akha Kurha", "nation_id": 17, "jurisdiction_id": 106, "confidence": "high"}
+{"id": 56, "slug": "in-punhad-bihar", "name": "Punhad", "nation_id": 17, "jurisdiction_id": 107, "confidence": "high"}
+{"id": 57, "slug": "in-kako-bihar", "name": "KAKO", "nation_id": 17, "jurisdiction_id": 108, "confidence": "high"}
+{"id": 58, "slug": "in-maharajganj-bihar", "name": "Maharajganj", "nation_id": 17, "jurisdiction_id": 109, "confidence": "high"}
+{"id": 59, "slug": "in-warisaliganj-bihar", "name": "Warisaliganj", "nation_id": 17, "jurisdiction_id": 110, "confidence": "high"}
+{"id": 60, "slug": "in-rahui-bihar", "name": "Rahui", "nation_id": 17, "jurisdiction_id": 111, "confidence": "high"}
+{"id": 61, "slug": "in-bairgania-bihar", "name": "Bairgania", "nation_id": 17, "jurisdiction_id": 112, "confidence": "high"}
+{"id": 62, "slug": "in-jagadanandspur-west-bengal", "name": "Jagadanandspur", "nation_id": 17, "jurisdiction_id": 113, "confidence": "high"}
+{"id": 63, "slug": "in-binnaguri-west-bengal", "name": "Binnaguri", "nation_id": 17, "jurisdiction_id": 114, "confidence": "high"}
+{"id": 64, "slug": "in-paschim-bardhaman-west-bengal", "name": "Paschim Bardhaman", "nation_id": 17, "jurisdiction_id": 115, "confidence": "high"}
+{"id": 65, "slug": "in-english-bazar-west-bengal", "name": "English Bazar", "nation_id": 17, "jurisdiction_id": 116, "confidence": "high"}
+{"id": 66, "slug": "in-serampore-west-bengal", "name": "Serampore", "nation_id": 17, "jurisdiction_id": 117, "confidence": "high"}
+{"id": 67, "slug": "in-pujali-west-bengal", "name": "Pujali", "nation_id": 17, "jurisdiction_id": 118, "confidence": "high"}
+{"id": 68, "slug": "in-champdany-west-bengal", "name": "Champdany", "nation_id": 17, "jurisdiction_id": 119, "confidence": "high"}
+{"id": 69, "slug": "in-chandrakona-west-bengal", "name": "Chandrakona", "nation_id": 17, "jurisdiction_id": 120, "confidence": "high"}
+{"id": 70, "slug": "in-khajuriya-madhya-pradesh", "name": "Khajuriya", "nation_id": 17, "jurisdiction_id": 121, "confidence": "high"}
+{"id": 71, "slug": "in-mandavi-madhya-pradesh", "name": "Mandavi", "nation_id": 17, "jurisdiction_id": 122, "confidence": "high"}
+{"id": 72, "slug": "in-devri-madhya-pradesh", "name": "Devri", "nation_id": 17, "jurisdiction_id": 123, "confidence": "high"}
+{"id": 73, "slug": "in-indore-madhya-pradesh", "name": "Indore", "nation_id": 17, "jurisdiction_id": 124, "confidence": "high"}
+{"id": 74, "slug": "in-jiran-madhya-pradesh", "name": "Jiran", "nation_id": 17, "jurisdiction_id": 125, "confidence": "high"}
+{"id": 75, "slug": "in-buxwaha-madhya-pradesh", "name": "Buxwaha", "nation_id": 17, "jurisdiction_id": 126, "confidence": "high"}
+{"id": 76, "slug": "in-puliyakudy-tamil-nadu", "name": "Puliyakudy", "nation_id": 17, "jurisdiction_id": 127, "confidence": "high"}
+{"id": 77, "slug": "in-chinnanagapudi-tamil-nadu", "name": "Chinnanagapudi", "nation_id": 17, "jurisdiction_id": 128, "confidence": "high"}
+{"id": 78, "slug": "in-vaitheeswarankoil-tamil-nadu", "name": "Vaitheeswarankoil", "nation_id": 17, "jurisdiction_id": 129, "confidence": "high"}
+{"id": 79, "slug": "in-tirupathur-tamil-nadu", "name": "Tirupathur", "nation_id": 17, "jurisdiction_id": 130, "confidence": "high"}
+{"id": 80, "slug": "in-sentharapatti-tamil-nadu", "name": "Sentharapatti", "nation_id": 17, "jurisdiction_id": 131, "confidence": "high"}
+{"id": 81, "slug": "in-vellore-tamil-nadu", "name": "Vellore", "nation_id": 17, "jurisdiction_id": 132, "confidence": "high"}
+{"id": 82, "slug": "in-hulmanakalan-rajasthan", "name": "Hulmanakalan", "nation_id": 17, "jurisdiction_id": 133, "confidence": "high"}
+{"id": 83, "slug": "in-peepali-rajasthan", "name": "Peepali", "nation_id": 17, "jurisdiction_id": 134, "confidence": "high"}
+{"id": 84, "slug": "in-roopbas-rajasthan", "name": "Roopbas", "nation_id": 17, "jurisdiction_id": 135, "confidence": "high"}
+{"id": 85, "slug": "in-amet-rajasthan", "name": "Amet", "nation_id": 17, "jurisdiction_id": 136, "confidence": "high"}
+{"id": 86, "slug": "in-kathumar-rajasthan", "name": "Kathumar", "nation_id": 17, "jurisdiction_id": 137, "confidence": "high"}
+{"id": 87, "slug": "in-pilani-rajasthan", "name": "Pilani", "nation_id": 17, "jurisdiction_id": 138, "confidence": "high"}
+{"id": 88, "slug": "in-angondahalli-karnataka", "name": "Angondahalli", "nation_id": 17, "jurisdiction_id": 139, "confidence": "high"}
+{"id": 89, "slug": "in-amatur-karnataka", "name": "Amatur", "nation_id": 17, "jurisdiction_id": 140, "confidence": "high"}
+{"id": 90, "slug": "in-puttur-karnataka", "name": "Puttur", "nation_id": 17, "jurisdiction_id": 141, "confidence": "high"}
+{"id": 91, "slug": "in-koratagere-karnataka", "name": "Koratagere", "nation_id": 17, "jurisdiction_id": 142, "confidence": "high"}
+{"id": 92, "slug": "in-hoovina-hadagalli-karnataka", "name": "Hoovina Hadagalli", "nation_id": 17, "jurisdiction_id": 143, "confidence": "high"}
+{"id": 93, "slug": "in-taklipada-pipalaidevi-gujarat", "name": "Taklipada (Pipalaidevi)", "nation_id": 17, "jurisdiction_id": 144, "confidence": "high"}
+{"id": 94, "slug": "in-hariyawada-gujarat", "name": "Hariyawada", "nation_id": 17, "jurisdiction_id": 145, "confidence": "high"}
+{"id": 95, "slug": "in-una-gujarat", "name": "Una", "nation_id": 17, "jurisdiction_id": 146, "confidence": "high"}
+{"id": 96, "slug": "in-godhra-gujarat", "name": "Godhra", "nation_id": 17, "jurisdiction_id": 147, "confidence": "high"}
+{"id": 97, "slug": "in-kadi-gujarat", "name": "Kadi", "nation_id": 17, "jurisdiction_id": 148, "confidence": "high"}
+{"id": 98, "slug": "in-thatiguntapalle-andhra-pradesh", "name": "Thatiguntapalle", "nation_id": 17, "jurisdiction_id": 149, "confidence": "high"}
+{"id": 99, "slug": "in-v-kota-andhra-pradesh", "name": "V.Kota", "nation_id": 17, "jurisdiction_id": 150, "confidence": "high"}
+{"id": 100, "slug": "in-venkatagiri-andhra-pradesh", "name": "Venkatagiri", "nation_id": 17, "jurisdiction_id": 151, "confidence": "high"}
+{"id": 101, "slug": "in-visakhapatnam-andhra-pradesh", "name": "Visakhapatnam", "nation_id": 17, "jurisdiction_id": 152, "confidence": "high"}
+{"id": 102, "slug": "in-narsipatnam-andhra-pradesh", "name": "Narsipatnam", "nation_id": 17, "jurisdiction_id": 153, "confidence": "high"}
+{"id": 103, "slug": "in-mohara-odisha", "name": "Mohara", "nation_id": 17, "jurisdiction_id": 154, "confidence": "high"}
+{"id": 104, "slug": "in-udala-odisha", "name": "Udala", "nation_id": 17, "jurisdiction_id": 155, "confidence": "high"}
+{"id": 105, "slug": "in-kendujhar-odisha", "name": "Kendujhar", "nation_id": 17, "jurisdiction_id": 156, "confidence": "high"}
+{"id": 106, "slug": "in-shikarkhana-telangana", "name": "Shikarkhana", "nation_id": 17, "jurisdiction_id": 157, "confidence": "high"}
+{"id": 107, "slug": "in-khanapur-telangana", "name": "Khanapur", "nation_id": 17, "jurisdiction_id": 158, "confidence": "high"}
+{"id": 108, "slug": "in-yellandu-telangana", "name": "Yellandu", "nation_id": 17, "jurisdiction_id": 159, "confidence": "high"}
+{"id": 109, "slug": "in-uzhavoor-kerala", "name": "Uzhavoor", "nation_id": 17, "jurisdiction_id": 160, "confidence": "high"}
+{"id": 110, "slug": "in-koothattukulam-kerala", "name": "Koothattukulam", "nation_id": 17, "jurisdiction_id": 161, "confidence": "high"}
+{"id": 111, "slug": "in-parappanangadi-kerala", "name": "Parappanangadi", "nation_id": 17, "jurisdiction_id": 162, "confidence": "high"}
+{"id": 112, "slug": "in-chhuchhi-jharkhand", "name": "Chhuchhi", "nation_id": 17, "jurisdiction_id": 163, "confidence": "high"}
+{"id": 113, "slug": "in-kodarma-jharkhand", "name": "Kodarma", "nation_id": 17, "jurisdiction_id": 164, "confidence": "high"}
+{"id": 114, "slug": "in-medininagar-daltonganj-municipal-corporation-jharkhand", "name": "Medininagar (Daltonganj) Municipal Corporation", "nation_id": 17, "jurisdiction_id": 165, "confidence": "high"}
+{"id": 115, "slug": "in-duttapur-bagcherra-assam", "name": "Duttapur Bagcherra", "nation_id": 17, "jurisdiction_id": 166, "confidence": "high"}
+{"id": 116, "slug": "in-nazira-assam", "name": "Nazira", "nation_id": 17, "jurisdiction_id": 167, "confidence": "high"}
+{"id": 117, "slug": "in-gohpur-assam", "name": "Gohpur", "nation_id": 17, "jurisdiction_id": 168, "confidence": "high"}
+{"id": 118, "slug": "in-manak-majra-punjab", "name": "Manak Majra", "nation_id": 17, "jurisdiction_id": 169, "confidence": "high"}
+{"id": 119, "slug": "in-raja-sansi-punjab", "name": "Raja Sansi", "nation_id": 17, "jurisdiction_id": 170, "confidence": "high"}
+{"id": 120, "slug": "in-sankara-chhattisgarh", "name": "Sankara", "nation_id": 17, "jurisdiction_id": 171, "confidence": "high"}
+{"id": 121, "slug": "in-mahasamund-chhattisgarh", "name": "Mahasamund", "nation_id": 17, "jurisdiction_id": 172, "confidence": "high"}
+{"id": 122, "slug": "in-ranjit-nagar-haryana", "name": "Ranjit Nagar", "nation_id": 17, "jurisdiction_id": 173, "confidence": "high"}
+{"id": 123, "slug": "in-pehowa-haryana", "name": "Pehowa", "nation_id": 17, "jurisdiction_id": 174, "confidence": "high"}
+{"id": 124, "slug": "in-south-delhi-municipal-corporation-delhi", "name": "South Delhi Municipal Corporation", "nation_id": 17, "jurisdiction_id": 175, "confidence": "high"}
+{"id": 171, "slug": "gurgaon", "name": "Gurgaon", "nation_id": 17, "jurisdiction_id": 221, "confidence": "high"}
+{"id": 167, "slug": "coimbatore", "name": "Coimbatore", "nation_id": 17, "jurisdiction_id": 217, "confidence": "high"}
+{"id": 168, "slug": "araria", "name": "Araria", "nation_id": 17, "jurisdiction_id": 218, "confidence": "high"}
+{"id": 170, "slug": "noida-sector-10", "name": "noida sector 10", "nation_id": 17, "jurisdiction_id": 220, "confidence": "high"}

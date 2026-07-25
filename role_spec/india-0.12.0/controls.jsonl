@@ -1,0 +1,35 @@
+{"ctrl_id": "CTRL-c318cadd8c39", "mechanism": "remove", "exercised_by_role_id": "role:in/in-president", "scope": null, "provision": "Art. 124(4)", "confidence": 0.9}
+{"ctrl_id": "CTRL-b024be215bfb", "mechanism": "appoint", "exercised_by_role_id": "role:in/in-chief-justice", "scope": null, "provision": "Art. 124(2); collegium", "confidence": 0.9}
+{"ctrl_id": "CTRL-d2ca0e61c3f7", "mechanism": "supervise", "exercised_by_role_id": "role:in/in-uk-chief-minister", "scope": "public health administration", "provision": "State List Entry 6", "confidence": 0.6}
+{"ctrl_id": "CTRL-cff67f75dd72", "mechanism": "supervise", "exercised_by_role_id": "role:in/in-edu-uk-minister", "scope": "district education administration", "provision": "s. 4", "confidence": 0.6}
+{"ctrl_id": "CTRL-ffa613fe115c", "mechanism": "supervise", "exercised_by_role_id": "role:in/in-uk-chief-minister", "scope": "PDS delivery and grievance tiers", "provision": "ss. 14-15, 24", "confidence": 0.6}
+{"ctrl_id": "CTRL-e489e8ebbf66", "mechanism": "supervise", "exercised_by_role_id": "role:in/in-uk-chief-minister", "scope": "mandi board oversight", "provision": "as adapted", "confidence": 0.6}
+{"ctrl_id": "CTRL-d62f0190f26c", "mechanism": "appoint", "exercised_by_role_id": "role:in/in-uk-chief-minister", "scope": null, "provision": "s. 42(3)", "confidence": 0.9}
+{"ctrl_id": "CTRL-2811c7c4fe3d", "mechanism": "appoint", "exercised_by_role_id": "role:in/in-prime-minister", "scope": null, "provision": "s. 5", "confidence": 0.9}
+{"ctrl_id": "CTRL-cc372fd04a2d", "mechanism": "supervise", "exercised_by_role_id": "role:in/in-uk-governor", "scope": "reports on failure of constitutional machinery", "provision": "Art. 356", "confidence": 0.9}
+{"ctrl_id": "CTRL-42a5efae9599", "mechanism": "dissolve", "exercised_by_role_id": "role:in/in-president", "scope": "failure of constitutional machinery in the state", "provision": "Art. 356", "confidence": 0.9}
+{"ctrl_id": "CTRL-c7650cd9d5cb", "mechanism": "appoint", "exercised_by_role_id": "role:in/in-uk-governor", "scope": null, "provision": "Art. 164", "confidence": 0.9}
+{"ctrl_id": "CTRL-b90b918578a5", "mechanism": "review", "exercised_by_role_id": "role:in/in-justice-high-court-of-uttarakhand-nainital", "scope": "writs against the state government", "provision": "Art. 226", "confidence": 0.9}
+{"ctrl_id": "CTRL-6f270fdf80aa", "mechanism": "no_confidence", "exercised_by_role_id": "role:in/in-uk-assembly-speaker", "scope": null, "provision": "Art. 164(2)", "confidence": 0.9}
+{"ctrl_id": "CTRL-5cba53a82485", "mechanism": "assent", "exercised_by_role_id": "role:in/in-uk-governor", "scope": "state bills — assent, withhold, return, or reserve for the President", "provision": "Art. 200", "confidence": 0.9}
+{"ctrl_id": "CTRL-e836003d2e94", "mechanism": "supervise", "exercised_by_role_id": "role:in/in-eci-cec", "scope": "conduct of elections to the state assembly", "provision": "Art. 324", "confidence": 0.9}
+{"ctrl_id": "CTRL-54ad0ae9b91f", "mechanism": "supervise", "exercised_by_role_id": "role:in/in-uk-chief-minister", "scope": "state road network", "provision": "State List Entry 13", "confidence": 0.6}
+{"ctrl_id": "CTRL-1759f7a99ca9", "mechanism": "supervise", "exercised_by_role_id": "role:in/in-uk-sec", "scope": "conduct of panchayat elections", "provision": "Art. 243K", "confidence": 0.9}
+{"ctrl_id": "CTRL-5ad16300fedd", "mechanism": "review", "exercised_by_role_id": "role:in/in-chief-justice", "scope": "executive action and constitutional amendments", "provision": "Art. 13, 32; basic structure", "confidence": 0.9}
+{"ctrl_id": "CTRL-2caeed6bbe96", "mechanism": "impeach", "exercised_by_role_id": "role:in/in-lok-sabha-speaker", "scope": null, "provision": "Art. 61", "confidence": 0.9}
+{"ctrl_id": "CTRL-eb414b6fbc0e", "mechanism": "appoint", "exercised_by_role_id": "role:in/in-president", "scope": null, "provision": "Art. 124(2)", "confidence": 0.9}
+{"ctrl_id": "CTRL-ca1c231ad694", "mechanism": "supervise", "exercised_by_role_id": "role:in/in-eci-cec", "scope": "conduct of elections to Parliament", "provision": "Art. 324", "confidence": 0.9}
+{"ctrl_id": "CTRL-e098ba3d7d70", "mechanism": "review", "exercised_by_role_id": "role:in/in-chief-justice", "scope": "legislation and constitutional amendments", "provision": "Art. 13, 32; basic structure", "confidence": 0.9}
+{"ctrl_id": "CTRL-fe6ac1c1dbae", "mechanism": "assent", "exercised_by_role_id": "role:in/in-president", "scope": "bills passed by Parliament — assent, withhold, or return once", "provision": "Art. 111", "confidence": 0.9}
+{"ctrl_id": "CTRL-85a98e940664", "mechanism": "appoint", "exercised_by_role_id": "role:in/in-mh-governor", "scope": null, "provision": "Art. 164", "confidence": 0.9}
+{"ctrl_id": "CTRL-a253a2adfba3", "mechanism": "remove", "exercised_by_role_id": "role:in/in-lok-sabha-speaker", "scope": null, "provision": "Art. 67", "confidence": 0.9}
+{"ctrl_id": "CTRL-a6671be5dbb3", "mechanism": "appoint", "exercised_by_role_id": "role:in/in-lok-sabha-speaker", "scope": null, "provision": "Art. 66", "confidence": 0.9}
+{"ctrl_id": "CTRL-8fbf36f20354", "mechanism": "remove", "exercised_by_role_id": "role:in/in-chief-justice", "scope": null, "provision": "Art. 317", "confidence": 0.9}
+{"ctrl_id": "CTRL-c62051d23443", "mechanism": "supervise", "exercised_by_role_id": "role:in/in-uk-sec", "scope": "conduct of municipal elections", "provision": "Art. 243ZA", "confidence": 0.9}
+{"ctrl_id": "CTRL-fc951f5084ef", "mechanism": "dissolve", "exercised_by_role_id": "role:in/in-uk-chief-minister", "scope": null, "provision": "Art. 243U", "confidence": 0.9}
+{"ctrl_id": "CTRL-7b2d63da7323", "mechanism": "supervise", "exercised_by_role_id": "role:in/in-eci-cec", "scope": "election and disqualification questions", "provision": "Art. 324", "confidence": 0.9}
+{"ctrl_id": "CTRL-98d9845f202c", "mechanism": "supervise", "exercised_by_role_id": "role:in/in-uk-chief-minister", "scope": "forest administration", "provision": "s. 2; state forest department", "confidence": 0.6}
+{"ctrl_id": "CTRL-b3ed3456ec6f", "mechanism": "supervise", "exercised_by_role_id": "role:in/in-uk-chief-minister", "scope": null, "provision": "s. 14", "confidence": 0.6}
+{"ctrl_id": "CTRL-0716676cbd39", "mechanism": "supervise", "exercised_by_role_id": "role:in/in-pauri-garhwal-dm", "scope": null, "provision": "s. 4", "confidence": 0.9}
+{"ctrl_id": "CTRL-0706c0478da5", "mechanism": "audit", "exercised_by_role_id": "role:in/in-cag", "scope": "Union accounts and spending", "provision": "Art. 148-151", "confidence": 0.9}
+{"ctrl_id": "CTRL-078963ec033b", "mechanism": "no_confidence", "exercised_by_role_id": "role:in/in-lok-sabha-speaker", "scope": null, "provision": "Art. 75(3)", "confidence": 0.9}
