@@ -17,7 +17,22 @@ as plausible noise. Our pilot pivot is Kotdwar, Uttarakhand, India.
 
 ## Stage 1 — the seed DAG (a weekend of curation)
 
-Author these rows by hand (LLM as drafting assistant, you as the authority):
+**Don't start from a blank page.** Copy the validates-green starter template — it's
+a tiny fictional country that already produces a full report, so you edit rather
+than invent the format:
+
+```bash
+python newdump.py new mycountry          # -> dumps/mycountry-0.1.0/ (a working skeleton)
+# ...edit the .jsonl files to your real country (guide: dumps/_template/README.md)...
+python newdump.py stamp dumps/mycountry-0.1.0    # refresh manifest + SHA256SUMS after every edit
+python validate.py dumps/mycountry-0.1.0         # must say 0 errors
+python dag.py dumps/mycountry-0.1.0 paths <your-town>
+```
+
+`newdump.py stamp` regenerates `manifest.json` + `SHA256SUMS` for you — never
+hand-maintain those. Exact field-by-field shapes for every table are in
+[SCHEMA.md](SCHEMA.md) and shown live in `dumps/_template/`. Then author your rows
+(LLM as drafting assistant, you as the authority):
 
 1. **The root**: your constitution as a `legal_instruments` row
    (`kind=constitution`). No codified constitution? Use `kind=convention` +

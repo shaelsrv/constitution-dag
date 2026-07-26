@@ -1,0 +1,2 @@
+{"id": 1, "nation_id": 1, "parent_id": null, "level": "national", "name": "Republic of Riverland", "code": "RV"}
+{"id": 2, "nation_id": 1, "parent_id": 1, "level": "local", "name": "Riverton Municipality", "code": "RV-RVT"}

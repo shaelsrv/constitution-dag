@@ -1,8 +1,6 @@
-# Dump + role-spec data files are checksummed; their bytes must be identical on
-# every platform. Force LF so SHA256SUMS matches on Windows checkouts too, and
-# never let autocrlf rewrite them (which silently breaks the checksums in CI).
-dumps/**/*.jsonl   text eol=lf
-dumps/**/SHA256SUMS text eol=lf
-dumps/**/manifest.json text eol=lf
-role_spec/**/*.jsonl text eol=lf
-role_spec/**/manifest.json text eol=lf
+# Everything under dumps/ and role_spec/ is checksummed (SHA256SUMS), so the bytes
+# must be identical on every platform. Force LF on the WHOLE tree — data and docs
+# alike — so a Windows checkout's autocrlf can't silently rewrite a byte and break
+# the checksums in CI. (This is exactly the bug that failed PR #1's first run.)
+dumps/**       text eol=lf
+role_spec/**   text eol=lf

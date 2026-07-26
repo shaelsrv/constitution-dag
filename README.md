@@ -170,6 +170,10 @@ those two files beside the page and repoint the script tags.
 
 Start from [AGENTS.md](AGENTS.md). The short version:
 
+0. **Scaffold** — don't start from a blank page. `python newdump.py new mycountry`
+   copies a validates-green starter (`dumps/_template/`, a tiny fictional country
+   that already produces a full report) into `dumps/mycountry-0.1.0/`. Edit it into
+   your country; `python newdump.py stamp <dir>` refreshes the manifest + checksums.
 1. **Seed** (a weekend, one person + an LLM assistant): ~12 apex offices, your
    constitution + its landmark amendments as instrument rows, the famous control
    loops (who impeaches whom, who audits whom), and ONE local chain from your own
