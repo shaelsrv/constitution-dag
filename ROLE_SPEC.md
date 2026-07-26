@@ -192,9 +192,10 @@ Any organization can produce a conforming export by mapping its own fields onto 
 | policy/law/HR-doc references | `source_ids` |
 | how well-verified | `confidence` |
 
-The pilot's generator is `app/export_role_spec.py` in the nationAtlas repo; run
-`python dag.py <dump> role-spec` (see below) to read a conforming export, or point any
-JSONL reader at the files.
+The pilot's generator (`export_role_spec.py`) lives in the upstream nationAtlas
+project, but you don't need it: the published `role_spec/` export is already in this
+repo. Run `python dag.py role-spec role_spec/india-0.12.0` to read it, or point any
+JSONL reader at the files — the format is fully self-describing.
 
 ---
 
