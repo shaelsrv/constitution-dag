@@ -1,5 +1,9 @@
 # Building your country's map — agents, infra, and the nurture loop
 
+You're building the substrate for accountability: a navigable, source-backed map
+of who holds what public authority, so real public actions can one day be pinned
+to the exact role and control behind them. It starts with one town you know.
+
 You need: Python 3.10+, a text editor, optionally an LLM assistant (any model,
 local models work), and access to your country's legal texts online. A database
 is optional — dumps are plain JSONL you can edit by hand.

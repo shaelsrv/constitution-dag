@@ -6,6 +6,20 @@ teeth; a municipal clerk knows which committee actually signs; a election
 official knows where the boundary files live. This document is the contract that
 lets that knowledge flow in without degrading trust in the data.
 
+Why it matters: a government citizens can *navigate* is a government citizens can
+*hold to account*. Every verified row makes the black box a little more legible.
+
+**Ways to help, from an afternoon to a standing role:**
+
+- **Improve data** — fix an inaccuracy, add a task flow, deepen an office.
+- **Add verified sources** — attach a primary-source reference that upgrades a
+  claim from *estimated* (`medium`) to *earned* (`high`).
+- **Contribute code** — improve `dag.py`, the validator, the viewer, exporters.
+- **Review contributions** — vouch for others' PRs under the signing scheme.
+- **Host a server** — run an instance for your region.
+- **Become a country maintainer** — own a nation's map and shepherd its growth
+  (`AUTHORITIES.md` lists maintainer keys and scopes).
+
 ## What a contribution looks like
 
 All contributions are pull requests against a dump (or a new dump). Three kinds:

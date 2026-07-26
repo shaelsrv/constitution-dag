@@ -1,5 +1,26 @@
 # Changelog
 
+## india-0.12.0 (2026-07-25)
+
+**The Universal Role Schema (Core v1) + 36 more task flows (loop round 3).**
+
+- New export format: the [Universal Role Schema (Core v1)](ROLE_SPEC.md) — an
+  organization-agnostic projection of every office and internal post into a small
+  stable record (`role_id`, `purpose`, `responsibility_ids`, `authority_ids`,
+  `control_ids`, `performed_by`, a shared **capability profile**, `confidence`,
+  `source_ids`). Ships as `role_spec/india-0.12.0/` (15,208 roles + linked
+  entities: 1,179 organizations, 1,358 responsibilities, 213 authorities, 219
+  sources, 13 capabilities). The point is interoperability: a government's wiring
+  now exports in the *same* shape a company, NGO, military, university, or future
+  AI organization could — so cross-organization queries ("every role that can
+  approve a payment"; "every role suitable for automation") work across sources
+  that never coordinated. Read it with `python dag.py role-spec role_spec/india-0.12.0`;
+  `validate.py --role-spec <dir>` enforces the contract (0 errors on this export).
+- Enrichment loop round 3 grew task flows 46 -> 82 (855 steps): more life-domain
+  citizen tasks, each source-grounded and review-corrected.
+- `performed_by` is `{human, human_only}` across this dataset — the field exists so
+  AI/robot/hybrid roles interchange in the same shape as the schema is adopted.
+
 ## india-0.11.0 (2026-07-24)
 
 **Stable external IDs for every role + 32 more task flows (loop round 2).**

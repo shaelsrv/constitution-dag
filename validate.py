@@ -69,6 +69,102 @@ def warn(msg):
     warnings.append(msg)
 
 
+ROLE_SPEC_ENUMS = {
+    "status": {"active", "vacant", "retired", "merged", "split", "abolished", "planned"},
+    "role_type": {"elected", "appointed", "employee", "contractor", "ai_agent",
+                  "robot", "hybrid"},
+    "performed_type": {"human", "ai", "robot", "hybrid"},
+    "automation": {"human_only", "human_in_the_loop", "supervised_autonomy",
+                   "full_autonomy"},
+    "capability": {"physical_inspection", "financial_approval", "policy_analysis",
+                   "investigation", "procurement", "public_communication",
+                   "legal_review", "compliance", "record_keeping",
+                   "emergency_response", "service_delivery", "supervision",
+                   "administration"},
+}
+ROLE_SPEC_REQUIRED = ["role_id", "dump_version", "revision_id", "name",
+                      "organization_id", "status", "role_type", "purpose",
+                      "responsibility_ids", "performed_by", "capabilities",
+                      "effective_from", "source_ids", "confidence"]
+
+
+def validate_role_spec(specdir):
+    """Enforce the Core v1 contract on a role_spec/<version> directory."""
+    def jl(name):
+        p = os.path.join(specdir, name + ".jsonl")
+        if not os.path.exists(p):
+            return []
+        with open(p, encoding="utf-8") as f:
+            return [json.loads(x) for x in f if x.strip()]
+
+    roles = jl("roles")
+    if not roles:
+        err(f"role-spec: no roles.jsonl in {specdir}")
+        return
+    mpath = os.path.join(specdir, "manifest.json")
+    if os.path.exists(mpath):
+        m = json.load(open(mpath, encoding="utf-8"))
+        if m.get("format") != "role-spec/core-v1":
+            err(f"role-spec: manifest format is {m.get('format')!r}, "
+                "expected 'role-spec/core-v1'")
+    else:
+        err("role-spec: manifest.json missing")
+
+    resp_ids = {r["resp_id"] for r in jl("responsibilities")}
+    auth_ids = {a["auth_id"] for a in jl("authorities")}
+    ctrl_ids = {c["ctrl_id"] for c in jl("controls")}
+    src_ids = {s["src_id"] for s in jl("sources")}
+    cap_ids = {c["cap_id"] for c in jl("capabilities")}
+    org_ids = {o["organization_id"] for o in jl("organizations")}
+    role_ids = set()
+
+    def ref(role_i, field, values, universe, label):
+        for v in (values or []):
+            if v not in universe:
+                err(f"role-spec roles[{role_i}] {field} {v!r} not in {label}")
+
+    for i, r in enumerate(roles):
+        for f in ROLE_SPEC_REQUIRED:
+            if r.get(f) in (None, ""):
+                err(f"role-spec roles[{i}] missing required field {f}")
+        rid = r.get("role_id")
+        if rid in role_ids:
+            err(f"role-spec roles[{i}] duplicate role_id {rid!r}")
+        role_ids.add(rid)
+        if r.get("status") not in ROLE_SPEC_ENUMS["status"]:
+            err(f"role-spec roles[{i}] bad status {r.get('status')!r}")
+        if r.get("role_type") not in ROLE_SPEC_ENUMS["role_type"]:
+            err(f"role-spec roles[{i}] bad role_type {r.get('role_type')!r}")
+        pb = r.get("performed_by") or {}
+        if pb.get("type") not in ROLE_SPEC_ENUMS["performed_type"]:
+            err(f"role-spec roles[{i}] bad performed_by.type {pb.get('type')!r}")
+        if pb.get("automation") not in ROLE_SPEC_ENUMS["automation"]:
+            err(f"role-spec roles[{i}] bad performed_by.automation {pb.get('automation')!r}")
+        c = r.get("confidence")
+        if not isinstance(c, (int, float)) or not (0 <= c <= 1):
+            err(f"role-spec roles[{i}] confidence {c!r} not a float in [0,1]")
+        if r.get("organization_id") not in org_ids:
+            err(f"role-spec roles[{i}] organization_id {r.get('organization_id')!r} "
+                "not in organizations.jsonl")
+        for cap in (r.get("capabilities") or []):
+            if not cap.startswith("CAP-") or cap[4:] not in ROLE_SPEC_ENUMS["capability"]:
+                err(f"role-spec roles[{i}] capability {cap!r} not in vocabulary")
+            if cap not in cap_ids:
+                err(f"role-spec roles[{i}] capability {cap!r} not in capabilities.jsonl")
+        if not (r.get("source_ids") or []) and (r.get("confidence") or 0) > 0.3:
+            err(f"role-spec roles[{i}] has no source_ids but confidence>{0.3} — "
+                "an unsourced claim must declare confidence<=low")
+        ref(i, "responsibility_ids", r.get("responsibility_ids"), resp_ids, "responsibilities")
+        ref(i, "authority_ids", r.get("authority_ids"), auth_ids, "authorities")
+        ref(i, "control_ids", r.get("control_ids"), ctrl_ids, "controls")
+        ref(i, "source_ids", r.get("source_ids"), src_ids, "sources")
+    # controls point back at real roles
+    for i, c in enumerate(jl("controls")):
+        by = c.get("exercised_by_role_id")
+        if by and by not in role_ids:
+            warn(f"role-spec controls[{i}] exercised_by_role_id {by!r} not a role in this export")
+
+
 def load(dumpdir):
     d = {}
     for name in sorted(os.listdir(dumpdir)):
@@ -242,6 +338,18 @@ def main():
     for nid in {r["nation_id"] for r in d.get("legal_instruments", [])}:
         if nid not in roots:
             err(f"nation_id={nid} has instruments but no constitution/convention root")
+
+    # ── Universal Role Schema (Core v1) validation, when a role_spec dir is given ──
+    specdir = None
+    if "--role-spec" in sys.argv:
+        specdir = sys.argv[sys.argv.index("--role-spec") + 1]
+    else:
+        sib = os.path.join(os.path.dirname(dumpdir.rstrip("/\\")) or ".",
+                           "..", "role_spec", os.path.basename(dumpdir.rstrip("/\\")))
+        if os.path.isdir(sib):
+            specdir = sib
+    if specdir and os.path.isdir(specdir):
+        validate_role_spec(specdir)
 
     print(f"validate: {len(errors)} error(s), {len(warnings)} warning(s)")
     for e in errors:

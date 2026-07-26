@@ -1,14 +1,49 @@
 # constitution-dag
 
-**Map how your constitution reaches your street.**
+**The GPS of accountability.**
 
-This is an open dataset + toolkit for building a *constitutional genealogy* of any
-country: a directed graph from the constitution at the top — through amendments,
-statutes, and court decisions — into the offices they create and empower, across
-the overlapping administrative divisions those offices serve, down to a single
-place where a citizen stands.
+Public officials should be judged by more than speeches, slogans, and campaign
+advertisements. They should be judged by the **actions they took while holding
+public responsibility**.
 
-It answers questions a citizen can act on:
+This is an open, navigable, source-backed map of a government — from the
+constitution at the top, through the amendments, statutes, and court decisions
+that create and empower every office, across the overlapping divisions those
+offices serve, down to the single place where a citizen stands.
+
+That structural map is what ships **today**. The map is the substrate for the
+larger goal: a record of real public **actions**, each anchored to the exact role
+and authority behind it, so that for any action a citizen can see —
+
+- **Who** made the decision
+- **Which public role** gave them the authority
+- **What evidence** supports the record
+- **How much public money** was involved
+- **What controls and approvals** applied
+- **What happened afterward**
+- **How the public** assessed it
+
+Support an action. Oppose it. Explain why. Then, when the time for accountability
+comes, citizens can review the complete record and decide with more than a slogan
+to go on. Every citizen evaluates public actions **according to their own values** —
+the record is neutral; the judgment is yours.
+
+And because governments change — and because public work is beginning to move
+between people, AI agents, and robots — the map keeps a **visible change history**:
+you can see exactly what changed, where the responsibility went, and what controls
+remain. Government should not feel like a black box.
+
+> **Status, honestly.** What exists now: the full structural map (offices,
+> authorities, controls, rights, internal posts, task flows) with provenance on
+> every row, plus a timeline of structural **events** with their actors and legal
+> instruments. The per-action money, outcome, and public-assessment fields are the
+> roadmap, not yet in the dump — this README marks that line rather than blur it,
+> because [the honesty rules](#the-honesty-rules-non-negotiable) are the point.
+
+## What it answers
+
+Under the accountability layer sits a complete structural map. It answers questions
+a citizen can act on:
 
 - **How many distinct constitutional paths** reach my town, and through which doors
   (municipal, electoral, district, state)?
@@ -28,21 +63,44 @@ It answers questions a citizen can act on:
   real task (land mutation, ration card, FIR, pension…): which officer does what,
   who approves, the statutory time limit, and where to appeal if stuck?
 
+It also **exports a universal, organization-agnostic role format** — the
+[Universal Role Schema (Core v1)](ROLE_SPEC.md). Every office and internal post
+projects into a small stable record (`role_id`, `purpose`, `responsibility_ids`,
+`performed_by`, a shared **capability profile**, `confidence`, `source_ids`), so a
+government's wiring becomes queryable in the *same* shape a company, NGO, or future
+AI organization would export — enabling cross-organization questions like *"every
+role that can approve a payment"* or *"every role suitable for automation."*
+
 The pilot covers **India**, pivoted on **Kotdwar, Uttarakhand**. Every office
-serving Kotdwar traces to the Constitution. Latest dump (`india-0.11.0`) holds:
+serving Kotdwar traces to the Constitution. Latest dump (`india-0.12.0`) holds:
 the genealogy layer (instruments → grants → offices → divisions → place, with the
 control web, rights ledger, and Seventh-Schedule domain allocations), the full
 **internal office structure** (~278k sanctioned post-types, DM to peon, across 6
-office classes), **10k+ internal feedback loops**, and **46 citizen task flows**
+office classes), **10k+ internal feedback loops**, and **82 citizen task flows**
 (and growing) — every role carrying a **stable external ID** so it can be
-referenced from outside the dump. Layers grow version by version; see the table
+referenced from outside the dump, and a companion **Universal Role Schema**
+export (`role_spec/india-0.12.0/`). Layers grow version by version; see the table
 below and CHANGELOG.md.
 
-> This structure will always be incomplete. That is the point of this repo:
-> nobody knows a country's real wiring better than the people inside it — the
-> forest officer who knows the Forest Act, the teacher who knows the education
-> code, the clerk who knows which form actually moves. This project exists so
-> that knowledge can be contributed, attributed, verified, and shared.
+## Why this exists
+
+Most government information is *technically* public. That doesn't mean it's
+understandable.
+
+> Budgets live in PDFs. Departments have separate websites. Responsibilities
+> overlap. Finding a straight answer takes hours.
+
+We're building an open, navigable knowledge graph that connects it all — so you
+can explore your country, follow public spending, understand institutions, and
+contribute verified information back. Citizens deserve to understand the systems
+they fund. **Better maps make better accountability.**
+
+This structure will always be incomplete, and that is the whole point: nobody
+knows a country's real wiring better than the people inside it — the forest
+officer who knows the Forest Act, the teacher who knows the education code, the
+clerk who knows which form actually moves. This project exists so that knowledge
+can be contributed, attributed, verified, and shared — an atlas of your nation,
+created by the people who know it best.
 
 ## Quickstart (no database needed)
 
@@ -51,26 +109,31 @@ git clone https://github.com/shaelsrv/constitution-dag
 cd constitution-dag
 
 # how does the Constitution of India reach Kotdwar?
-python dag.py dumps/india-0.11.0 paths kotdwar
+python dag.py dumps/india-0.12.0 paths kotdwar
 
 # one plate of food, five jurisdictions
-python dag.py dumps/india-0.11.0 object food
+python dag.py dumps/india-0.12.0 object food
 
 # what can a citizen invoke — and what does NOT exist
-python dag.py dumps/india-0.11.0 rights
+python dag.py dumps/india-0.12.0 rights
 
 # HOW does an office reach you: directly, or through command chains?
-python dag.py dumps/india-0.11.0 effect kotdwar "prime minister"
+python dag.py dumps/india-0.12.0 effect kotdwar "prime minister"
 
 # INSIDE an office: the ladder from the head down to the peon
-python dag.py dumps/india-0.11.0 inside "district collector"
+python dag.py dumps/india-0.12.0 inside "district collector"
 
 # HOW do I get something done: the step-by-step process, officer by officer
-python dag.py dumps/india-0.11.0 task            # list tasks
-python dag.py dumps/india-0.11.0 task land-mutation
+python dag.py dumps/india-0.12.0 task            # list tasks
+python dag.py dumps/india-0.12.0 task land-mutation
+
+# the UNIVERSAL ROLE SCHEMA export: capability profile + linked entities
+python dag.py role-spec role_spec/india-0.12.0                     # summary
+python dag.py role-spec role_spec/india-0.12.0 cap:physical_inspection
+python dag.py role-spec role_spec/india-0.12.0 role:tehsildar
 
 # export a mermaid diagram
-python dag.py dumps/india-0.11.0 paths kotdwar --mermaid kotdwar.md
+python dag.py dumps/india-0.12.0 paths kotdwar --mermaid kotdwar.md
 ```
 
 `dag.py` is stdlib-only Python 3.10+. The dumps are plain JSONL — load them into
@@ -122,7 +185,8 @@ Start from [AGENTS.md](AGENTS.md). The short version:
 
 | dump | contents | source |
 |---|---|---|
-| `dumps/india-0.11.0` | **current** — stable external role IDs + 46 task flows (loop-grown) | [nationAtlas](https://emergencemachine.com) (private during beta) |
+| `dumps/india-0.12.0` | **current** — Universal Role Schema (Core v1) export + 82 task flows (loop round 3) | [nationAtlas](https://emergencemachine.com) (private during beta) |
+| `dumps/india-0.11.0` | stable external role IDs + 46 task flows (loop round 2) | [nationAtlas](https://emergencemachine.com) (private during beta) |
 | `dumps/india-0.10.0` | 14 citizen task flows (grown by a generate->answer->review enrichment loop) | [nationAtlas](https://emergencemachine.com) (private during beta) |
 | `dumps/india-0.9.0` | task flows: how to get 6 real things done (mutation, certificate, permit, ration, RTE, MGNREGA) step by step | [nationAtlas](https://emergencemachine.com) (private during beta) |
 | `dumps/india-0.8.0` | internal feedback loops: 10k+ checks inside offices (who audits/verifies/inspects whom) | [nationAtlas](https://emergencemachine.com) (private during beta) |
@@ -163,11 +227,27 @@ what make the data trustworthy enough to merge:
    that was removed (a `constrained_by` edge from an amendment) is recorded as
    deliberately as any grant.
 
-## Contributing
+## Help build the atlas of your nation
 
-Quality is enforced in layers — CI validation, provenance gates, adversarial scans, scoped authorities, versioned accountability: see [QUALITY.md](QUALITY.md). Then see [CONTRIBUTING.md](CONTRIBUTING.md) — including how domain experts (the
-forest-department case) contribute what they know, how attribution works, and
-the signing scheme that lets downstream users verify who vouched for what.
+Government shouldn't feel like a black box. Help make it navigable for everyone —
+there's a role at every level of involvement:
+
+- **Explore your country** — follow public spending, understand institutions,
+  trace who answers for what.
+- **Contribute code. Improve data.** — fix an inaccuracy, add a task flow, deepen
+  an office's structure.
+- **Add verified sources** — attach primary-source references that upgrade a claim
+  from *estimated* to *earned*.
+- **Review contributions** — vouch for what others submit under the signing scheme.
+- **Host a server** — run an instance for your region.
+- **Become a country maintainer** — own the map for a nation and shepherd its
+  growth.
+
+Quality is enforced in layers — CI validation, provenance gates, adversarial
+scans, scoped authorities, versioned accountability: see [QUALITY.md](QUALITY.md).
+Then see [CONTRIBUTING.md](CONTRIBUTING.md) — how domain experts (the
+forest-department case) contribute what they know, how attribution works, and the
+signing scheme that lets downstream users verify who vouched for what.
 
 ## License
 
