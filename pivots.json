@@ -1,5 +1,8 @@
 {
   "dumps/india-0.12.0": [
     "kotdwar"
+  ],
+  "dumps/_template": [
+    "riverton"
   ]
 }
