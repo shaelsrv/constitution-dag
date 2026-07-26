@@ -29,9 +29,20 @@ ENUMS = {
                                "court_decision", "convention"},
     "instrument_edges.relation": {"created_by", "empowered_by", "constrained_by",
                                   "abolished_by"},
-    "constitutional_controls.mechanism": {"appoint", "remove", "impeach", "veto",
-                                          "assent", "audit", "review", "supervise",
-                                          "dissolve", "no_confidence"},
+    # Control mechanisms across constitutional systems. This is intentionally broad
+    # so a newcomer modelling a real government (Westminster, presidential, hybrid,
+    # uncodified) is not blocked by an India-shaped list. If your system needs a
+    # verb not here, the fix is to ADD it in a PR — not to mis-map a real control.
+    "constitutional_controls.mechanism": {
+        # appointment / tenure
+        "appoint", "nominate", "recommend", "confirm", "ratify", "remove",
+        "impeach", "dissolve", "no_confidence", "recall",
+        # legislative / assent
+        "veto", "assent", "refer", "return", "promulgate", "countersign",
+        # oversight / accountability
+        "audit", "review", "supervise", "advise", "direct", "inquire",
+        "investigate", "sanction", "censure", "summon", "prosecute", "pardon",
+    },
     "citizen_rights.kind": {"fundamental", "statutory", "legal", "absent"},
     "confidence": {"high", "medium", "low"},
 }
