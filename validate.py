@@ -217,7 +217,13 @@ def main():
             if not os.path.exists(p):
                 err(f"SHA256SUMS lists missing file {fname}")
                 continue
-            got = hashlib.sha256(open(p, "rb").read()).hexdigest()
+            # Hash LF-normalized bytes: the dump is checksummed for CONTENT
+            # integrity, and a Windows checkout (autocrlf) legitimately has CRLF
+            # in the working tree while the committed/canonical bytes are LF.
+            # Normalizing makes the check platform-independent (SHA256SUMS is
+            # written over LF by newdump.py / the exporter).
+            got = hashlib.sha256(
+                open(p, "rb").read().replace(b"\r\n", b"\n")).hexdigest()
             if got != want:
                 err(f"checksum mismatch: {fname}")
     else:

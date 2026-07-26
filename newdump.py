@@ -56,7 +56,11 @@ def stamp(dump):
         "provenance_note": prev.get("provenance_note",
                                     "built with newdump.py; verify every row against primary sources"),
     }
-    json.dump(manifest, open(mpath, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
+    # Write with LF (newline="\n"), NOT the platform default — Git commits LF for
+    # this tree (.gitattributes), and the checksum must match the committed bytes.
+    with open(mpath, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(manifest, f, indent=2, ensure_ascii=False)
+        f.write("\n")
     lines = []
     for fn in sorted(os.listdir(dump)):
         # checksum the DATA (jsonl + manifest), not docs — a README's line endings
@@ -65,7 +69,10 @@ def stamp(dump):
             continue
         p = os.path.join(dump, fn)
         if os.path.isfile(p):
-            lines.append(f"{hashlib.sha256(open(p, 'rb').read()).hexdigest()}  {fn}")
+            # Hash LF-normalized bytes so the checksum equals the committed (LF)
+            # form regardless of the local working-tree line endings (autocrlf).
+            data = open(p, "rb").read().replace(b"\r\n", b"\n")
+            lines.append(f"{hashlib.sha256(data).hexdigest()}  {fn}")
     with open(os.path.join(dump, "SHA256SUMS"), "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + "\n")
     print(f"stamped {dump}: {sum(counts.values())} rows across {len(counts)} tables")
