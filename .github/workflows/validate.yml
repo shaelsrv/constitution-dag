@@ -1,0 +1,29 @@
+name: validate
+on:
+  push: { branches: [main] }
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Validate active dumps
+        run: |
+          python - << 'PY'
+          import json, subprocess, sys
+          pivots = json.load(open("pivots.json"))
+          rc = 0
+          for dump, places in pivots.items():
+              print(f"== validate {dump} ==", flush=True)
+              r = subprocess.run([sys.executable, "validate.py", dump])
+              rc |= r.returncode
+              for place in places:
+                  print(f"== smoke: paths {place} ==", flush=True)
+                  r = subprocess.run([sys.executable, "dag.py", dump, "paths", place])
+                  rc |= r.returncode
+                  print(f"== tripwire scan (report only) ==", flush=True)
+                  subprocess.run([sys.executable, "scan.py", dump, "--pivot", place])
+          sys.exit(rc)
+          PY

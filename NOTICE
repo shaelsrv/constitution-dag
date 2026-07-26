@@ -1,0 +1,32 @@
+constitution-dag
+Part of the Emergence Machine project — https://emergencemachine.com
+Source: https://github.com/shaelsrv/mycitizenatlas
+
+================================================================================
+Licensing
+================================================================================
+
+- Code / tooling (dag.py, validate.py, newdump.py, scan.py, coverage.py,
+  viewer3d.html, and all scripts): MIT License — see LICENSE.
+- Data (dumps/, role_spec/) and documentation (the prose): Creative Commons
+  Attribution 4.0 International (CC-BY 4.0) — see DATA_LICENSE.
+
+Both licenses are attribution-friendly and impose no restriction on commercial
+or derivative use. You may use, fork, adapt, and redistribute freely.
+
+================================================================================
+Attribution we ask for (this is the CC-BY attribution, and the point of it)
+================================================================================
+
+When you use the data, the tooling, or a derivative, please credit:
+
+    constitution-dag, part of the Emergence Machine project
+    (https://emergencemachine.com)
+    https://github.com/shaelsrv/mycitizenatlas
+
+Keeping the "Emergence Machine" reference is what routes discovery and credit
+back upstream — it is why the project is openly licensed rather than closed.
+Individual contributors are additionally credited in ATTRIBUTIONS.jsonl.
+
+If you publish work built on this (a paper, a site, a national map), a citation
+(see CITATION.cff) is the most helpful form of attribution.

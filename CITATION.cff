@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it and credit the Emergence Machine project."
+title: "constitution-dag: a constitutional genealogy of public authority"
+abstract: >-
+  An open, navigable, source-backed map of a government — from the constitution
+  through amendments, statutes, and court decisions into the offices they create
+  and empower, across administrative divisions, down to a single place where a
+  citizen stands. Part of the Emergence Machine project.
+type: dataset
+authors:
+  - name: "constitution-dag contributors"
+    website: "https://github.com/shaelsrv/mycitizenatlas"
+repository-code: "https://github.com/shaelsrv/mycitizenatlas"
+url: "https://emergencemachine.com"
+license: MIT
+license-url: "https://github.com/shaelsrv/mycitizenatlas/blob/main/LICENSE"
+keywords:
+  - civic-tech
+  - accountability
+  - constitutional-law
+  - knowledge-graph
+  - open-data
+  - emergence-machine

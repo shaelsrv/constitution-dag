@@ -1,0 +1,38 @@
+name: Report an inaccuracy
+description: A row in a dump is wrong — the fastest way to get it fixed.
+title: "[inaccuracy] "
+labels: [inaccuracy, triage]
+body:
+  - type: input
+    id: dump
+    attributes:
+      label: Dump version
+      placeholder: dumps/india-0.12.0
+    validations: { required: true }
+  - type: input
+    id: row
+    attributes:
+      label: Which row
+      description: table + identifying fields (slug, citation, right_name …)
+      placeholder: "positions: in-kotdwar-mayor"
+    validations: { required: true }
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong, and what is correct
+      description: >
+        Plain words. Local knowledge is welcome and is often how errors are
+        found — but the FIX will be verified against a public source.
+    validations: { required: true }
+  - type: textarea
+    id: source
+    attributes:
+      label: Public source (if you have one)
+      description: >
+        Gazette, statute portal, official site, court record, news of record.
+        No source? File anyway — the report becomes a verification task.
+  - type: dropdown
+    id: expertise
+    attributes:
+      label: Do you have inside/domain knowledge of this system?
+      options: ["No", "Yes — I work in or with this system (say what in the report)"]

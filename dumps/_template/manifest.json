@@ -1,0 +1,26 @@
+{
+  "format": "constitution-dag-dump/1",
+  "version": "template",
+  "nations": [
+    "RV"
+  ],
+  "license": "CC-BY-4.0",
+  "counts": {
+    "citizen_rights": 2,
+    "constitutional_controls": 5,
+    "dependencies": 0,
+    "division_kind_grants": 1,
+    "divisions": 2,
+    "domain_allocations": 1,
+    "instrument_edges": 6,
+    "jurisdictions": 2,
+    "legal_instruments": 3,
+    "nations": 1,
+    "place_divisions": 2,
+    "places": 1,
+    "position_divisions": 5,
+    "position_domains": 0,
+    "positions": 5
+  },
+  "provenance_note": "FICTIONAL starter template — copy with newdump.py, then replace every row with your real country"
+}
