@@ -7,5 +7,12 @@
     }
   ],
   "subtitle": "From the Constitution of India to one street in Kotdwar: offices, powers, rights",
-  "description": "Versioned dump of a constitutional genealogy graph: legal instruments (constitution/amendments/statutes/court decisions), the offices they create and empower (with article-level provisions and subject-matter scopes), the feedback-control web (who impeaches/audits/reviews whom), domain allocations (Seventh Schedule), division-kind grants, and a citizen-rights ledger including demoted and absent rights. Includes the full office-graph context for India with pivot city Kotdwar, Uttarakhand (44/44 offices constitutionally grounded). Every row carries source + confidence. See https://github.com/shaelsrv/mycitizenatlas for the format spec, portable analyzer, and contribution framework."
+  "description": "Versioned dump of a constitutional genealogy graph: legal instruments (constitution/amendments/statutes/court decisions), the offices they create and empower (with article-level provisions and subject-matter scopes), the feedback-control web (who impeaches/audits/reviews whom), domain allocations (Seventh Schedule), division-kind grants, and a citizen-rights ledger including demoted and absent rights. Includes the full office-graph context for India with pivot city Kotdwar, Uttarakhand (44/44 offices constitutionally grounded). Every row carries source + confidence. See https://github.com/shaelsrv/mycitizenatlas for the format spec, portable analyzer, and contribution framework.",
+  "keywords": [
+    "government",
+    "law",
+    "politics",
+    "india",
+    "social science"
+  ]
 }
