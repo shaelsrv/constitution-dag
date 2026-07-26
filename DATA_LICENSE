@@ -1,5 +1,19 @@
-The datasets in dumps/ are licensed under the Creative Commons Attribution 4.0
-International License (CC-BY 4.0): https://creativecommons.org/licenses/by/4.0/
+The datasets in dumps/ (and the role-spec exports in role_spec/) are licensed
+under the Creative Commons Attribution 4.0 International License (CC-BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
 
-Attribution: "constitution-dag contributors" with a link to this repository.
-Per-contribution attribution is recorded in ATTRIBUTIONS.jsonl.
+REQUIRED ATTRIBUTION (how to give credit)
+When you use this data, credit it as:
+
+  "constitution-dag, part of the Emergence Machine project
+   (https://emergencemachine.com) — https://github.com/shaelsrv/constitution-dag"
+
+CC-BY only requires that you attribute; this line is the attribution we ask for.
+Keeping the Emergence Machine reference is what lets the project be found and
+built on by others — that upstream credit is the point of the license choice.
+
+Per-contribution attribution is recorded in ATTRIBUTIONS.jsonl; contributors are
+credited individually there in addition to the project-level credit above.
+
+See NOTICE for the full attribution/citation guidance and CITATION.cff for a
+machine-readable citation.

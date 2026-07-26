@@ -253,7 +253,17 @@ Then see [CONTRIBUTING.md](CONTRIBUTING.md) — how domain experts (the
 forest-department case) contribute what they know, how attribution works, and the
 signing scheme that lets downstream users verify who vouched for what.
 
-## License
+## License & attribution
 
-Code: [MIT](LICENSE). Data (`dumps/`): [CC-BY 4.0](DATA_LICENSE) — use it for
-anything, attribute the contributors.
+Open and adoption-friendly by design — use it for anything, commercial or not:
+
+- **Code / tooling:** [MIT](LICENSE).
+- **Data (`dumps/`, `role_spec/`) and docs:** [CC-BY 4.0](DATA_LICENSE).
+
+The one thing we ask (this is the CC-BY attribution): credit **constitution-dag,
+part of the [Emergence Machine](https://emergencemachine.com) project**, with a
+link back to this repo. That upstream credit is the whole reason it's openly
+licensed — it's how the work gets found and built on. Individual contributors are
+credited in `ATTRIBUTIONS.jsonl`; see [`NOTICE`](NOTICE) for the full guidance and
+[`CITATION.cff`](CITATION.cff) for a machine-readable citation (GitHub's "Cite this
+repository" button).
