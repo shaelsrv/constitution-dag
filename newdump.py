@@ -59,7 +59,9 @@ def stamp(dump):
     json.dump(manifest, open(mpath, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
     lines = []
     for fn in sorted(os.listdir(dump)):
-        if fn == "SHA256SUMS":
+        # checksum the DATA (jsonl + manifest), not docs — a README's line endings
+        # must never fail a data-integrity gate.
+        if fn == "SHA256SUMS" or fn.endswith(".md"):
             continue
         p = os.path.join(dump, fn)
         if os.path.isfile(p):
